@@ -1,0 +1,181 @@
+﻿﻿Xtreme Official DLP
+Latest version：44
+Update date：2011-04-16
+
+Strict DLP Chinese - SDC
+Latest version：44003 Beta[Base on official v44]
+Update date：2013-09-28
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v44003 BetaChangelog：
+* The new check to eMule -LPE-
+* The new check to some QQ Xuanfeng client
+* The new check to MTVP2P(2013) [雁蝎]
+* The new check to EggAche
+* The new check to DarkSky
+* The new check to Xunlei App(Mobile version)
+* Remove ED2000 check
+* The 3 new algorithms in Fake ModString
+* The development with Ghost Mod check
+* Rebuild the Israel Community -> Fake ModString(Type 1) check [无敌稻草人]
+* VeryCD-Default-List-NickName -> VeryCD-Default-NickNames
+* New source was combined with old versions [犟驴子]
+* UCS-2/UTF-16 Little Endian/LE coding with Dos\Windows format in source
+* 64-Bit/x64 version only support Vista and newer Windows systems now
+  * 32-Bit/x86 version support NT kernel based systems and newer Windows systems
+  * See SDC versions in ReadMe
+* English language in ReadMe and Changelog [luke lucky/Damn Sure]
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v44002 Update 1 Changelog：
+* Update VeryCD-Default-List-NickName list
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v44002 Changelog：
+* The new check to VgroupTeam [doompower]
+* The new check to THC [Bill Lee]
+* The new check to P2PSearcher [dark]
+* The new check to new SpeedyP2P client
+* The Ghost Mod check is now on
+* The new algorithm in Non-Standard ModString check
+* Some developments with Official/VeryCD-EasyMule-Mod/VeryCD-Default-List-NickName/Israel Community/Fake X-Ray check [Ejack]
+* Release by Visual Studio 2012
+* Chinese(Traditional) language in ReadMe and Changelog [風之水]
+ 
+-------------------------------------------------------------------------------
+ 
+Strict DLP Chinese v44001 Changelog：
+* Base on Official DLP v44
+* The new algorithm in Non-Standard ModString check
+* The development with VeryCD-Default-List-NickName check
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v43002 Changelog：
+* Non-Standard ModString check now is on
+* Sort some code out [PERSMULE]
+* Fix a bug in Lite version
+* Move the Changelog to source archive
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v43001 Changelog：
+* Base on Official DLP v43
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v43002 Changelog:
+* The new check to Fake MorphCA [DargonD]
+* The new check to "0.50a" [DargonD]
+* The new check to "ED2000.COM"
+* The new check to two UserHash:
+ * Community UserHash
+  D0D897BD360EEFF329903E04990B6F86 
+ * Tencent Offline Downloading Server UserHash
+  36725093E00E9350F7680C871E946FD1
+* Israel Community check now is on
+* Move Non-Standard ModString check to Stable(Comment)
+* The FlashGet development
+* Add QQDownload check to Bad Userhash
+* The VeryCD check development
+* Remove the Fake X-Ray check(In Comment)
+* Remove the Official-Fix version and its function was replaced by Lite version
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v42001 Changelog:
+* Base on Official DLP v42
+* The new version Lite is on
+* The development with Israel Community and Fake X-Ray check
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v41002 Changelog:
+* The check of Develop part now is in Stable
+* The new check to Xunlei Offline Downloading Server [angvil]
+* The new check to Tencent Offline Downloading Server [angvil]
+* The new check to MTVP2P
+* The new check "OS" [ieD2k]
+* The new check to some fake clients [tetris]
+* The new check to Unbuyi [一馬]
+* The "EYE888" check development
+* Move Israel Community check and Fake X-Ray check to Stable(Comment)
+* Fix the introduction of Official-Fix version
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v41001 Changelog:
+
+Base Part
+* Base on Official DLP v41
+* The new check to eMule-GIFC [DargonD]
+* The new check to “qobfxb” [DargonD]
+* The new check to "EYE888", "btbbt.com" and "Greendown.cn" [FzH]
+* The new check to twelve Bad UserHash:
+ * Three Community UserHash [FzH/DargonD]
+  5E02F74DBA0E8A19DBF6733F0AE66F4A / B6491292AE0E07AC8C6045CAC2DD6F9F / 596B305E050EA842CE38DF3811216F3F
+ * Eight Invalid UserHash [CHNP2P/DargonD]
+  B1798B2F620E0B676452C6E2EF706F13 / C1533316C00E3E0D0218843A05E46FAC / FE10F3C0610E0A925B85204CE8456F42 /
+  C9E61DEEF30E0360E2741C9CF1396F94 / 559ACC89D80E90C50A7A0CD3224F6F57 / 6AE1D2DF4B0E8707B6F6BC29E8746F0F /
+  8A537F20B80EF9AF02E59E6C087C6F6B / 3F44A7996F0E17D1F4B319EB58B26F64
+ * Two Multi UserHash [DargonD]
+  66B002DADE0E6DBEDF4FCCAA380E6FD4 / AAEE84C0C30E247CBB99B459255D6F99
+* The new check to WebeSo Smule [寂寞驴]
+* The new check to Fake X-Ray Mod [**Riso64Bit**]
+* Remove the VeryCD-EasyMule2-Mod&VeryCD-MiniMule-Mod version
+* Remove all the pushing check
+
+--------------------
+
+Develop1 Part
+* The Israel Community check development
+* Some algorithms in Non-Standard ModString check [反迅雷/茄头/angvil/**Riso64Bit**]
+* Some algorithms in Fake ModString check [反迅雷]
+* Remove some code
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v39005 Changelog:
+* The new check to VeryCD-MiniMule-Mod(HardBan)
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v39004 Changelog:
+
+Base Part
+* The new check to Bad UserHash “CB42F563EE0EA7907395420CAC146FF5” [DargonD]
+* Change VeryCD EasyMule2 Mod check to HardBan list
+* Released by SSE2
+* Arrange the source archive
+
+--------------------
+
+Develop1 Part
+* Base on Base version
+* The new check Israel Community
+* The new check Fake X-Ray
+* The new check Custom ModString
+* The new check Fake ModString
+* The new algorithm in Custom ModString check
+* The fix from SDC 39004 Beta version [Dolphin/DargonD/茄头/alisa/dilxat]
+* Move the Custom ModString check
+* Remove Pushing check in QQDownload check
+
+Develop2 Part
+* The new algorithm in Israel Community check and Fake ModString check
+* The Custom ModString check development [rifleman/dilxat]
+* The Israel Community check development from Magic Angelyzer Mod [dilxat]
+* The Custom ModString check development from Sivka Mod [angvil]
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v39003 Changelog:
+* The new version of SDC
+* The check development
+* The new Release mode
+* The new ReadMe doccument
+* Source is UCS-2 Little Endian/UTF-16 LE and text file is UTF-8 coding now
+* 7-Zip archive

@@ -1,26 +1,29 @@
 ﻿特别声明：
 
-全部 Strict DLP Chinese（SDC）仅供学习交流，遵循GPL协议开发和使用，切勿用于任何非法用途！
-使用者请自行估量是否有加载 Strict DLP Chinese 的需要（其与官方DLP的差别见下方公告+注意），如不能清楚判断而造成不良后果，项目组所有成员均不承担一切责任！
-
-公告+注意：
-所有Strict DLP Chinese（以下简称SDC）均基于Xtreme官方DLP的严格版本。在Xtreme的官方DLP的基础上，SDC将VeryCD-Mod和VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了SoftBan列表，原因是GPL-Breaker、私有网络和社区客户端等不良行为。
+全部 Strict DLP Chinese（SDC）仅供学习交流，遵循 GUN GPL 通用公共许可证 (GNU General Public License) ，切勿将其用于任何非法用途！
+使用前请自行估量是否有加载 Strict DLP Chinese 的需要，如果不能清楚判断而造成之不良后果，项目组所有成员均不承担一切责任！
+使用SDC源代码前务必参阅 GNU-GPL-v2.0 以及 Source-License 通用公共许可证之内容！
 
 
 -------------------------------------------------------------------------------
 
-
-Strict DLP Chinese 项目的SourceForge页面：
-http://sourceforge.net/projects/specialdlp/
-
-Strict DLP Chinese 项目的 Google Code 页面：
-http://code.google.com/p/specialdlp/
 
 Strict DLP Chinese 项目的Blog：
 http://blog.sdlpc.net/
 
+Strict DLP Chinese 项目的SourceForge页面：
+http://sourceforge.net/projects/specialdlp/
+
+Strict DLP Chinese 项目的GitHub页面：
+https://github.com/chengr28/specialdlp/
+
 
 -------------------------------------------------------------------------------
+
+
+SDC与官方DLP之间的主要差别：
+所有SDC均是基于Xtreme官方DLP的严格版本。
+在Xtreme官方DLP的基础上，SDC将VeryCD-Mod和VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了SoftBan列表，原因是GPL-Breaker、私有网络和社区客户端等不良行为。
 
 
 加载方法：
@@ -29,13 +32,13 @@ http://blog.sdlpc.net/
 
 
 关于配置文件真实读取目录问题：
-此设置可以在安装eMule的过程中进行选择，不过也可以在以后任何时候在选项=>扩展设置里进行设置。请注意这个问题，否则可能会造成SDC未被正确加载。
+此设置可以在安装eMule的过程中进行选择，不过也可以在以后任何时候在『选项->扩展设置』里进行设置。请注意这个问题，否则可能会造成SDC未被正确加载。
 
 1.在程序目录下保存配置和下载：程序目录下的Config文件夹内
 2.每个用户的配置和下载是独立的：
- * Vista/7/8以及更新版本：System:\Users\[您的用户名]\AppData\Local\eMule\Config
- * XP/2000等旧版本：System:\Documents and Settings\[您的用户名]\Application Data\eMule\Config
-3.所有的用户共用相同的配置和下载（仅限Vista/Win7）：System:\ProgramData\eMule\Config
+ * Vista/7/8以及更新版本：%userprofile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
+ * XP/2000等旧版本：%userprofile%\Application Data\eMule\config 也就是 System:\Documents and Settings\[您的用户名]\Application Data\eMule\config
+3.所有的用户共用相同的配置和下载（仅限Vista/7/8以及更新版本）：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
 
 
 -------------------------------------------------------------------------------
@@ -46,20 +49,20 @@ SDC版本介绍：
 * src：SDC的C++源代码
 提醒1：SDC基于 Microsoft Visual C++ 2012 制作
 提醒2：使用SDC的源代码前请认真阅读以下使用许可协议：
-       * License：eMule以及Xtreme DLP的使用许可
-       * GNU-GPL-v2：GNU通用公共许可证v2的部分副本
+       * Source-License：eMule以及Xtreme DLP的使用许可
+       * GNU-GPL-v2.0：GNU通用公共许可证v2的部分副本
 
 * x86：用于32位（x86）计算机的SDC版本
 提醒：多数家用计算机及使用的eMule程序均为32位，因此您一般应该使用x86版本而不是x64版本
 * x64：用于64位（x64）计算机的SDC版本
 提醒：适用于64位计算机及x64编译的eMule版本，x64的SDC版本只能用于64位计算机上
-注意：SDC的x64版本是专门为原生x64的eMule程序编译的，因为现阶段绝大多数eMule程序都是x86编译程序，所以您应该使用x86版本的SDC而非x64版本的SDC！
+注意：SDC的x64版本是专门为原生x64的eMule程序编译的，因为现阶段绝大多数eMule程序的编译目标平台为x86，所以您应该使用x86版本的SDC而非x64版本的SDC！
 
 
 * Lite：Xtreme官方DLP修补漏检版本。
-* All-VeryCD-Mod：对所有VeryCD系列客户端进行检测的版本，其中 VeryCD Mod 和EasyMule被加入了软性吸血列表。
+* All-VeryCD-Mod：对所有VeryCD系列客户端进行检测的版本，其中所有 VeryCD Mod 和easyMule被加入了软性吸血列表。
 * VeryCD-EasyMule-Mod：EasyMule被加入了软性吸血列表。
-* VeryCD-Default-List-NickName：所有昵称中含有VeryCD客户端默认昵称的 VeryCD Mod 和EasyMule加入到软性吸血列表。
+* VeryCD-Default-NickNames：所有昵称中含有VeryCD客户端默认昵称的 VeryCD Mod 和easyMule加入到软性吸血列表。
 
 
 -------------------------------------------------------------------------------
@@ -70,7 +73,7 @@ SDC版本介绍：
 Q：如何查看SDC已经成功被eMule加载？
 A：有2个查看方法：
 * 查看反吸血选项中显示的DLP版本号是否为SDC的最新版本号，如果不是则说明加载失败；
-* 如果SDC对应版本不能起到预期的效果，请浏览下面FAQ所列举的各种情况予以参考并解决。
+* 如果SDC对应版本不能起到预期的效果，请浏览下面FAQ所列举的各种情况予以参考解决。
 
 Q：加载失败如何解决？
 A：有3种解决方案：
@@ -98,7 +101,7 @@ A：有2种方案：
     * 后果：漏检吸血客户端
     * 原因：CN Mod 对Xtreme官方版DLP支持不佳造成漏检
  * 请联系SDC开发小组寻求解决方法：
-  * SDC开发小组的博客： http://blog.sdlpc.net
+  * SDC开发小组的博客： http://blog.sdlpc.net/
   * SDC开发小组的开发邮箱 dev[AT]sdlpc.net 或直接联系核心代码开发人员 chengr28[AT]gmail.com
 
 Q：何谓“屏蔽模式”和“减分模式”？
@@ -123,7 +126,7 @@ Q：SDC会修补官方DLP的漏检吗？
 A：当然会，只要收到官方DLP漏检的报告，SDC小组会尽快升级以修补漏检，同时也会通知Xtreme官方DLP的维护者尽快修复。
 
 Q：哪里能看到SDC完整的更新日志？
-A：从43002开始SDC就不再在编译文件(bin)里附带提供更新日志(ChangeLog)，如果需要浏览更新日志，可以在SDC的源代码(src)里查看，或者移步SDC的项目主页及 SDC Blog。
+A：从43002开始SDC就不再在编译文件(bin)里附带提供更新日志(Changelog)，如果需要浏览更新日志，可以在SDC的源代码(src)里查看，或者移步SDC的项目主页及 SDC Blog。
 
 
 应用减分模式特别技巧：

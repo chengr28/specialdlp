@@ -3,8 +3,30 @@
 更新時間：2011-04-16
 
 Strict DLP Chinese - SDC
-最新版本：44002 Update 1 [基於基於官方版DLP v44]
-更新時間：2013-01-17
+最新版本：44003 Beta[基於官方版DLP v44]
+更新時間：2013-09-28
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v44003 Beta 更新日誌：
+* 添加對 eMule -LPE- 的檢測
+* 添加對部分 QQ旋風客戶端 的檢測
+* 添加對 MTVP2P(2013) 的檢測 [雁蝎]
+* 添加對 EggAche 的檢測
+* 添加對 DarkSky 系列的檢測
+* 添加對 迅雷應用（手機客戶端） 的檢測
+* 解除對 ED2000 的檢測
+* 為 Fake ModString 檢測新增3種類型的檢測
+* 優化 Ghost Mod 檢測
+* 重寫 Israel Community -> Fake ModString(Type 1) 檢測 [无敌稻草人]
+* VeryCD-Default-List-NickName -> VeryCD-Default-NickNames
+* 合併各版本的源代碼 [犟驴子]
+* 源代碼全部採用 Dos\Windows 格式的 UCS-2/UTF-16 Little Endian/LE 編碼
+* 64位/x64版本現在只支持Vista及更新版本的Windows系統
+  * 注意此处所说的版本并非指系统运行平台而是指eMule程序的编译目标平台
+  * 現時絕大部分eMule程序的編譯目標平台為32位/x86，而SDC的32位/x86版本支持NT內核及更新版本Windows的系統運行平台
+  * 更詳細的信息參見 ReadMe 文檔中 SDC版本介紹 一節
+* 說明和更新日誌添加 English/英語 語言 [luke lucky/Damn Sure]
 
 -------------------------------------------------------------------------------
 
@@ -25,7 +47,7 @@ Strict DLP Chinese v44002 更新日誌：
 * 優化對虛假 X-Ray/VeryCD-EasyMule-Mod 的算法防止可能發生的誤傷
 * 優化 Israel Community 檢測的算法
 * 使用 Visual Studio 2012 編譯
-* 說明和更新記錄文件新增中文（繁體）語言 [風之水]
+* 說明和更新日誌新增中文（繁體）語言 [風之水]
 
 -------------------------------------------------------------------------------
 
@@ -38,8 +60,8 @@ Strict DLP Chinese v44001 更新日誌：
 
 Strict DLP Chinese v43002 更新日誌：
 * 更新並啟用 Non-Standard ModString 檢測
-* 移動部分檢測程式碼 修補漏洞與可能BUG [PERSMULE]
-* 移動部分檢測程式碼 修復錯誤的檢測(Lite)
+* 移動部分檢測程式碼修補漏洞與可能BUG [PERSMULE]
+* 移動部分檢測程式碼修復錯誤的檢測(Lite)
 * 將更新日誌從編譯文件(bin)移動到啟動原始碼(src)裡
 
 -------------------------------------------------------------------------------

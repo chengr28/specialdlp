@@ -1,26 +1,29 @@
 ﻿特別聲明：
 
-全部Strict DLP Chinese（SDC）僅供學習交流，遵循GPL通用公眾授權條款 (GNU General Public License)，同時切勿用於任何非法用途！
-使用者請自行估量是否有擴充安裝Strict DLP Chinese的需要（其與官方DLP的差別見下方公告+注意），如果不能清楚判斷而造成不良後果，本人不負任何責任！
-
-公告+注意：
-所有Strict DLP Chinese（以下簡稱SDC）均基於Xtreme官方DLP的嚴格版本。在Xtreme的官方DLP的基礎上，SDC將VeryCD-Mod和VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了SoftBan列表，原因是GPL-breaker、私有網絡和社區用戶端等不良行為
+全部 Strict DLP Chinese（SDC）僅供學習交流，遵循 GUN GPL 通用公眾授權條款 (GNU General Public License) ，切勿將其用於任何非法用途！
+使用前請自行估量是否有擴充安裝 Strict DLP Chinese 的需要，如果不能清楚判斷而造成之不良後果，項目組所有成員均不負任何責任！
+使用SDC原始碼前務必參閱 GNU-GPL-v2.0 以及 Source-License 通用公眾授權條款之內容！
 
 
 -------------------------------------------------------------------------------
 
+
+Strict DLP Chinese 項目的Blog：
+http://blog.sdlpc.net/
 
 Strict DLP Chinese 項目的SourceForge頁面：
 http://sourceforge.net/projects/specialdlp/
 
-Strict DLP Chinese 項目的 Google Code 頁面：
-http://code.google.com/p/specialdlp/
-
-Strict DLP Chinese 項目的Blog：
-https://blog.sdlpc.net/
+Strict DLP Chinese 項目的GitHub頁面：
+https://github.com/chengr28/specialdlp/
 
 
 -------------------------------------------------------------------------------
+
+
+SDC與官方DLP之間的主要差別：
+所有SDC均是基於Xtreme官方DLP的嚴格版本。
+在Xtreme官方DLP的基礎上，SDC將VeryCD-Mod和VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了SoftBan列表，原因是GPL-Breaker、私有網路和社區客戶端等不良行為。
 
 
 擴充安裝方法：
@@ -29,16 +32,16 @@ https://blog.sdlpc.net/
 
 
 關於設定文件讀取真實目錄問題：
-此設定可以在安裝eMule的過程中進行選擇，不過也可以在以後任何時候在「選項=>擴充設定」裡進行設定。請注意這個問題，否則可能會造成SDC未被正確載入。
+此設定可以在安裝eMule的過程中進行選擇，不過也可以在以後任何時候在「選項->擴充設定」裡進行設定。請注意這個問題，否則可能會造成SDC未被正確載入。
 
 1.在程式目錄下保存設定和下載：程式目錄下的Config文件夾內
 2.每個使用者的設定和下載是獨立的：
- * Vista/7/8以及更新版本：System:\Users\[您的使用者名]\AppData\Local\eMule\Config
- * XP/2000等舊版本：System:\Documents and Settings\[您的使用者名]\Application Data\eMule\Config
-3.所有的使用者共用相同的設定和下載（僅限Vista/Win7）：System:\ProgramData\eMule\Config
+ * Vista/7/8以及更新版本：%userprofile%\AppData\Local\eMule\config 亦即 System:\Users\[您的用戶名]\AppData\Local\eMule\config
+ * XP/2000等舊版本：%userprofile%\Application Data\eMule\config 亦即 System:\Documents and Settings\[您的用戶名]\Application Data\eMule\config
+3.所有的使用者共用相同的設定和下載（僅限Vista/7/8以及更新版本）：%AllUsersProfile%\eMule\Config 亦即 System:\ProgramData\eMule\Config
 
 
--------------------------------------------------- -----------------------------
+-------------------------------------------------------------------------------
 
 SDC版本介紹：
 
@@ -46,23 +49,23 @@ SDC版本介紹：
 * src：SDC的C++啟動原始碼
 提醒1：SDC基於Microsoft Visual C++ 2012 製作
 提醒2：使用SDC的啟動原始碼前請認真閱讀以下使用許可協議：
-       * License：eMule以及Xtreme DLP的使用許可
-       * GNU-GPL-v2：GNU通用公共許可證v2的部分副本
+       * Source-License：eMule以及Xtreme DLP的使用許可
+       * GNU-GPL-v2.0：GNU通用公共許可證v2的部分副本
 
 * x86：用於32位（x86）電腦系統的SDC版本
 提醒：大多數家用電腦均為32位元，因此您應該一般使用x86版本而不是x64版本
 * x64：用於64位（x64）電腦系統的SDC版本
 提醒：x64的SDC版本只能用於64位元電腦系統上
-注意：SDC的x64版本是專門為原生x64的eMule程式編寫，因為現階段絕大多數eMule程序都是x86撰寫程式，所以您應該使用x86版本的SDC而非x64版本的SDC！
+注意：SDC的x64版本是專門為原生x64的eMule程式編寫，因為現階段絕大多數eMule程序的編譯目標平台為x86，所以您應該使用x86版本的SDC而非x64版本的SDC！
 
 
 * Lite：Xtreme官方DLP修補漏檢版本。
-* All-VeryCD-Mod：對所有VeryCD系列用戶端進行檢測的版本，其中VeryCD Mod 和EasyMule被加入了軟性吸血列表。
+* All-VeryCD-Mod：對所有VeryCD系列用戶端進行檢測的版本，其中所有 VeryCD Mod 和EasyMule被加入了軟性吸血列表。
 * VeryCD-EasyMule-Mod：EasyMule被加入了軟性吸血列表。
-* VeryCD-Default-List-NickName：所有暱稱中含有VeryCD用戶端默認暱稱的VeryCD Mod 和EasyMule加入到軟性吸血列表。
+* VeryCD-Default-NickNames：所有暱稱中含有VeryCD用戶端默認暱稱的 VeryCD Mod 和EasyMule加入到軟性吸血列表。
 
 
--------------------------------------------------- -----------------------------
+-------------------------------------------------------------------------------
 
 
 常見問題FAQ
@@ -70,7 +73,7 @@ SDC版本介紹：
 Q：如何查看SDC已經成功被eMule載入？
 A：有2個查看方法：
 * 查看反吸血選項中顯示的DLP版本號是否為SDC的最新版本號，如果不是則說明載入失敗；
-* 如果不能起到SDC對應版本預期的效果，請瀏覽下面FAQ所列舉的各種情況予以參考並解決。
+* 如果不能起到SDC對應版本預期的效果，請瀏覽下面FAQ所列舉的各種情況予以參考。
 
 Q：為何SDC的對應版本無法實現其對應的功能？
 A：有2種解決方案：
@@ -98,7 +101,7 @@ A：有2種方案：
     * 後果：漏檢吸血用戶端
     * 原因：CN Mod對Xtreme官方版DLP支持不佳造成漏檢
  * 請聯繫SDC開發小組尋求解決方法：
-  * SDC開發小組的Blog： http://sdlpc.net
+  * SDC開發小組的Blog： http://sdlpc.net/
   * SDC開發小組的開放郵箱dev[AT]sdlpc.net 或直接聯繫核心代碼開發人員chengr28[AT]gmail.com
 
 Q：何謂“屏蔽模式”和“減分模式”？

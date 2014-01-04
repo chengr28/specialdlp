@@ -1,6 +1,15 @@
-Strict DLP Chinese (SDC)
+ï»¿Strict DLP Chinese (SDC)
 =====
+### SDCæ˜¯ä»€ä¹ˆï¼Ÿ
+æ‰€æœ‰ Strict DLP Chinese(SDC) å‡åŸºäºXtremeå®˜æ–¹DLPçš„ä¸¥æ ¼ç‰ˆæœ¬ã€‚åœ¨Xtremeçš„å®˜æ–¹DLPçš„åŸºç¡€ä¸Šï¼ŒSDCå°†VeryCD-Modå’ŒVeryCD-EasyMule?-Modï¼ˆç¬¬1ç‰ˆï¼‰ä¸­çš„éƒ¨åˆ†æˆ–å…¨éƒ¨åŠ å…¥äº†SoftBanåˆ—è¡¨ï¼ŒåŸå› æ˜¯GPL-breakerã€ç§æœ‰ç½‘ç»œå’Œç¤¾åŒºå®¢æˆ·ç«¯ç­‰ä¸è‰¯è¡Œä¸º
 
-Strict DLP Chinese (SDC) is a strict DLP based on the Official DLP. In addition to the Official DLP, SDC adds the eMule VeryCD Mod and easyMule (1) into the SoftBan list, because of GPL-breaker, private network, community leecher and another reasons.
+### SDCæ˜¯ä»€éº¼ï¼Ÿ
+æ‰€æœ‰ Strict DLP Chinese(SDC) å‡åŸºæ–¼Xtremeå®˜æ–¹DLPä¹‹åš´æ ¼ç‰ˆæœ¬ã€‚æ–¼Xtremeçš„å®˜æ–¹DLPçš„åŸºç¤ä¸Šï¼ŒSDCå°‡VeryCD-Modå’ŒVeryCD-EasyMule?-Modï¼ˆç¬¬1ç‰ˆï¼‰ä¸­çš„éƒ¨åˆ†æˆ–å…¨éƒ¨åŠ å…¥SoftBan?åˆ—è¡¨ï¼ŒåŸå› æ˜¯GPL-breakerã€ç§æœ‰ç¶²è·¯å’Œç¤¾ç¾¤å®¢æˆ¶ç«¯ç­‰ä¸è‰¯è¡Œç‚º
 
-ËùÓĞStrict DLP Chinese£¨ÒÔÏÂ¼ò³ÆSDC£©¾ù»ùÓÚXtreme¹Ù·½DLPµÄÑÏ¸ñ°æ±¾¡£ÔÚXtremeµÄ¹Ù·½DLPµÄ»ù´¡ÉÏ£¬SDC½«VeryCD-ModºÍVeryCD-EasyMule?-Mod£¨µÚ1°æ£©ÖĞµÄ²¿·Ö»òÈ«²¿¼ÓÈëÁËSoftBanÁĞ±í£¬Ô­ÒòÊÇGPL-breaker¡¢Ë½ÓĞÍøÂçºÍÉçÇø¿Í»§¶ËµÈ²»Á¼ĞĞÎª
+### What is SDC ?
+Strict DLP Chinese(SDC) is a strict DLP based on the Official DLP. In addition to the Official DLP, SDC adds the eMule VeryCD Mod and easyMule(1) into the SoftBan list, because of GPL-breaker, private network, community leecher and another reasons.
+
+ç›¸å…³é“¾æ¥
+-----
+1.[SDC Blog](http://blog.sdlpc.net)<br />
+2.[SDCçš„Sourceforgeé¡µé¢](https://sourceforge.net/projects/specialdlp)<br />
