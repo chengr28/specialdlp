@@ -1,6 +1,6 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "antiLeech", "antiLeech.vcproj", "{64E9E7B0-7D5E-4141-8B32-CDF8479804A7}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "antiLeech", "antiLeech.vcxproj", "{64E9E7B0-7D5E-4141-8B32-CDF8479804A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
