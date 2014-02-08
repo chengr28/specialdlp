@@ -16,21 +16,7 @@ this program; if not, write to the Free Software Foundation, Inc., 675 Mass
 Ave, Cambridge, MA 02139, USA.
 
 
-----------------------------------------------------------------------------------------------------
-
-
-LEGAL:
-
-eMule Copyright (C)2002-2005 Merkur (merkur-@users.sourceforge.net)
-
-eDonkey2000 (C)Jed McCaleb, MetaMachine (www.eDonkey2000.com)
-
-Windows(TM), Windows 95(TM), Windows 98(TM), Windows ME(TM), Windows NT(TM), 
-Windows 2000(TM) and Windows XP(TM) are Copyright (C)Microsoft Corporation. 
-All rights reserved.
-
-
-----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 
 DLP = Dynamic Leecher Protection
@@ -50,3 +36,17 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+
+-------------------------------------------------------------------------------
+
+
+LEGAL:
+
+eMule Copyright (C)2002-2005 Merkur (merkur-@users.sourceforge.net)
+
+eDonkey2000 (C)Jed McCaleb, MetaMachine (www.eDonkey2000.com)
+
+Windows(TM), Windows 95(TM), Windows 98(TM), Windows ME(TM), Windows NT(TM), 
+Windows 2000(TM) and Windows XP(TM) are Copyright (C)Microsoft Corporation. 
+All rights reserved.
