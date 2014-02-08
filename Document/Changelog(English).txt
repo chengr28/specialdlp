@@ -3,18 +3,25 @@ Latest version：44
 Update date：2011-04-16
 
 Strict DLP Chinese - SDC
-Latest version：44003 Beta[Base on official v44]
-Update date：2013-09-28
+Latest version：44003 Update 1[Base on official v44]
+Update date：2014-02-08
 
 -------------------------------------------------------------------------------
 
-Strict DLP Chinese v44003 BetaChangelog：
+Strict DLP Chinese v44003 Update 1 Changelog：
+* Fix bug of Xunlei Offline Download Server and Mobile Apps check in All-VeryCD-Mod version [pandaleo]
+* New return value with [SDC] Tag
+* Unicode in resource
+
+-------------------------------------------------------------------------------
+
+Strict DLP Chinese v44003 Changelog：
 * The new check to eMule -LPE-
 * The new check to some QQ Xuanfeng client
 * The new check to MTVP2P(2013) [雁蝎]
 * The new check to EggAche
 * The new check to DarkSky
-* The new check to Xunlei App(Mobile version)
+* The new check to Xunlei Offline Download Server and Mobile Apps
 * Remove ED2000 check
 * The 3 new algorithms in Fake ModString
 * The development with Ghost Mod check
