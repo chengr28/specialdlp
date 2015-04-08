@@ -5,14 +5,12 @@
 
 -------------------------------------------------------------------------------
 
-Strict DLP Chinese Blog：
-http://blog.sdlpc.net/
 
 Strict DLP Chinese Project on SourceForge:
-http://sourceforge.net/projects/specialdlp/
+http://sourceforge.net/projects/specialdlp
 
 Strict DLP Chinese Project on GitHub:
-https://github.com/chengr28/specialdlp/
+https://github.com/chengr28/specialdlp
 
 
 -------------------------------------------------------------------------------
@@ -42,10 +40,7 @@ SDC versions:
 
 * bin：Binary, it can be used in Windows.
 * src：C++ source.
- * It is based on Microsoft Visual C++ 2012.
- * Also if you want to use those codes, pay attention to their licenses:
-       * eMule Xtreme Mod&Xtreme DLP License(Source-License.txt)
-       * GNU GPL v2.0 License(GNU-GPL-v2.0.txt)
+ * It is based on Microsoft Visual C++ 2013.
 
 * x86：It is the 32-bit Windows&eMule version.
  * Most of computer and eMule version are 32-bit now, so you should use this version.
