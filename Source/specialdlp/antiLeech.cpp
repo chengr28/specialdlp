@@ -308,7 +308,7 @@ bool IsTypicalHex(CString& addon)
 	}
 	if(i==endpos)
 	{
-		if(numeric>0 &&
+		if(numeric>0 && 
 			(smallalpha>0 && bigalpha==0 || smallalpha==0 && bigalpha>0)
 			)
 			return true;
@@ -720,7 +720,8 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Hard(LPCTSTR modversion, LPCTSTR
 	//WiZaRd
 
 
-//SDC Added
+//SDC added
+#if defined(specialdlp)
 //Some Bad MODSTRING check
 	if (wcsstr(modversion, L"eMule-GIFC") || //GPL-Breaker [DragonD]
 		wcsstr(clientversion, L"0.49c") && wcsstr(modversion, L"X-Ray 2.") || //Fake X-Ray Mod [**Riso64Bit**]
@@ -733,39 +734,37 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Hard(LPCTSTR modversion, LPCTSTR
 		wcsstr(modversion, L"DarkSky")) //Custom ModString
 			return L"[SDC]Bad ModString";
 
-//SDC Advanced
+//SDC advanced
 //Non-Standard ModString check
-	size_t Client_Data[] = {strMod.GetLength(), 0, 0};
-	if (Client_Data[0] < 1U || 
+	size_t Client_Data[] = {(size_t)strMod.GetLength(), 0, 0};
+	if (!(Client_Data[0] < 1U || 
 		wcsstr(modversion, L"eserver") || //eServer
 		wcsstr(modversion, L"Apollo") || //Apollo Mod
-		wcsstr(modversion, L"CHN ") && Client_Data[0] > 8U) //CN Mod
+		wcsstr(modversion, L"CHN ") && Client_Data[0] > 8U)) //CN Mod
 	{
-		;
-	}
-	else if (wcsstr(modversion, L" ") || wcsstr(modversion, L"."))
-	{
-		for (Client_Data[1] = 0;Client_Data[1U] < Client_Data[0];++Client_Data[1U])
+		if (wcsstr(modversion, L" ") || wcsstr(modversion, L"."))
 		{
-			wchar_t NS_Date = strMod[(int)Client_Data[1]];
-			if (NS_Date > 64U && NS_Date < 91U || NS_Date > 96U && NS_Date < 123U) //Letter words in ModString
-				Client_Data[2U] = 1U;
-			if (Client_Data[2U] == 0 && (Client_Data[1U] == 0 || Client_Data[1U] == Client_Data[0] - 1U) || NS_Date == 91U || NS_Date == 93U) //"[" and "]" in ModString
-				return L"[SDC]Non-Standard ModString";
-			if (Client_Data[2U] == 1U || NS_Date == 32U || NS_Date == 40U || NS_Date == 41U || NS_Date == 43U || //" ", "(", ")" or "+" in ModString
-				NS_Date == 45U || NS_Date == 46U || //"-" or "." in Modstring
-				NS_Date > 47U && NS_Date < 58U) //Number in ModString
+			wchar_t NS_Date = 0;
+			for (Client_Data[1] = 0;Client_Data[1U] < Client_Data[0];++Client_Data[1U])
 			{
-				;
-			}
-			else {
-				return L"[SDC]Non-Standard ModString";
+				NS_Date = strMod[(int)Client_Data[1U]];
+				if (NS_Date > 64U && NS_Date < 91U || NS_Date > 96U && NS_Date < 123U) //Letter words in ModString
+					Client_Data[2U] = 1U;
+				if (
+				//"[" and "]" in ModString
+					Client_Data[2U] == 0 && (Client_Data[1U] == 0 || Client_Data[1U] == Client_Data[0] - 1U) || NS_Date == 91U || NS_Date == 93U || 
+				//" ", "(", ")" or "+" in ModString
+					!(Client_Data[2U] == 1U || NS_Date == 32U || NS_Date == 40U || NS_Date == 41U || NS_Date == 43U || 
+					NS_Date == 45U || NS_Date == 46U || //"-" or "." in Modstring
+					NS_Date > 47U && NS_Date < 58U)) //Number in ModString
+						return L"[SDC]Non-Standard ModString";
 			}
 		}
+		else {
+			return L"[SDC]Non-Standard ModString"; //" " or "." in ModString
+		}
 	}
-	else {
-		return L"[SDC]Non-Standard ModString"; //" " or "." in ModString
-	}
+#endif
 
 	return NULL;
 }
@@ -822,13 +821,11 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Soft(LPCTSTR modversion, LPCTSTR
 
 
 //SDC Main
-#if All_VeryCD_Mod //All-VeryCD-Mod check
-	if (wcsstr(modversion, L"VeryCD") &&
-		!wcsstr(modversion, L"VeryCD 090304")) //This version has been checked in DLPCheckNameAndHashAndMod()
-			return L"[SDC]All-VeryCD-Mod";
-#endif
-
-#if VeryCD_EasyMule_Mod //VeryCD-EasyMule-Mod check
+#if defined(specialdlp)
+#if defined(All_VeryCD_Mod)
+	if (wcsstr(modversion, L"VeryCD") && !wcsstr(modversion, L"VeryCD 090304")) //This version has been checked in DLPCheckNameAndHashAndMod()
+		return L"[SDC]All-VeryCD-Mod";
+#elif defined(VeryCD_EasyMule_Mod)
 	if (wcsstr(modversion, L"easyMule") || //New versions
 		(wcsstr(modversion, L"VeryCD") && 
 	//Old versions released in 2007 and 2008
@@ -844,6 +841,7 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Soft(LPCTSTR modversion, LPCTSTR
 		wcsstr(modversion, L"1121") || wcsstr(modversion, L"1122") || wcsstr(modversion, L"1205") || 
 		wcsstr(modversion, L"1218"))))))
 			return L"[SDC]VeryCD-EasyMule-Mod";
+#endif
 #endif
 
 	return NULL;
@@ -1166,10 +1164,11 @@ LPCTSTR __declspec(dllexport) DLPCheckUsername_Hard(LPCTSTR username)
 				return _T("new Ketamine");
 	}
 	
-//SDC Add
+//SDC added
+#if defined(specialdlp)
 //Some Bad USERNAME check
-//		wcsstr(username, L"ED2000") || //GPL-Breaker
 	if (wcsstr(username, L"VgroupTeam") || //Random ModString [doompower]
+//		wcsstr(username, L"ED2000") || //GPL-Breaker
 	//P2PSearcher
 		wcsstr(username, L"[CHN]X_jIQ") || //Old version
 		wcsstr(username, L"[CHN]sf") || //New version
@@ -1182,26 +1181,18 @@ LPCTSTR __declspec(dllexport) DLPCheckUsername_Hard(LPCTSTR username)
 			return L"[SDC]Bad UserName";
 
 //Fake ModString check(Type 4)
-	CString strNick = CString(username);
-	if (strNick.ReverseFind(L'»') == (SSIZE_T)wcslen(username) - 1 && strNick.ReverseFind(L'«') > 5)
+	CString strNick(username);
+	if (strNick.ReverseFind(L'«') > 5 && strNick.ReverseFind(L'»') == (SSIZE_T)wcslen(username) - 1)
 	{
 		for (SSIZE_T Index = strNick.ReverseFind(_T('«')) - 5;Index < strNick.ReverseFind(L'«') - 1;++Index)
 		{
 			if (username[Index] < 65U || username[Index] > 90U)
-			{
 				break;
-			}
-			else if (Index == strNick.ReverseFind(L'«') - 2)
-			{
-				if (username[strNick.ReverseFind(L'«') - 1U] == 32U && username[strNick.ReverseFind(L'«') - 6] == 32U)
-					return L"[SDC]Fake ModString(Type 4)"; //Their NickName look like a normal eMule Mods but ramdom parts are not right, such as "NickName **** «ModString»" which **** are uppercase letters
-			}
-			else {
-				continue;
-			}
+			else if (Index == strNick.ReverseFind(L'«') - 2 && username[strNick.ReverseFind(L'«') - 1U] == 32U && username[strNick.ReverseFind(L'«') - 6] == 32U)
+				return L"[SDC]Fake ModString(Type 4)"; //Their NickName look like a normal eMule Mods but ramdom parts are not right, such as "NickName **** «ModString»" which **** are uppercase letters
 		}
 	}
-
+#endif
 //End
 
 	return NULL;
@@ -1277,12 +1268,21 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	static const TCHAR refuserhash13[]= _T("CB42F563EE0EA7907395420CAC146FF5"); //From "qobfxb" multi user [DargonD] 
 
 
-//SDC Fixed
+//SDC fixed
+#if defined(specialdlp)
 	if (_wcsicmp(userhash, refuserhash0) == 0 || _wcsicmp(userhash, refuserhash1) == 0 || _wcsicmp(userhash, refuserhash2) == 0 || 
 		_wcsicmp(userhash, refuserhash6) == 0 || _wcsicmp(userhash, refuserhash7) == 0 || _wcsicmp(userhash, refuserhash8) == 0 || 
-		_wcsicmp(userhash, refuserhash9) == 0 || _wcsicmp(userhash, refuserhash10) == 0 || _wcsicmp(userhash, refuserhash11) == 0 || _wcsicmp(userhash, refuserhash12) == 0 || 
+		_wcsicmp(userhash, refuserhash9) == 0 || _wcsicmp(userhash, refuserhash10) == 0 || _wcsicmp(userhash, refuserhash11) == 0 || 
+		_wcsicmp(userhash, refuserhash12) == 0 || 
 		_wcsicmp(userhash, refuserhash13) == 0 && !wcsstr(username, L"qobfxb")) //The official refuserhash13 with NickName "qobfxb" will be checked in DLPCheckUsername_Hard()
 			return L"[SDC]Community UserHash";
+#else //Official
+	if(_tcsicmp(userhash,refuserhash0)==0 || _tcsicmp(userhash,refuserhash1)==0 || _tcsicmp(userhash,refuserhash2)==0 
+		|| _tcsicmp(userhash,refuserhash6)==0 || _tcsicmp(userhash,refuserhash7)==0 || _tcsicmp(userhash,refuserhash8)==0
+		|| _tcsicmp(userhash,refuserhash9)==0 || _tcsicmp(userhash,refuserhash10)==0
+		|| _tcsicmp(userhash,refuserhash11)==0 || _tcsicmp(userhash,refuserhash12)==0 || _tcsicmp(userhash,refuserhash13)==0)
+		return _T("Community Userhash");
+#endif
 
 
 	//corrupt userhash check
@@ -1292,11 +1292,17 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 		return _T("Corrupt UserHash");
 
 
-//SDC Fixed
+//SDC fixed
 //Community Userhash check, thanks SquallATF.
+#if defined(specialdlp)
 	static const wchar_t refuserhash5[] = L"DA1CEEE05B0E5319B3B48CAED24C6F4A";
 	if (_wcsicmp(userhash, refuserhash5) == 0 && !wcsstr(username, L"QQDownload")) //The official refuserhash5 with NickName "QQDownload" will be checked in DLPCheckUsername_Hard()
 		return L"[SDC]Bad UserHash";
+#else //Official
+	static const TCHAR refuserhash5[] = _T("DA1CEEE05B0E5319B3B48CAED24C6F4A");
+	if (_tcsicmp(userhash, refuserhash5) == 0)
+		return _T("Bad Userhash");
+#endif
 
 
 //zz_fly End
@@ -1374,7 +1380,8 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 		return _T("Mystery ModString");
 
 
-//SDC Added
+//SDC added
+#if defined(specialdlp)
 //Some Community UserHash Check
 	static const wchar_t SDC_refuserhash1[] = L"66B002DADE0E6DBEDF4FCCAA380E6FD4"; //From multi user (TW&CN) [DargonD]
 	static const wchar_t SDC_refuserhash2[] = L"AAEE84C0C30E247CBB99B459255D6F99"; //From NAS_01G multi user [DargonD]
@@ -1392,29 +1399,24 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	static const wchar_t SDC_refuserhash14[] = L"D0D897BD360EEFF329903E04990B6F86"; //Xunlei
 	static const wchar_t SDC_refuserhash15[] = L"36725093E00E9350F7680C871E946FD1"; //Tencent Offline Download Server UserHash [DargonD]
 	static const wchar_t SDC_refuserhash16[] = L"769D36987E0E313A1501967D0F146F7A"; //UserHash of Xunlei Offline Download Server and Moblie System Apps [pandaleo]
-
-	if (_wcsicmp(userhash, SDC_refuserhash1) == 0 || _wcsicmp(userhash, SDC_refuserhash2) == 0 || _wcsicmp(userhash, SDC_refuserhash3) == 0 ||
-		_wcsicmp(userhash, SDC_refuserhash4) == 0 || _wcsicmp(userhash, SDC_refuserhash5) == 0 || _wcsicmp(userhash, SDC_refuserhash6) == 0 ||
-		_wcsicmp(userhash, SDC_refuserhash7) == 0 || _wcsicmp(userhash, SDC_refuserhash8) == 0 || _wcsicmp(userhash, SDC_refuserhash9) == 0 ||
-		_wcsicmp(userhash, SDC_refuserhash10) == 0 || _wcsicmp(userhash, SDC_refuserhash11) == 0 || _wcsicmp(userhash, SDC_refuserhash12) == 0 || _wcsicmp(userhash, SDC_refuserhash13) == 0 ||
+	if (_wcsicmp(userhash, SDC_refuserhash1) == 0 || _wcsicmp(userhash, SDC_refuserhash2) == 0 || _wcsicmp(userhash, SDC_refuserhash3) == 0 || 
+		_wcsicmp(userhash, SDC_refuserhash4) == 0 || _wcsicmp(userhash, SDC_refuserhash5) == 0 || _wcsicmp(userhash, SDC_refuserhash6) == 0 || 
+		_wcsicmp(userhash, SDC_refuserhash7) == 0 || _wcsicmp(userhash, SDC_refuserhash8) == 0 || _wcsicmp(userhash, SDC_refuserhash9) == 0 || 
+		_wcsicmp(userhash, SDC_refuserhash10) == 0 || _wcsicmp(userhash, SDC_refuserhash11) == 0 || _wcsicmp(userhash, SDC_refuserhash12) == 0 || 
+		_wcsicmp(userhash, SDC_refuserhash13) == 0 || 
 		_wcsicmp(userhash, SDC_refuserhash14) == 0 && !wcsstr(modversion, L"xl build") || //The SDC_refuserhash14 with modstring "xl build" will be checked in DLPCheckModstring_Hard()
 		_wcsicmp(userhash, SDC_refuserhash15) == 0 && !wcsstr(username, L"[CHN][VeryCD]QQ") || //The SDC_refuserhash15 with NickName "[CHN][VeryCD]QQ" will be checked in DLPCheckUsername_Hard()
 		_wcsicmp(userhash, SDC_refuserhash16) == 0 && !wcsstr(username, L"[CHN]shaohan")) //The SDC_refuserhash16 with NickName "[CHN]shaohan" will be checked in DLPCheckUsername_Hard()
 			return L"[SDC]Community UserHash";
 
-//SDC Advanced
+//SDC advanced
 //Ghost Mod check [Bill Lee]
-	size_t Client_Data[] = {modversion.GetLength(), username.GetLength(), username.ReverseFind(91), /* username.ReverseFind(93), */ 0};
-	if (StrStrIW(username, L"speedyp2p.com") || Client_Data[0] != 0 /* || Client_Data[1] < 10 */ || !wcsstr(username, L"«") && !wcsstr(username, L"»"))
-	{
-		;
-	}
-	else {
-/*		if (username.ReverseFind(_T('«')) == Client_Data[3] + 2 && (int)username[Client_Data[3]+1] == 32 && (int)username[Client_Data[3] - 5] == 91 && 
-			(int)username[Client_Data[3] - 6] == 32 && username.ReverseFind(_T('»')) == Client_Data[1] - 1) */
+	size_t Client_Data[] = {(size_t)modversion.GetLength(), (size_t)username.GetLength(), 0, /* username.ReverseFind(93), */ 0};
+	if (username.ReverseFind(91) > 0)
+		Client_Data[2U] = username.ReverseFind(91);
+	if (!(StrStrIW(username, L"speedyp2p.com") || Client_Data[0] != 0 /* || Client_Data[1U] < 10 */ || !wcsstr(username, L"«") && !wcsstr(username, L"»")))
 		return L"[SDC]Ghost Mod"; //Their NickName look like a normal eMule Mods but without ModString
-	}
-
+#endif
 
 	if(modversion.IsEmpty())
 		return NULL;
@@ -1441,22 +1443,18 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	//zz_fly :: end
 	
 
-//SDC Advanced
+//SDC advanced
+#if defined(specialdlp)
 //Fake ModString check(Type 1)
 	Client_Data[3U] = modversion[0];
-	if (Client_Data[0] < 10U || Client_Data[0] > 15U || Client_Data[1] < 11U || Client_Data[1] > 35U || Client_Data[2U] < 1U || 
+	if (!(Client_Data[0] < 10U || Client_Data[0] > 15U || Client_Data[1] < 11U || Client_Data[1] > 35U || Client_Data[2U] < 1U || 
 		wcsstr(modversion, L"AnalyZZUL") || //AnalyZZUL Mod
-		wcsstr(modversion, L"AcKroNiC")) //AcKroNiC Mod
-	{
-		;
-	}
-	else {
-		if (Client_Data[3U] > 64U && Client_Data[3U] < 91U && modversion[(int)Client_Data[0] - 4U] == 32U && modversion[(int)Client_Data[0] - 2U] == 46U &&
-			modversion[(int)Client_Data[0] - 1U] > 47U && modversion[(int)Client_Data[0] - 1U] < 58U && modversion[(int)Client_Data[0] - 3U] > 47U && modversion[(int)Client_Data[0] - 3U] < 58U &&
-			(username[0] > 64U && username[0] < 91U || username[0] > 96U && username[0] < 123U) && 
-			username[(int)Client_Data[1U] - 1U] == 93U && username[(int)Client_Data[1U] - 6U] == 91U && username[(int)Client_Data[1U] - 7U] == 32U)
-				return L"[SDC]Fake ModString(Type 1)"; //Normal ModString is usually "ModString *.*(Version)" but its NickName without "«ModString»"
-	}
+		wcsstr(modversion, L"AcKroNiC")) && //AcKroNiC Mod
+		(Client_Data[3U] > 64U && Client_Data[3U] < 91U && modversion[(int)Client_Data[0] - 4U] == 32U && modversion[(int)Client_Data[0] - 2U] == 46U && 
+		modversion[(int)Client_Data[0] - 1U] > 47U && modversion[(int)Client_Data[0] - 1U] < 58U && modversion[(int)Client_Data[0] - 3U] > 47U && modversion[(int)Client_Data[0] - 3U] < 58U && 
+		(username[0] > 64U && username[0] < 91U || username[0] > 96U && username[0] < 123U) && 
+		username[(int)Client_Data[1U] - 1U] == 93U && username[(int)Client_Data[1U] - 6U] == 91U && username[(int)Client_Data[1U] - 7U] == 32U))
+			return L"[SDC]Fake ModString(Type 1)"; //Normal ModString is usually "ModString *.*(Version)" but its NickName without "«ModString»"
 
 //Fake ModString check(Type 3)
 	size_t Index = 0;
@@ -1467,7 +1465,7 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	}
 
 //Fake ModString check(Type 2)
-	size_t EACheck[] = {username.GetLength(), username[0], 0, 0, 0, 0, 0, 0}; //Length, First, Second, Last, FirstEnd, SecondEnd, LastStart, Signal
+	size_t EACheck[] = {(size_t)username.GetLength(), (size_t)username[0], 0, 0, 0, 0, 0, 0}; //Length, First, Second, Last, FirstEnd, SecondEnd, LastStart, Signal
 	if (wcsstr(username, L"(") && wcsstr(username, L")")) //There must be "(" and ")"
 		EACheck[7U]++;
 	if (wcsstr(username, L"[") && wcsstr(username, L"]")) //There must be "[" and "]"
@@ -1495,12 +1493,12 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 		else
 			EACheck[6U] = EACheck[3U] - 2U;
 		if (EACheck[4U] != EACheck[3U] && (EACheck[3U] == 41U || EACheck[3U] == 93U || EACheck[3U] == 125) && 
-			username.Find((wchar_t)EACheck[4U]) + 1 == username.Find(32U) && username.ReverseFind((wchar_t)EACheck[6U]) - 1 == username.ReverseFind(32U) &&
-			username.Find((wchar_t)EACheck[4U]) > 4 && username.Find((wchar_t)EACheck[4U]) < 12 &&
+			username.Find((wchar_t)EACheck[4U]) + 1 == username.Find(32U) && username.ReverseFind((wchar_t)EACheck[6U]) - 1 == username.ReverseFind(32U) && 
+			username.Find((wchar_t)EACheck[4U]) > 4 && username.Find((wchar_t)EACheck[4U]) < 12 && 
 			username.ReverseFind((wchar_t)EACheck[6U]) > (SSIZE_T)EACheck[0] - 13 && username.ReverseFind((wchar_t)EACheck[6U]) < (SSIZE_T)EACheck[0] - 5)
 				Type[0] = true; //Like "(****) NickName [****]", "****" is 4-10 words
 		if (EACheck[1U] != EACheck[2U] && (EACheck[2U] == 40U || EACheck[2U] == 91U || EACheck[2U] == 123U) && 
-			username.Find((wchar_t)EACheck[4U]) + 1 == username.Find(32U) && username[username.Find((wchar_t)EACheck[5U]) + 1U] == 32 &&
+			username.Find((wchar_t)EACheck[4U]) + 1 == username.Find(32U) && username[username.Find((wchar_t)EACheck[5U]) + 1U] == 32 && 
 			username.Find((wchar_t)EACheck[5U]) - username.Find((wchar_t)EACheck[2U]) > 4 && username.Find((wchar_t)EACheck[5U]) - username.Find((wchar_t)EACheck[2U]) < 12)
 				Type[1U] = true; //Like "(****) [****] NickName", "****" is 4-10 words
 		if (!wcsstr(modversion, L"kMule") && //kMule Mod
@@ -1515,8 +1513,6 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 				{
 					if (Index == (size_t)username.Find((wchar_t)EACheck[4U]) - 1)
 						Type[2U] = true;
-
-					continue;
 				}
 				else {
 					break;
@@ -1530,8 +1526,6 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 					{
 						if (Index == EACheck[0] - 2U)
 							return L"[SDC]Fake ModString(Type 2)";
-
-						continue;
 					}
 					else {
 						break;
@@ -1546,8 +1540,6 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 					{
 						if (Index == (size_t)username.Find((wchar_t)EACheck[5U]) - 1)
 							return L"[SDC]Fake ModString(Type 2)";
-
-						continue;
 					}
 					else {
 						break;
@@ -1558,12 +1550,10 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	}
 
 //SDC Main
-#if All_VeryCD_Mod
+#if defined(All_VeryCD_Mod)
 	if (wcsstr(modversion, L"VeryCD 090304") && !wcsstr(username, L"[CHN]shaohan")) //This version has been checked before DLPCheckModstring_Soft()
 		return L"[SDC]All-VeryCD-Mod";
-#endif
-
-#if VeryCD_Default_NickNames //VeryCD-Default-NickNames check
+#elif defined(VeryCD_Default_NickNames)
 	if (wcsstr(modversion, L"VeryCD") && 
 	//They will be checked in DLPCheckModstring_Hard()
 		!(wcsstr(modversion, L" 08") && (wcsstr(modversion, L"0126") || wcsstr(modversion, L"0730") || 
@@ -1608,6 +1598,7 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	//2013-01 Updated
 		wcsstr(username, L"[easyMule]")))))
 			return L"[SDC]VeryCD-Default-NickNames";
+#endif
 #endif
 
 	return NULL; 
