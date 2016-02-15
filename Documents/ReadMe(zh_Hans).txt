@@ -2,17 +2,17 @@
 
 全部 Strict DLP Chinese（SDC）仅供学习交流，遵循 GUN GPL 通用公共许可证 (GNU General Public License) ，切勿将其用于任何非法用途！
 使用前请自行估量是否有加载 Strict DLP Chinese 的需要，如果不能清楚判断而造成之不良后果，项目组所有成员均不承担一切责任！
-使用SDC源代码前务必参阅 GNU-GPL-v2.0 以及 Source-License 通用公共许可证之内容！
+使用 SDC 源代码前务必参阅 GNU-GPL-v2.0 以及 Source-License 通用公共许可证之内容！
 
 
 -------------------------------------------------------------------------------
 
 
-Strict DLP Chinese 项目的SourceForge页面：
-http://sourceforge.net/projects/specialdlp/
+Strict DLP Chinese 项目的 GitHub 页面：
+https://github.com/chengr28/specialdlp
 
-Strict DLP Chinese 项目的GitHub页面：
-https://github.com/chengr28/specialdlp/
+Strict DLP Chinese 项目的 SourceForge 页面：
+https://sourceforge.net/projects/specialdlp
 
 
 -------------------------------------------------------------------------------
@@ -28,6 +28,9 @@ SDC与官方DLP之间的主要差别：
 2.或者直接把解压出来的antiLeech.dll.new文件放到原来antiLeech.dll所在的目录，然后在反吸血选项（Xtreme II）中单击“Reload”
 
 
+-------------------------------------------------------------------------------
+
+
 关于配置文件真实读取目录问题：
 此设置可以在安装eMule的过程中进行选择，不过也可以在以后任何时候在『选项->扩展设置』里进行设置。请注意这个问题，否则可能会造成SDC未被正确加载。
 
@@ -40,7 +43,7 @@ SDC与官方DLP之间的主要差别：
 
 -------------------------------------------------------------------------------
 
-SDC版本介绍：
+SDC 版本介绍：
 
 * bin：已编译的二进制程序，可直接在计算机上使用
 * src：SDC的C++源代码
@@ -62,7 +65,7 @@ SDC版本介绍：
 -------------------------------------------------------------------------------
 
 
-常见问题FAQ
+常见问题 FAQ
 
 Q：如何查看SDC已经成功被eMule加载？
 A：有2个查看方法：
@@ -121,6 +124,9 @@ A：当然会，只要收到官方DLP漏检的报告，SDC小组会尽快升级�
 
 Q：哪里能看到SDC完整的更新日志？
 A：从43002开始SDC就不再在编译文件(bin)里附带提供更新日志(Changelog)，如果需要浏览更新日志，可以在SDC的源代码(src)里查看，或者移步SDC的项目主页及 SDC Blog。
+
+
+-------------------------------------------------------------------------------
 
 
 应用减分模式特别技巧：

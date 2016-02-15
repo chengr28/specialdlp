@@ -1,15 +1,13 @@
 ﻿#pragma once
 
 
-//SDC Added
-#define DLPVERSION       44003
-#define DETACH_VERSION   43,0,0,3
-
-//SDC version define: Lite, All-VeryCD-Mod, VeryCD-EasyMule-Mod or VeryCD-Default-NickNames.
-#define Lite 1U
-//#define All_VeryCD_Mod 1U
-//#define VeryCD_EasyMule_Mod 1U
-//#define VeryCD_Default_NickNames 1U
+//SDC added
+#if defined(specialdlp)
+	#define DLPVERSION		44004
+	#define DETACH_VERSION	44,0,0,4
+#else //Official
+	#define DLPVERSION		44
+#endif
 
 
 class CantiLeech 

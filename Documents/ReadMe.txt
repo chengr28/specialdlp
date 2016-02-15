@@ -1,16 +1,14 @@
-﻿WARNING: Strict DLP Chinese(SDC) can be only used for academic exchanges witch follow GNU GPL License. Please do NOT use it for illegal ways in your country(ies).
-　　　　Confirm your need before using SDC. If you get some troublesome results or law problems about using SDC, at your own risk.
-　　　　See GNU-GPL-v2.0 and Source-License before using source from SDC project.
+﻿WARNING: Strict DLP Chinese(SDC) is only for academic purpose which follows the GNU GPL License. Please do NOT use it illegally in your country(ies) and confirm your need before using SDC. Troublesome results or law problems are at your own risk. Please see GNU-GPL-v2.0 and Source-License before using source from SDC project.
 
 
 -------------------------------------------------------------------------------
 
 
-Strict DLP Chinese Project on SourceForge:
-http://sourceforge.net/projects/specialdlp
-
 Strict DLP Chinese Project on GitHub:
 https://github.com/chengr28/specialdlp
+
+Strict DLP Chinese Project on SourceForge:
+https://sourceforge.net/projects/specialdlp
 
 
 -------------------------------------------------------------------------------
@@ -24,8 +22,13 @@ Usage﻿:
 1.Close the eMule, then extract "antiLeech.dll.new" from the compressed file and move it to the directory where the original "antiLeech.dll" is. Then restart eMule. (This method is highly recommanded since all the latest check would be loaded with emule. On the contrary, the second method won't assure you that the latest check would be in use.)
 2.Or extract the 7z archive and take the antiLeech.dll.new which you need into the folder that there is an antiLeech.dll. Then go to eMule - Options - AntiLeech and click "reload".
 
+
+-------------------------------------------------------------------------------
+
+
 About the true config folder of eMule
 You can select the modes which decide the config folder in eMule. The option is in eMule - Options - Extended.
+
 1."Each user has its own configuration and downloads", the folder is in:
  * Windows Vista/7/8 or other new version: %userprofile%\AppData\Local\eMule\config (System:\Users\[UserName]\AppData\Local\eMule\config)
  * Windows 2000/XP or the other old one: %userprofile%\Application Data\eMule\config (System:\Documents and Settings\[UserName]\Application Data\eMule\config)
@@ -115,6 +118,7 @@ A: Of course, also we will report problems to Xtreme Project Develop Team.
 Q: Where can you see the Changelog?
 A: It is in source archive, SDC Project website and SDC Blog.
 
+
 -------------------------------------------------------------------------------
 
 
@@ -137,3 +141,4 @@ Some advice for using Reduce Score mode:
 
 * Please reboot the eMule if you change the mode.
  Notice: AntiLeech is not banning someone all the time. If you change from Ban mode to Reduce Score mode, leechers which passed the check before will NOT be removed after the change of mode. If you changed from Reduce Score Mode to Ban Mode, leechers which in upload queue could not be rechecked.
+ 
