@@ -30,9 +30,9 @@ About the true config folder of eMule
 You can select the modes which decide the config folder in eMule. The option is in eMule - Options - Extended.
 
 1."Each user has its own configuration and downloads", the folder is in:
- * Windows Vista/7/8 or other new version: %userprofile%\AppData\Local\eMule\config (System:\Users\[UserName]\AppData\Local\eMule\config)
- * Windows 2000/XP or the other old one: %userprofile%\Application Data\eMule\config (System:\Documents and Settings\[UserName]\Application Data\eMule\config)
-2."Everyone has the same configuration and downloads" (Only Windows Vista/7/8 or other new version), the folder is in %AllUsersProfile%\eMule\config (System:\ProgramData\eMule\config)
+  * Windows Vista/7/8/10 or other new version: %userprofile%\AppData\Local\eMule\config (System:\Users\[UserName]\AppData\Local\eMule\config)
+  * Windows XP/2003 or the other old one: %userprofile%\Application Data\eMule\config (System:\Documents and Settings\[UserName]\Application Data\eMule\config)
+2."Everyone has the same configuration and downloads" (Only Windows Vista/7/8/10 or other new version), the folder is in %AllUsersProfile%\eMule\config (System:\ProgramData\eMule\config)
 3."Store config and downloads in the program directory", the folder is in the program folder.
 
 
@@ -42,19 +42,16 @@ You can select the modes which decide the config folder in eMule. The option is 
 SDC versions:
 
 * bin：Binary, it can be used in Windows.
-* src：C++ source.
- * It is based on Microsoft Visual C++ 2013.
-
-* x86：It is the 32-bit Windows&eMule version.
- * Most of computer and eMule version are 32-bit now, so you should use this version.
-* x64：It is the 64-bit Windows&eMule version.
- * It could be only used for 64-Bit Windows&eMule, not in 32-Bit Windows%eMule version.
- * Pay attention of the SDC x64 version, it can be only run in x64 eMule program which targeted platform is x64.
-
-* Lite：It fixed the Xtreme official DLP.
-* All-VeryCD-Mod：It can check all VeryCD-Mod and VeryCD-EasyMule-Mod.
-* VeryCD-EasyMule-Mod：It can check all VeryCD-EasyMule-Mod without old VeryCD-Mod version.
-* VeryCD-Default-NickNames：It can check all VeryCD-Mod and VeryCD-EasyMule-Mod whose nickname is in the black dafault list.
+  * x86：It is the 32-bit Windows&eMule version.
+    * Most of computer and eMule version are 32-bit now, so you should use this version.
+  * x64：It is the 64-bit Windows&eMule version.
+    * It could be only used for 64-Bit Windows and eMule, not in 32-Bit Windows and eMule version.
+    * Pay attention of the SDC x64 version, it can be only run in x64 eMule program which targeted platform is x64.
+  * Lite：It fixed the Xtreme official DLP.
+  * All-VeryCD-Mod：It can check all VeryCD-Mod and VeryCD-EasyMule-Mod.
+  * VeryCD-EasyMule-Mod：It can check all VeryCD-EasyMule-Mod without old VeryCD-Mod version.
+  * VeryCD-Default-NickNames：It can check all VeryCD-Mod and VeryCD-EasyMule-Mod whose nickname is in the black dafault list.
+* src：Source.
 
 
 -------------------------------------------------------------------------------
@@ -84,14 +81,13 @@ A: It is old version of DLP, you can delete it anytime.
 Q: What can you do when you has found lost checks?
 A: 
 * Please check the black list:
- * You will find this problem if you use those combinations between eMule and DLP version.
+* You will find this problem if you use those combinations between eMule and DLP version.
   * eMule v0.48a eXcalibur 1.85.3
     * eMule eXcalibur is not suppost Xtreme official DLP.
   * eMule v0.49b CN-7 Build 191 Final
     * eMule CN Mod is not suppost all the Xtreme official DLP check.
- * Please make contact with us:
-  * SDC Blog: http://blog.sdlpc.net/
-  * Report to exploitation mail dev[AT]sdlpc.net or SDC Project owner's email: chengr28[AT]gmail.com
+* Please make contact with us:
+  * Please our GitHub website.
 
 Q: What is the Ban mode or Reduce Score mode?
 A: Ban mode means ban all clients that SDC find it is a leecher.
