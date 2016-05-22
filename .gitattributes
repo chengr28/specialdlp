@@ -1,0 +1,6 @@
+# Newline in Windows(CR-LF)
+Documents/*.txt text eol=crlf
+Source/* text eol=crlf
+
+# Binary files
+Release/* binary
