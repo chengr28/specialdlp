@@ -11,34 +11,33 @@
 Strict DLP Chinese 项目的 GitHub 页面：
 https://github.com/chengr28/specialdlp
 
-Strict DLP Chinese 项目的 SourceForge 页面：
+Strict DLP Chinese 项目的 Sourceforge 页面：
 https://sourceforge.net/projects/specialdlp
 
 
 -------------------------------------------------------------------------------
 
 
-SDC 与官方 DLP 之间的主要差别：
-所有 SDC 均是基于 Xtreme 官方 DLP 的严格版本。
-在 Xtreme 官方 DLP 的基础上，SDC 将 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 列表，原因是 GPL-Breaker、私有网络和社区客户端等不良行为。
+* SDC 与官方 DLP 之间的主要差别：
+** 所有 SDC 均是基于 Xtreme 官方 DLP 的严格版本
+** 在 Xtreme 官方 DLP 的基础上，SDC 将 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 列表，原因是 GPL-Breaker、私有网络和社区客户端等不良行为。
 
 
-加载方法：
-1.将 eMule 关闭，把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，并重新启动 eMule（强烈建议使用这种加载方法，因为这种方法可以把全部新版的检测加载到 eMule 中，第2种方法重新加载后已经连接成功的客户端不会被重新检测，且新版本的所有检测不一定都能使用）
-2.或者直接把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，然后在反吸血选项（Xtreme II）中单击“Reload”
+* 加载方法：
+** 将 eMule 关闭，把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，并重新启动 eMule（强烈建议使用这种加载方法，因为这种方法可以把全部新版的检测加载到 eMule 中，第2种方法重新加载后已经连接成功的客户端不会被重新检测，且新版本的所有检测不一定都能使用）
+** 或者直接把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，然后在反吸血选项（Xtreme II）中单击“Reload”
 
 
 -------------------------------------------------------------------------------
 
 
-关于配置文件真实读取目录问题：
-此设置可以在安装 eMule 的过程中进行选择，不过也可以在以后任何时候在『选项->扩展设置』里进行设置。请务必注意这个问题，否则可能会造成 SDC 未被正确加载。
-
+* 关于配置文件真实读取目录问题：
+** 此设置可以在安装 eMule 的过程中进行选择，不过也可以在以后任何时候在『选项->扩展设置』里进行设置。请务必注意这个问题，否则可能会造成 SDC 未被正确加载。
 1.在程序目录下保存配置和下载：程序目录下的 Config 文件夹内
 2.每个用户的配置和下载是独立的：
- * Windows Vista/7/8/10 以及更新版本：%userprofile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
- * Windows XP/2003 等旧版本：%userprofile%\Application Data\eMule\config 也就是 System:\Documents and Settings\[您的用户名]\Application Data\eMule\config
-3.所有的用户共用相同的配置和下载（仅限 Windows Vista/7/8/10 以及更新版本）：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
+ * Windows Vista/7/8/8.1/10 以及更新版本：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
+ * Windows XP/2003 等旧版本：%UserProfile%\Application Data\eMule\config 也就是 System:\Documents and Settings\[您的用户名]\Application Data\eMule\config
+3.所有的用户共用相同的配置和下载（仅限 Windows Vista/7/8/8.1/10 以及更新版本）：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
 
 
 -------------------------------------------------------------------------------
@@ -116,10 +115,7 @@ Q：为何使用 SDC 的“减分模式”后发现上传队列依然存在大�
 A：首先需要说明的是，“减分模式”并不同于“屏蔽模式”，仅仅是依照应用 DLP 的eMule客户端的初始设定来对吸血骡进行减分，并不是完全封禁。
 
 Q：SDC 会修补官方 DLP 的漏检吗？
-A：当然会，只要收到官方DLP漏检的报告，SDC 小组会尽快升级以修补漏检，同时也会通知 Xtreme 官方 DLP 的维护者尽快修复。
-
-Q：哪里能看到 SDC 完整的更新日志？
-A：从 43002 开始 SDC 就不再在编译文件(bin)里附带提供更新日志(Changelog)，如果需要浏览更新日志，可以在 SDC 的源代码(src)里查看。
+A：当然会，只要收到官方 DLP 漏检的报告，SDC 小组会尽快升级以修补漏检，同时也会通知 Xtreme 官方 DLP 的维护者尽快修复。
 
 
 -------------------------------------------------------------------------------

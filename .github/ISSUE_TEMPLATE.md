@@ -1,16 +1,16 @@
-﻿### 运行环境及程序版本号
+﻿### Version and system environment/程序版本号及运行环境/程式版本號及運行環境
 
 
 
 
 
-### 期望的程序行为
+### Expected behavior/期望的程序行为/期望的程式行為
 
 
 
 
 
-### 实际的程序行为
+### Actual behavior/实际的程序行为/實際的程式行為
 
 
 

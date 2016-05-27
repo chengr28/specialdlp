@@ -18,27 +18,27 @@ https://sourceforge.net/projects/specialdlp
 -------------------------------------------------------------------------------
 
 
-SDC 與官方 DLP 之間的主要差別：
-所有 SDC 均是基於 Xtreme 官方 DLP 的嚴格版本。
-在 Xtreme 官方 DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 清單，原因是 GPL-Breaker、私有網路和社區用戶端等不良行為。
+* SDC 與官方 DLP 之間的主要差別：
+** 所有 SDC 均是基於 Xtreme 官方 DLP 的嚴格版本
+** 在 Xtreme 官方 DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 清單，原因是 GPL-Breaker、私有網路和社區用戶端等不良行為。
 
 
-載入方法：
-1.將 eMule 關閉，把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，並重新啟動 eMule（強烈建議使用這種載入方法，因為這種方法可以把全部新版的檢測載入到 eMule 中，第2種方法重新載入後已經連接成功的用戶端不會被重新檢測，且新版本的所有檢測不一定都能使用）
-2.或者直接把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，然後在反吸血選項（Xtreme II）中按一下「Reload」
+* 載入方法：
+** 將 eMule 關閉，把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，並重新啟動 eMule（強烈建議使用這種載入方法，因為這種方法可以把全部新版的檢測載入到 eMule 中，第2種方法重新載入後已經連接成功的用戶端不會被重新檢測，且新版本的所有檢測不一定都能使用）
+** 或者直接把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，然後在反吸血選項（Xtreme II）中按一下「Reload」
 
 
 -------------------------------------------------------------------------------
 
 
-關於設定檔真實讀取目錄問題：
+* 關於設定檔真實讀取目錄問題：
 此設置可以在安裝 eMule 的過程中進行選擇，不過也可以在以後任何時候在『選項->擴展設置』裡進行設置。 請務必注意這個問題，否則可能會造成 SDC 未被正確載入。
 
 1.在程式目錄下保存配置和下載：程式目錄下的 Config 資料夾內
 2.每個使用者的配置和下載是獨立的：
-  * Windows Vista/7/8/10 以及更新版本：%userprofile%\AppData\Local\eMule\config 也就是 System:\Users\[您的使用者名]\AppData\Local\eMule\config
-  * Windows XP/2003 等舊版本：%userprofile%\Application Data\eMule\config 也就是 System:\Documents and Settings\[您的使用者名]\Application Data\eMule\config
-3.所有的使用者共用相同的配置和下載（僅限 Windows Vista/7/8/10 以及更新版本）：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
+  * Windows Vista/7/8/8.1/10 以及更新版本：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的使用者名]\AppData\Local\eMule\config
+  * Windows XP/2003 等舊版本：%UserProfile%\Application Data\eMule\config 也就是 System:\Documents and Settings\[您的使用者名]\Application Data\eMule\config
+3.所有的使用者共用相同的配置和下載（僅限 Windows Vista/7/8/8.1/10 以及更新版本）：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
 
 
 -------------------------------------------------------------------------------
@@ -48,10 +48,10 @@ SDC 版本介紹：
 
 * bin：已編譯的二進位程式，可直接在電腦上使用
   * x86：用於32位（x86）程式的 SDC 版本
-提醒：多數家用電腦及使用的eMule程式均為32位，因此您一般應該使用 x86 版本而不是 x64 版本
+    * 提醒：多數家用電腦及使用的eMule程式均為32位，因此您一般應該使用 x86 版本而不是 x64 版本
   * x64：用於64位（x64）程式的 SDC 版本
-提醒：適用于原生 x64 編譯的 eMule 版本，而 x64 的 SDC 版本只能用於64位電腦上
-注意：SDC 的 x64 版本是專門為原生 x64 eMule 程式編譯，因為現階段絕大多數 eMule 程式的編譯目標平臺為 x86 所以您應該使用 x86 版本的 SDC 而非 x64 版本的SDC！
+    * 提醒：適用于原生 x64 編譯的 eMule 版本，而 x64 的 SDC 版本只能用於64位電腦上
+    * 注意：SDC 的 x64 版本是專門為原生 x64 eMule 程式編譯，因為現階段絕大多數 eMule 程式的編譯目標平臺為 x86 所以您應該使用 x86 版本的 SDC 而非 x64 版本的SDC！
   * Lite：Xtreme 官方 DLP 修補漏檢版本。
   * All-VeryCD-Mod：對所有 VeryCD 系列用戶端進行檢測的版本，其中所有 VeryCD Mod 和 easyMule 被加入了軟性吸血清單。
   * VeryCD-EasyMule-Mod：EasyMule 被加入了軟性吸血清單。
@@ -117,9 +117,6 @@ A：首先需要說明的是，「減分模式」並不同于「遮罩模式」�
 
 Q：SDC 會修補官方 DLP 的漏檢嗎？
 A：當然會，只要收到官方 DLP 漏檢的報告，SDC 小組會儘快升級以修補漏檢，同時也會通知 Xtreme 官方 DLP 的維護者儘快修復。
-
-Q：哪裡能看到 SDC 完整的更新日誌？
-A：從 43002 開始 SDC 就不再在編譯檔(bin)裡附帶提供更新日誌(Changelog)，如果需要流覽更新日誌，可以在 SDC 的原始程式碼(src)裡查看。
 
 
 -------------------------------------------------------------------------------
