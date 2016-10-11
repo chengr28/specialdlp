@@ -15,7 +15,7 @@ Strict DLP Chinese v44004 Changelog:
 * Upgrade to Visual Studio 2015
 * Fix some bugs of memory using
 * Minimum support Windows Vista(x86/x64) at this and newer version
-* Release Hash[SHA-3(256)]
+* Release Hash[SHA-3(256)]:
   * x64
     * All-VeryCD-Mod: F4F406372DC5911AD58E6034F38AEB3CF88A48A9AA37983BF843EFC0422C3627
     * Lite: 01EBFD4CDD6C044E5EF31DFAEB81CA97EA9D1D6F1182958A39C748173E1BA528
