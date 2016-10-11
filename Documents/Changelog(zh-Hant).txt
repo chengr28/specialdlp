@@ -18,7 +18,7 @@ Strict DLP Chinese v44004 更新日誌：
   * 二進位檔案在 Windows XP/2003 系統下仍然可被讀取和正常識別
   * 這些系統下能否正常使用取決於調用 SDC 的 eMule 程式是否支援新的 SDK 二進位模型
   * 使用舊版 SDK 二進位模型的 eMule 程式調用 SDC 可能會造成 eMule 程式崩潰或誤殺用戶端，如確需使用前請務必進行必要的測試
-* Release Hash[SHA-3(256)]
+* Release Hash[SHA-3(256)]:
   * x64
     * All-VeryCD-Mod: F4F406372DC5911AD58E6034F38AEB3CF88A48A9AA37983BF843EFC0422C3627
     * Lite: 01EBFD4CDD6C044E5EF31DFAEB81CA97EA9D1D6F1182958A39C748173E1BA528

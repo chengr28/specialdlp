@@ -9,4 +9,3 @@ Source/* text eol=crlf
 
 # Binary files
 *.new binary
-Release/* binary
