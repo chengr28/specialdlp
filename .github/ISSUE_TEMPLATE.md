@@ -1,16 +1,22 @@
-﻿### Version and environment/版本号及运行环境/版本號及運行環境
+﻿### Version/使用的版本/使用的版本
 
 
 
 
 
-### Expected behavior/期望的程序行为/期望的程式行為
+### Running Environment/运行环境/運行環境
 
 
 
 
 
-### Actual behavior/实际的程序行为/實際的程式行為
+### Expectation/期望情况/期望情況
+
+
+
+
+
+### Actual/实际情况/實際情況
 
 
 

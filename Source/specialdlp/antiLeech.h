@@ -1,10 +1,10 @@
 ﻿#pragma once
 
 
-//SDC added
-#if defined(specialdlp)
-	#define DLPVERSION		44004
-	#define DETACH_VERSION	44,0,0,4
+//Add by SDC team.
+#if defined(SPECIAL_DLP_VERSION)
+	#define DLPVERSION		44005
+	#define DETACH_VERSION	44,0,0,5
 #else //Official
 	#define DLPVERSION		44
 #endif
