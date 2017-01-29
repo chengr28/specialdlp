@@ -4,7 +4,7 @@
 
 Strict DLP Chinese - SDC
 最新版本：44005
-更新時間：2017-01-29
+更新時間：2017-01-30
 
 
 -------------------------------------------------------------------------------
@@ -15,6 +15,7 @@ Strict DLP Chinese v44005 Changelog:
 * 添加對 eMule v5.6a 的檢測 [冰靈曦曉]
 * 添加對 eMuleTorrent 的檢測 [冰靈曦曉]
 * 添加 All-VeryCD-Mod&Tag 版本
+* 移除對 Subversion/SVN 的支持
 * Release Hash[SHA-3(256)]:
   * x64
     * All-VeryCD-Mod: D96EB063EF46D88E0B5C35C15A884C0668EF50A755146CAADC21D7787D433EF9

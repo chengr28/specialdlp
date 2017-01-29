@@ -19,22 +19,21 @@ https://sourceforge.net/projects/specialdlp
 
 
 * SDC 與官方 DLP 之間的主要差別：
-** 所有 SDC 均是基於 Xtreme 官方 DLP 的嚴格版本
-** 在 Xtreme 官方 DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 清單，原因是 GPL-Breaker、私有網路和社區用戶端等不良行為。
+  * 所有 SDC 均是基於 Xtreme 官方 DLP 的嚴格版本
+  * 在 Xtreme 官方 DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 清單，原因是 GPL-Breaker、私有網路和社區用戶端等不良行為。
 
 
 * 載入方法：
   * 將 eMule 關閉，把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，並重新啟動 eMule
     * 強烈建議使用這種載入方法，因為這種方法可以把全部新版的檢測載入到 eMule 中，第2種方法重新載入後已經連接成功的用戶端不會被重新檢測，且新版本的所有檢測不一定都能使用）
-  * 直接把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄
-    * 然後在反吸血選項 (Xtreme II) 中按一下 Reload
+  * 直接把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，然後在反吸血選項 (Xtreme II) 中按一下 Reload
 
 
 -------------------------------------------------------------------------------
 
 
 * 關於設定檔真實讀取目錄問題：
-  * 此設置可以在安裝 eMule 的過程中進行選擇，不過也可以在以後任何時候在『選項->擴展設置』裡進行設置。 請務必注意這個問題，否則可能會造成 SDC 未被正確載入。
+  * 此設置可以在安裝 eMule 的過程中進行選擇，不過也可以在以後任何時候在『選項 - 擴展設置』裡進行設置。 請務必注意這個問題，否則可能會造成 SDC 未被正確載入。
   * 在程式目錄下保存配置和下載：程式目錄下的 Config 資料夾內
   * 每個使用者的配置和下載是獨立的：
     * Windows Vista/7/8/8.1/10 以及更新版本：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的使用者名]\AppData\Local\eMule\config
@@ -120,7 +119,7 @@ A：
 
 Q：為何使用 SDC 的「減分模式」後發現上傳佇列依然存在大量被減分的用戶端？
 A：
-  * 首先需要說明的是，「減分模式」並不同于「遮罩模式」，僅僅是依照應用 DLP 的eMule用戶端的初始設定來對吸血騾進行減分，並不是完全封禁。
+  * 首先需要說明的是，「減分模式」並不同于「遮罩模式」，僅僅是依照應用 DLP 的 eMule 用戶端的初始設定來對吸血騾進行減分，並不是完全封禁。
 
 Q：SDC 會修補官方 DLP 的漏檢嗎？
 A：
