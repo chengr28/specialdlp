@@ -26,8 +26,7 @@ https://sourceforge.net/projects/specialdlp
 * Usage﻿:
   * Shutdown the eMule, then extract "antiLeech.dll.new" from the compressed file and move it to the directory where the original "antiLeech.dll" is. Then restart eMule.
     * This method is highly recommanded since all the latest check would be loaded with emule. On the contrary, the second method won't assure you that the latest check would be in use.
-  * Extract the 7z archive and take the antiLeech.dll.new which you need into the folder that there is an antiLeech.dll.
-    * Then go to eMule - Options - AntiLeech and click "reload".
+  * Extract the 7z archive and take the antiLeech.dll.new which you need into the folder that there is an antiLeech.dll. Then go to eMule - Options - AntiLeech and click "reload".
 
 
 -------------------------------------------------------------------------------

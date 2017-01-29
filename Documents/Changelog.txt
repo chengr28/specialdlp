@@ -4,7 +4,7 @@ Update date：2011-04-16
 
 Strict DLP Chinese - SDC
 Latest version：44005
-Update date：2017-01-29
+Update date：2017-01-30
 
 
 -------------------------------------------------------------------------------
@@ -13,8 +13,9 @@ Update date：2017-01-29
 Strict DLP Chinese v44005 Changelog:
 
 * Add "eMule v5.6a" to blacklist in client version [冰靈曦曉]
-* Add "eMuleTorrent" to blacklst in ModString [冰靈曦曉]
+* Add "eMuleTorrent" to blacklist in ModString [冰靈曦曉]
 * Add All-VeryCD-Mod&Tag version
+* Remove Subversion/SVN support
 * Release Hash[SHA-3(256)]:
   * x64
     * All-VeryCD-Mod: D96EB063EF46D88E0B5C35C15A884C0668EF50A755146CAADC21D7787D433EF9
