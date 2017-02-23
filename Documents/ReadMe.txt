@@ -3,7 +3,7 @@
 Strict DLP Chinese(SDC) is only for academic purpose which follows the GNU GPL License.
 Please do NOT use it illegally in your country(ies) and confirm your need before using SDC.
 Troublesome results or law problems are at your own risk.
-Please see GNU-GPL-v2.0 and Source-License before using source from SDC project.
+Please read GNU-GPL-v2.0 and Source-License before using source from SDC project.
 
 
 -------------------------------------------------------------------------------
@@ -25,7 +25,8 @@ https://sourceforge.net/projects/specialdlp
 
 * Usage﻿:
   * Shutdown the eMule, then extract "antiLeech.dll.new" from the compressed file and move it to the directory where the original "antiLeech.dll" is. Then restart eMule.
-    * This method is highly recommanded since all the latest check would be loaded with emule. On the contrary, the second method won't assure you that the latest check would be in use.
+    * This method is highly recommanded since all the latest check would be loaded with emule. On the contrary.
+    * The second method won't assure you that the latest check would be in use.
   * Extract the 7z archive and take the antiLeech.dll.new which you need into the folder that there is an antiLeech.dll. Then go to eMule - Options - AntiLeech and click "reload".
 
 
@@ -34,10 +35,8 @@ https://sourceforge.net/projects/specialdlp
 
 * About the true config folder of eMule
   * You can select the modes which decide the config folder in eMule. The option is in eMule - Options - Extended.
-  * "Each user has its own configuration and downloads", the folder is in:
-    * Windows Vista/7/8/8.1/10 or other new version: %UserProfile%\AppData\Local\eMule\config (System:\Users\[UserName]\AppData\Local\eMule\config)
-    * Windows XP/2003 or the other old one: %UserProfile%\Application Data\eMule\config (System:\Documents and Settings\[UserName]\Application Data\eMule\config)
-  * "Everyone has the same configuration and downloads" (Only Windows Vista/7/8/8.1/10 or other new version), the folder is in %AllUsersProfile%\eMule\config (System:\ProgramData\eMule\config)
+  * "Each user has its own configuration and downloads", the folder is in: %UserProfile%\AppData\Local\eMule\config (System:\Users\[UserName]\AppData\Local\eMule\config)
+  * "Everyone has the same configuration and downloads", the folder is in %AllUsersProfile%\eMule\config (System:\ProgramData\eMule\config)
   * "Store config and downloads in the program directory", the folder is in the program folder.
 
 

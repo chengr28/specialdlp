@@ -25,7 +25,8 @@ https://sourceforge.net/projects/specialdlp
 
 * 加载方法：
   * 将 eMule 关闭，把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，并重新启动 eMule
-    * 强烈建议使用这种加载方法，因为这种方法可以把全部新版的检测加载到 eMule 中，第2种方法重新加载后已经连接成功的客户端不会被重新检测，且新版本的所有检测不一定都能使用
+    * 强烈建议使用这种加载方法，因为这种方法可以把全部新版的检测加载到 eMule 中
+    * 第2种方法重新加载后已经连接成功的客户端不会被重新检测，且新版本的所有检测不一定都能使用
   * 直接把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，然后在反吸血选项 (Xtreme II) 中单击 Reload
 
 
@@ -35,10 +36,8 @@ https://sourceforge.net/projects/specialdlp
 * 关于配置文件真实读取目录问题：
   * 此设置可以在安装 eMule 的过程中进行选择，不过也可以在以后任何时候在『选项 - 扩展设置』里进行设置。请务必注意这个问题，否则可能会造成 SDC 未被正确加载。
   * 在程序目录下保存配置和下载：程序目录下的 Config 文件夹内
-  * 每个用户的配置和下载是独立的：
-    * Windows Vista/7/8/8.1/10 以及更新版本：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
-    * Windows XP/2003 等旧版本：%UserProfile%\Application Data\eMule\config 也就是 System:\Documents and Settings\[您的用户名]\Application Data\eMule\config
-  * 所有的用户共用相同的配置和下载（仅限 Windows Vista/7/8/8.1/10 以及更新版本）：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
+  * 每个用户的配置和下载是独立的：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
+  * 所有的用户共用相同的配置和下载：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
 
 
 -------------------------------------------------------------------------------
