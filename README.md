@@ -2,7 +2,7 @@
 =====
 
 ### Updated
-**44005 Update 2**
+[![GitHub release](https://img.shields.io/github/release/chengr28/specialdlp.svg)](https://github.com/chengr28/specialdlp/releases/latest)
 
 ### Usage
 * Please visit [Documents](https://github.com/chengr28/specialdlp/tree/master/Documents)
@@ -15,7 +15,7 @@
 * 所有 Strict DLP Chinese(SDC) 均基於 eMule Xtreme 官方 DLP 之嚴格版本。於 eMule Xtreme 的官方 DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 列表，原因是 GPL-breaker、私有網路和社群客戶端等不良行為。<br />
 
 ### Special message
-* Starting 44005, SDC only support Windows Vista and newer system, [click here to download 44003 Update 2](https://github.com/chengr28/specialdlp/releases/tag/v44003.2) which is the last version in Windows XP/2003.
+* Starting with 44005, SDC only support Windows Vista and newer system. [Click here to download 44003 Update 2](https://github.com/chengr28/specialdlp/releases/tag/v44003.2) which is the last version in Windows XP/2003.
 * 从 44005 开始 SDC 只对 Windows Vista 及更新的系统提供支持，[点击这里下载最后一个支持 Windows XP/2003 的版本](https://github.com/chengr28/specialdlp/releases/tag/v44003.2)。
 * 從 44005 開始 SDC 只對 Windows Vista 及更新的系統提供支援，[點擊這裡下載最後一個支援 Windows XP/2003 的版本](https://github.com/chengr28/specialdlp/releases/tag/v44003.2)。
 
