@@ -3,34 +3,36 @@ Latest version：44
 Update date：2011-04-16
 
 Strict DLP Chinese - SDC
-Latest version：44005 Update 2
-Update date：2017-03-25
+Latest version：44005 Update 3
+Update date：2017-08-12
 
 
 -------------------------------------------------------------------------------
 
 
-Strict DLP Chinese v44005 Changelog:
+Strict DLP Chinese v44005 Update 3 Changelog:
 
 * Add "eMule v5.6a" to blacklist in client version [冰靈曦曉]
 * Add "eMuleTorrent" to blacklist in ModString [冰靈曦曉]
+* Add "HubbleKadTracker" to blacklist in NickName [冰靈曦曉]
 * Add All-VeryCD-Mod&Tag version
+* Upgrade to Visual Studio 2017
 * Remove all advanced check [javasboy]
 * Remove Subversion/SVN support
 * Remove Windows XP/2003 support
 * Release Hash[SHA-3(256)]:
   * x64
-    * All-VeryCD-Mod: BDF9DFEEA74B21D103638A8AB18D85D5F4820442DF4E2F0FCF8F4DC9E4BBDA26
-    * VeryCD-Tag: 2E6DF84C142C565D4C0032085C8F1AADFF3AE3FEFF937187D92933C9E7AAF237
-    * Lite: D026128C69E9C7FFCBE101842E2388E33C9763D544C94ABC56088203049E0E63
-    * VeryCD-Default-NickNames: 78E1A138AA8BC75E2F06C15ACE80DF5EB565010C00B50C8A126B3FF97C11685A
-    * VeryCD-EasyMule-Mod: 430802A9881147345693DCD4B64B0D0AE7DCE933A2460CE7693C8A0182537939
+    * All-VeryCD-Mod: 04CBD03E1B006F15DC7DE71417EB452DFEA5990D90D4A42812D5016152293C01
+    * VeryCD-Tag: 95E945A739BA5D292D657249099E422BE6A885F87B1C16817BE9B9052C9823EA
+    * Lite: DD89D4E800C336DD53FC23CB937D1A277ED99FBE257D6E89DF21FA1F78F7E053
+    * VeryCD-Default-NickNames: CB66A381D1440A90E1B39FDFC6AF0203664B6013F455266E1423B8B5EE356EB7
+    * VeryCD-EasyMule-Mod: 6DEA9C645C18EA4A4F9CEDCBF480DD5AB3AE8912070FBB60FA0513E16F4CB70E
   * x86
-    * All-VeryCD-Mod: 8D54045E912E997E86A15AAA8FBD26E8EB2F4B954F6CCCB3182256A124CF89DD
-    * VeryCD-Tag: D1A99BD6D40FADC6847023C3E21D7ED8481D9CF872FCF3EF8E8CAF53E5858061
-    * Lite: A8C3FBC38170484D82FA0F9928666776E65D726E5AE0478ACB7E46427FEE6CEB
-    * VeryCD-Default-NickNames: 490235FFCDC4F4021C28B4762CAB52B27916B3163EF263EEAA786BCFB76F6324
-    * VeryCD-EasyMule-Mod: 8C1AF4BC16A2091F2B448A1D680E1C4F63CB4850EE4E7C82539AB27ECAF37BC3
+    * All-VeryCD-Mod: D7D00772B5F9166FD60C2899AE0F1A292342B736D4D2DAA38BC8EE7B85E667AF
+    * VeryCD-Tag: AC89100F907AF40D33CE31F8ADD1C97B28E04EE87D1D7B3B90BC1F505B025DBE
+    * Lite: 972D9C48691AC195A2F398903C81A54DD835B1AE3E5604DEDCE03EACFBD18C1A
+    * VeryCD-Default-NickNames: 4D15D49C59561B2831EC4A864A8D4BB39FCC7BAD1C264A85E0ADFE87432A7D41
+    * VeryCD-EasyMule-Mod: 28B4FF650779FF4278F699E7CE791F90DD34C8450EC116D60B20E5DEDC059E0D
 
 
 -------------------------------------------------------------------------------
@@ -59,38 +61,24 @@ Strict DLP Chinese v44004 Changelog:
 
 Strict DLP Chinese v44003 Update 2 Changelog:
 
-* Compile using Visual Studio 2013
-* Convert source encoding from UTF-16 LE to UTF-8
-
-
--------------------------------------------------------------------------------
-
-
-Strict DLP Chinese v44003 Update 1 Changelog:
-
-* Fix bug of Xunlei Offline Download Server and Mobile Apps check in All-VeryCD-Mod version [pandaleo]
-* New return value with [SDC] Tag
-* Unicode in resource
-
-
--------------------------------------------------------------------------------
-
-
-Strict DLP Chinese v44003 Changelog:
-
 * The new check to eMule -LPE-
 * The new check to some QQ Xuanfeng client
 * The new check to MTVP2P(2013) [雁蝎]
 * The new check to EggAche
 * The new check to DarkSky
 * The new check to Xunlei Offline Download Server and Mobile Apps
+* Fix bug of Xunlei Offline Download Server and Mobile Apps check in All-VeryCD-Mod version [pandaleo]
+* New return value with [SDC] Tag
 * Remove ED2000 check
 * The 3 new algorithms in Fake ModString
 * The development with Ghost Mod check
 * Rebuild the Israel Community -> Fake ModString(Type 1) check [无敌稻草人]
 * VeryCD-Default-List-NickName -> VeryCD-Default-NickNames
 * New source was combined with old versions [犟驴子]
+* Compile using Visual Studio 2013
+* Unicode in resource
 * UCS-2/UTF-16 Little Endian/LE coding with Dos\Windows format in source
+* Convert source encoding from UTF-16 LE to UTF-8
 * 64-Bit/x64 version only support Vista and newer Windows systems now
   * 32-Bit/x86 version support NT kernel based systems and newer Windows systems
   * See SDC versions in ReadMe
@@ -102,20 +90,13 @@ Strict DLP Chinese v44003 Changelog:
 
 Strict DLP Chinese v44002 Update 1 Changelog:
 
-* Update VeryCD-Default-List-NickName list
-
-
--------------------------------------------------------------------------------
-
-
-Strict DLP Chinese v44002 Changelog:
-
 * The new check to VgroupTeam [doompower]
 * The new check to THC [Bill Lee]
 * The new check to P2PSearcher [dark]
 * The new check to new SpeedyP2P client
 * The Ghost Mod check is now on
 * The new algorithm in Non-Standard ModString check
+* Update VeryCD-Default-List-NickName list
 * Some developments with Official/VeryCD-EasyMule-Mod/VeryCD-Default-List-NickName/Israel Community/Fake X-Ray check [Ejack]
 * Release by Visual Studio 2012
 * Chinese(Traditional) language in ReadMe and Changelog [風之水]
