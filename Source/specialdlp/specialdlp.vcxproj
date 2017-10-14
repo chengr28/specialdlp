@@ -716,11 +716,11 @@
     <None Include="res\antiLeech.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="antiLeech.h" />
-    <ClInclude Include="resource.h" />
+    <ResourceCompile Include="antiLeech.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="antiLeech.rc" />
+    <ClInclude Include="antiLeech.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
