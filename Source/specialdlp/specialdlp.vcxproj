@@ -61,7 +61,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3A9EE43B-4961-4F30-A565-A48EB043B6C4}</ProjectGuid>
     <RootNamespace>specialdlp</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -709,9 +709,6 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="antiLeech.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="antiLeech.def" />
     <None Include="res\antiLeech.rc2" />
   </ItemGroup>
@@ -721,6 +718,9 @@
   <ItemGroup>
     <ClInclude Include="antiLeech.h" />
     <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="antiLeech.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

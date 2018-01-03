@@ -15,16 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="antiLeech.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="antiLeech.def">
-      <Filter>源文件</Filter>
-    </None>
     <None Include="res\antiLeech.rc2">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="antiLeech.def">
+      <Filter>源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -39,5 +34,10 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="antiLeech.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
