@@ -1,9 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specialdlp", "specialdlp\specialdlp.vcxproj", "{3A9EE43B-4961-4F30-A565-A48EB043B6C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auxiliary", "Auxiliary", "{7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{A37D4510-D187-410A-994D-6F13B1A1C778}"
+	ProjectSection(SolutionItems) = preProject
+		Auxiliary\Documents\Changelog.en.txt = Auxiliary\Documents\Changelog.en.txt
+		Auxiliary\Documents\Changelog.zh-Hans.txt = Auxiliary\Documents\Changelog.zh-Hans.txt
+		Auxiliary\Documents\Changelog.zh-Hant.txt = Auxiliary\Documents\Changelog.zh-Hant.txt
+		Auxiliary\Documents\ReadMe.en.html = Auxiliary\Documents\ReadMe.en.html
+		Auxiliary\Documents\ReadMe.en.md = Auxiliary\Documents\ReadMe.en.md
+		Auxiliary\Documents\ReadMe.en.txt = Auxiliary\Documents\ReadMe.en.txt
+		Auxiliary\Documents\ReadMe.zh-Hans.html = Auxiliary\Documents\ReadMe.zh-Hans.html
+		Auxiliary\Documents\ReadMe.zh-Hans.md = Auxiliary\Documents\ReadMe.zh-Hans.md
+		Auxiliary\Documents\ReadMe.zh-Hans.txt = Auxiliary\Documents\ReadMe.zh-Hans.txt
+		Auxiliary\Documents\ReadMe.zh-Hant.html = Auxiliary\Documents\ReadMe.zh-Hant.html
+		Auxiliary\Documents\ReadMe.zh-Hant.md = Auxiliary\Documents\ReadMe.zh-Hant.md
+		Auxiliary\Documents\ReadMe.zh-Hant.txt = Auxiliary\Documents\ReadMe.zh-Hant.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Markdown", "Markdown", "{052D298E-CCE3-4839-9601-4D5463F87C19}"
+	ProjectSection(SolutionItems) = preProject
+		Auxiliary\Markdown\.gitattributes = Auxiliary\Markdown\.gitattributes
+		Auxiliary\Markdown\ISSUE_TEMPLATE.md = Auxiliary\Markdown\ISSUE_TEMPLATE.md
+		Auxiliary\Markdown\LICENSE = Auxiliary\Markdown\LICENSE
+		Auxiliary\Markdown\README.md = Auxiliary\Markdown\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +80,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A37D4510-D187-410A-994D-6F13B1A1C778} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
+		{052D298E-CCE3-4839-9601-4D5463F87C19} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7287AF59-7DAB-4489-BEAB-9BB5AE40ABFE}
