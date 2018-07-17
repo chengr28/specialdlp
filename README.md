@@ -24,7 +24,7 @@
 * [eMuleFans 电骡爱好者](https://emulefans.com)
 
 ### Difference of versions
-![版本对比](specialdlp/SDC（Strict DLP Chinese）版本对比.png)
+![版本对比](Source\SDC_Difference-of-version.jpg)
 
 ### License
 GNU General Public License/GNU GPL v2
