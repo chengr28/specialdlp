@@ -24,7 +24,7 @@
 * [eMuleFans 电骡爱好者](https://emulefans.com)
 
 ### Difference of versions
-![版本对比](Source\SDC_Difference-of-version.jpg)
+[![版本对比](Source\SDC_Difference-of-version.jpg)](https://bbs.kafan.cn/thread-2105786-1-1.html)
 
 ### License
 GNU General Public License/GNU GPL v2
