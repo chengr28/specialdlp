@@ -5,4 +5,3 @@
 *.sln text eol=crlf
 *.vcxproj text eol=crlf
 Documents/*.txt text eol=crlf
-Source/* text eol=crlf
