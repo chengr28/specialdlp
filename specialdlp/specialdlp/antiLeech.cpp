@@ -27,7 +27,7 @@
 //>>> eWombat [SNAFU_V3]
 LPCTSTR apszSnafuTag[]=
 {
-	_T("[DodgeBoards]"),									//0
+	_T("[DodgeBoards]"),										//0
 		_T("[DodgeBoards & DarkMule eVorteX]"),					//1
 		_T("[DarkMule v6 eVorteX]"),							//2
 		_T("[eMuleReactor]"),									//3
@@ -1263,7 +1263,6 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 //Community Userhash check, thanks SquallATF.
 #if defined(SPECIAL_DLP_VERSION)
 	static const wchar_t RefUserHash_5[] = L"DA1CEEE05B0E5319B3B48CAED24C6F4A";
-//	static const auto RefUserHash_5(L"DA1CEEE05B0E5319B3B48CAED24C6F4A");
 	if (!wcsstr(username, L"QQDownload") && _wcsicmp(userhash, RefUserHash_5) == 0) //The official refuserhash5 with NickName "QQDownload" will be checked in DLPCheckUsername_Hard function.
 		return L"[SDC]Bad UserHash";
 #else //Official
@@ -1367,22 +1366,6 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 	static const wchar_t SDC_RefUserHash_14[] = L"D0D897BD360EEFF329903E04990B6F86"; //Xunlei
 	static const wchar_t SDC_RefUserHash_15[] = L"36725093E00E9350F7680C871E946FD1"; //Tencent Offline Download Server UserHash [DargonD]
 	static const wchar_t SDC_RefUserHash_16[] = L"769D36987E0E313A1501967D0F146F7A"; //UserHash of Xunlei Offline Download Server and Moblie System Apps [pandaleo]
-//	static const auto SDC_RefUserHash_1(L"66B002DADE0E6DBEDF4FCCAA380E6FD4"); //From multi user (TW&CN) [DargonD]
-//	static const auto SDC_RefUserHash_2(L"AAEE84C0C30E247CBB99B459255D6F99"); //From NAS_01G multi user [DargonD]
-//	static const auto SDC_RefUserHash_3(L"5E02F74DBA0E8A19DBF6733F0AE66F4A"); //Community UserHash [FzH/DargonD]
-//	static const auto SDC_RefUserHash_4(L"B6491292AE0E07AC8C6045CAC2DD6F9F"); //Community UserHash [FzH/DargonD]
-//	static const auto SDC_RefUserHash_5(L"596B305E050EA842CE38DF3811216F3F"); //Community UserHash [FzH/DargonD]
-//	static const auto SDC_RefUserHash_6(L"B1798B2F620E0B676452C6E2EF706F13"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_7(L"C1533316C00E3E0D0218843A05E46FAC"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_8(L"FE10F3C0610E0A925B85204CE8456F42"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_9(L"C9E61DEEF30E0360E2741C9CF1396F94"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_10(L"559ACC89D80E90C50A7A0CD3224F6F57"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_11(L"6AE1D2DF4B0E8707B6F6BC29E8746F0F"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_12(L"8A537F20B80EF9AF02E59E6C087C6F6B"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_13(L"3F44A7996F0E17D1F4B319EB58B26F64"); //Invalid UserHash [DargonD]
-//	static const auto SDC_RefUserHash_14(L"D0D897BD360EEFF329903E04990B6F86"); //Xunlei
-//	static const auto SDC_RefUserHash_15(L"36725093E00E9350F7680C871E946FD1"); //Tencent Offline Download Server UserHash [DargonD]
-//	static const auto SDC_RefUserHash_16(L"769D36987E0E313A1501967D0F146F7A"); //UserHash of Xunlei Offline Download Server and Moblie System Apps [pandaleo]
 	if (_wcsicmp(userhash, SDC_RefUserHash_1) == 0 || _wcsicmp(userhash, SDC_RefUserHash_2) == 0 || _wcsicmp(userhash, SDC_RefUserHash_3) == 0 || 
 		_wcsicmp(userhash, SDC_RefUserHash_4) == 0 || _wcsicmp(userhash, SDC_RefUserHash_5) == 0 || _wcsicmp(userhash, SDC_RefUserHash_6) == 0 || 
 		_wcsicmp(userhash, SDC_RefUserHash_7) == 0 || _wcsicmp(userhash, SDC_RefUserHash_8) == 0 || _wcsicmp(userhash, SDC_RefUserHash_9) == 0 || 

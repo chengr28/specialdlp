@@ -75,7 +75,7 @@ private:
 #define CT_UNKNOWNx99			0x99 // eMule v0.26d [RAMMSTEIN 8b]
 #define CT_UNKNOWNx9C			0x9C // Emulereactor Community Mod
 #define CT_UNKNOWNxbb			0xbb // emule.de (client version:60)
-#define CT_UNKNOWNxc4			0xc4 //MD5 Community from new bionic - hello
+#define CT_UNKNOWNxc4			0xc4 // MD5 Community from new bionic - hello
 #define CT_UNKNOWNxC8			0xc8 // MD5 Community from new bionic - hello //Xman x4
 #define CT_UNKNOWNxCA			0xCA // NewDarkMule
 #define CT_UNKNOWNxCD			0xCD // www.donkey2002.to
@@ -88,9 +88,9 @@ private:
 #define CT_UNKNOWNxD2			0xD2 // Chinese Leecher //SquallATF
 //#define CT_UNKNOWNx85			0x85 // viper-israel.org and eChanblardNext  //zz_fly, viper become good
 
-#define CT_FRIENDSHARING		0x66 //eWombat  [SNAFU]
-#define CT_DARK					0x54 //eWombat [SNAFU]
-#define FRIENDSHARING_ID 0x5F73F1A0 // Magic Key, DO NOT CHANGE!
+#define CT_FRIENDSHARING		0x66 // eWombat  [SNAFU]
+#define CT_DARK					0x54 // eWombat [SNAFU]
+#define FRIENDSHARING_ID 0x5F73F1A0  // Magic Key, DO NOT CHANGE!
 
 // unknown eMule tags
 #define ET_MOD_UNKNOWNx12		0x12 // http://www.haspepapa-welt.de

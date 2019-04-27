@@ -3,13 +3,13 @@
 LIBRARY      "antiLeech"
 
 EXPORTS
-    TestFunc			@1
-    GetDLPVersion		@2
-    ; DLPCheckModstring	@3
-    ; DLPCheckUsername	@4
-    ; DLPCheckNameAndHash @5
-    DLPCheckHelloTag	@6
-    DLPCheckInfoTag		@7
+    TestFunc					@1
+    GetDLPVersion				@2
+    ; DLPCheckModstring			@3
+    ; DLPCheckUsername			@4
+    ; DLPCheckNameAndHash		@5
+    DLPCheckHelloTag			@6
+    DLPCheckInfoTag				@7
     DLPCheckModstring_Hard		@8
     DLPCheckModstring_Soft		@9
     DLPCheckUsername_Hard		@10

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specialdlp", "specialdlp\specialdlp.vcxproj", "{3A9EE43B-4961-4F30-A565-A48EB043B6C4}"
 EndProject
@@ -30,6 +30,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Markdown", "Markdown", "{05
 		Auxiliary\Markdown\LICENSE = Auxiliary\Markdown\LICENSE
 		Auxiliary\Markdown\README.md = Auxiliary\Markdown\README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7F6C2DC0-ACDB-4101-9F2C-219E2C2596E2}"
+	ProjectSection(SolutionItems) = preProject
+		Auxiliary\Scripts\Hash.bat = Auxiliary\Scripts\Hash.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specialdlp", "specialdlp", "{AC73A027-5FAF-4DEC-93AC-F92A3326A654}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,8 +89,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
+		{7D1AE1A0-C6C3-45A3-81B2-F83FF6595585} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 		{A37D4510-D187-410A-994D-6F13B1A1C778} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
 		{052D298E-CCE3-4839-9601-4D5463F87C19} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
+		{7F6C2DC0-ACDB-4101-9F2C-219E2C2596E2} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7287AF59-7DAB-4489-BEAB-9BB5AE40ABFE}

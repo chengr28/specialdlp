@@ -4,4 +4,3 @@
 *.rc2 text eol=crlf
 *.sln text eol=crlf
 *.vcxproj text eol=crlf
-Documents/*.txt text eol=crlf

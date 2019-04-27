@@ -21,6 +21,9 @@
     <None Include="antiLeech.def">
       <Filter>源文件</Filter>
     </None>
+    <None Include="antiLeechx64.def">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="antiLeech.rc">

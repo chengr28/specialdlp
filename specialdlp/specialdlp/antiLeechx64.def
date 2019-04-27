@@ -1,0 +1,20 @@
+﻿; antiLeech.def : Deklariert die Modulparameter für die DLL.
+
+LIBRARY      "antiLeechx64"
+
+EXPORTS
+    TestFunc					@1
+    GetDLPVersion				@2
+    ; DLPCheckModstring			@3
+    ; DLPCheckUsername			@4
+    ; DLPCheckNameAndHash		@5
+    DLPCheckHelloTag			@6
+    DLPCheckInfoTag				@7
+    DLPCheckModstring_Hard		@8
+    DLPCheckModstring_Soft		@9
+    DLPCheckUsername_Hard		@10
+    DLPCheckUsername_Soft		@11
+    DLPCheckNameAndHashAndMod	@12
+    DLPCheckMessageSpam			@13
+    DLPCheckUserhash			@14
+    ; Explizite Exporte können hier eingefügt werden
