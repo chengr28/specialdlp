@@ -26,15 +26,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Markdown", "Markdown", "{052D298E-CCE3-4839-9601-4D5463F87C19}"
 	ProjectSection(SolutionItems) = preProject
 		Auxiliary\Markdown\.gitattributes = Auxiliary\Markdown\.gitattributes
-		Auxiliary\Markdown\ISSUE_TEMPLATE.md = Auxiliary\Markdown\ISSUE_TEMPLATE.md
 		Auxiliary\Markdown\LICENSE = Auxiliary\Markdown\LICENSE
 		Auxiliary\Markdown\README.md = Auxiliary\Markdown\README.md
+		Auxiliary\Markdown\README.zh-Hans.md = Auxiliary\Markdown\README.zh-Hans.md
+		Auxiliary\Markdown\README.zh-Hant.md = Auxiliary\Markdown\README.zh-Hant.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7F6C2DC0-ACDB-4101-9F2C-219E2C2596E2}"
-	ProjectSection(SolutionItems) = preProject
-		Auxiliary\Scripts\Hash.bat = Auxiliary\Scripts\Hash.bat
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specialdlp", "specialdlp", "{AC73A027-5FAF-4DEC-93AC-F92A3326A654}"
 EndProject

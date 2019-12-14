@@ -1,8 +1,8 @@
-﻿特別聲明：
+﻿警告
 
-全部 Strict DLP Chinese（SDC）僅供學習交流，遵循 GUN GPL 通用公共許可證 (GNU General Public License) 切勿將其用於任何非法用途！
-使用前請自行估量是否有載入 Strict DLP Chinese 的需要，如果不能清楚判斷而造成之不良後果，專案組所有成員均不承擔一切責任！
-使用 SDC 原始程式碼前務必參閱 GNU-GPL-v2.0 以及 Source-License 通用公共許可證之內容！
+Strict DLP Chinese (SDC) 僅供學習交流。遵循相應的許可證，切勿將其用於任何非法用途！
+使用前請自行估量是否有載入 SDC 的需要，如果不能清楚判斷而造成之一切不良後果，專案組所有成員均不承擔任何責任。
+使用 SDC 原始程式碼前，請先務必參閱 LICENSE 的內容！
 
 
 -------------------------------------------------------------------------------
@@ -11,6 +11,9 @@
 Strict DLP Chinese 項目的 GitHub 頁面：
 https://github.com/chengr28/specialdlp
 
+Strict DLP Chinese 項目的 GitLab 頁面：
+https://gitlab.com/chengr28/specialdlp
+
 Strict DLP Chinese 項目的 SourceForge 頁面：
 https://sourceforge.net/projects/specialdlp
 
@@ -18,16 +21,16 @@ https://sourceforge.net/projects/specialdlp
 -------------------------------------------------------------------------------
 
 
-* SDC 與官方 DLP 之間的主要差別：
-  * 所有 SDC 均是基於 Xtreme 官方 DLP 的嚴格版本
-  * 在 Xtreme 官方 DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 清單，原因是 GPL-Breaker、私有網路和社區用戶端等不良行為。
+* SDC 與官方 DLP 的主要差別：
+  * 所有 SDC 是基於官方 eMule Xtreme DLP 的嚴格版本
+  * 在官方 eMule Xtreme DLP 的基礎上，SDC 將 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 清單，原因是 GPL-Breaker、私有網路和社區用戶端等不良行為。
 
 
 * 載入方法：
   * 將 eMule 關閉，把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，並重新啟動 eMule
     * 強烈建議使用這種載入方法，因為這種方法可以把全部新版的檢測載入到 eMule 中
     * 第2種方法重新載入後已經連接成功的用戶端不會被重新檢測，且新版本的所有檢測不一定都能使用
-  * 直接把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，然後在反吸血選項 (Xtreme II) 中按一下 Reload
+  * 或者直接把解壓出來的 antiLeech.dll.new 檔放到原來 antiLeech.dll 所在的目錄，然後在反吸血選項 (Xtreme II) 中按一下 Reload
 
 
 -------------------------------------------------------------------------------
@@ -35,9 +38,9 @@ https://sourceforge.net/projects/specialdlp
 
 * 關於設定檔真實讀取目錄問題：
   * 此設置可以在安裝 eMule 的過程中進行選擇，不過也可以在以後任何時候在『選項 - 擴展設置』裡進行設置。請務必注意這個問題，否則可能會造成 SDC 未被正確載入。
-  * 在程式目錄下保存配置和下載：程式目錄下的 Config 資料夾內
-  * 每個使用者的配置和下載是獨立的：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的使用者名]\AppData\Local\eMule\config
-  * 所有的使用者共用相同的配置和下載：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
+    * 在程式目錄下保存配置和下載：程式目錄下的 Config 資料夾內
+    * 每個使用者的配置和下載是獨立的：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的使用者名]\AppData\Local\eMule\config
+    * 所有的使用者共用相同的配置和下載：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
 
 
 -------------------------------------------------------------------------------
@@ -46,16 +49,16 @@ https://sourceforge.net/projects/specialdlp
 SDC 版本介紹：
 
 * bin：已編譯的二進位程式，可直接在電腦上使用
-  * x86：用於 32 位 (x86) 程式的 SDC 版本
-    * 提醒：多數家用電腦及使用的 eMule 程式均為 32 位，因此您一般應該使用 x86 版本而不是 x64 版本
-  * x64：用於 64 位 (x64) 程式的 SDC 版本
-    * 提醒：適用于原生 x64 編譯的 eMule 版本，而 x64 的 SDC 版本只能用於 64 位電腦上
-    * 注意：SDC 的 x64 版本是專門為原生 x64 eMule 程式編譯，因為現階段絕大多數 eMule 程式的編譯目標平臺為 x86 所以您應該使用 x86 版本的 SDC 而非 x64 版本的 SDC！
-  * Lite：Xtreme 官方 DLP 修補漏檢版本。
-  * All-VeryCD-Mod：對所有 VeryCD 系列用戶端進行檢測的版本，其中所有 VeryCD Mod 和 easyMule 被加入了軟性吸血清單。
-  * VeryCD-Tag：對所有昵稱含有 [VeryCD] 進行檢測的版本。
-  * VeryCD-EasyMule-Mod：EasyMule 被加入了軟性吸血清單。
-  * VeryCD-Default-NickNames：所有昵稱中含有 VeryCD 用戶端預設昵稱的 VeryCD Mod 和 easyMule 加入到軟性吸血清單。
+  * 按照不同的架構：
+    * x86：用於 32 位 (x86) 程式的 SDC 版本，多數使用的 eMule 程式均為 32 位，因此您應該使用 x86 版本而不是 x64 版本。
+    * x64：用於 64 位 (x64) 程式的 SDC 版本，適用于原生 x64 編譯的 eMule 版本，而 x64 的 SDC 版本只能用於 64 位電腦上。
+      * 注意：SDC 的 x64 版本是專門為原生 x64 eMule 程式編譯，因為現階段絕大多數 eMule 程式的編譯目標平臺為 x86 所以您應該使用 x86 版本的 SDC 而非 x64 版本的 SDC！
+  * 按照不同的功能：
+    * Lite：Xtreme 官方 DLP 修補漏檢版本。
+    * All-VeryCD-Mod：對所有 VeryCD 系列用戶端進行檢測的版本，其中所有 VeryCD Mod 和 easyMule 被加入了軟性吸血清單。
+    * VeryCD-Tag：對所有昵稱含有 [VeryCD] 進行檢測的版本。
+    * VeryCD-EasyMule-Mod：EasyMule 被加入了軟性吸血清單。
+    * VeryCD-Default-NickNames：所有昵稱中含有 VeryCD 用戶端預設昵稱的 VeryCD Mod 和 easyMule 加入到軟性吸血清單。
 * src：原始程式碼
 
 
