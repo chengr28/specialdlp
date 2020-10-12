@@ -1,65 +1,67 @@
 ﻿警告
 
-Strict DLP Chinese (SDC) 仅供学习交流。遵循相应的许可证，切勿将其用于任何非法用途！
-使用前请自行估量是否有加载 SDC 的需要，如果不能清楚判断而造成之一切不良后果，项目组所有成员均不承担任何责任。
-使用 SDC 源代码前，请先务必参阅 LICENSE 的内容！
+Strict DLP Chinese (SDC) 仅供学习交流用途，请遵循相应的许可证。
+切勿将其用于任何非法用途！使用前请自行估量是否有加载 SDC 的需要。
+如果不能清楚判断而造成之一切不良后果，项目组所有成员均不承担任何责任。
+使用 SDC 源代码前，请先务必参阅 license 的内容！
 
 
 -------------------------------------------------------------------------------
 
 
-Strict DLP Chinese 项目的 GitHub 页面：
+Strict DLP Chinese 的 GitHub
 https://github.com/chengr28/specialdlp
 
-Strict DLP Chinese 项目的 GitLab 页面：
+Strict DLP Chinese 的 GitLab
 https://gitlab.com/chengr28/specialdlp
 
-Strict DLP Chinese 项目的 Sourceforge 页面：
+Strict DLP Chinese 的 Sourceforge
 https://sourceforge.net/projects/specialdlp
 
 
 -------------------------------------------------------------------------------
 
 
-* SDC 与官方 DLP 的主要差别：
-  * 所有 SDC 是基于官方 eMule Xtreme DLP 的严格版本
-  * 在官方 eMule Xtreme DLP 的基础上，SDC 将 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 列表，原因是 GPL-Breaker、私有网络和社区客户端等不良行为。
+SDC 与官方 DLP 的主要差别
+* 所有 SDC 是基于官方 eMule Xtreme DLP 的严格版本
+* 在官方 eMule Xtreme DLP 的基础上，SDC 将 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第1版）中的部分或全部加入了 SoftBan 列表，原因是 GPL-Breaker、私有网络和社区客户端等不良行为。
 
 
-* 加载方法：
-  * 将 eMule 关闭，把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，并重新启动 eMule
-    * 强烈建议使用这种加载方法，因为这种方法可以把全部新版的检测加载到 eMule 中
-    * 第2种方法重新加载后已经连接成功的客户端不会被重新检测，且新版本的所有检测不一定都能使用
-  * 或者直接把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，然后在反吸血选项 (Xtreme II) 中单击 Reload
-
-
--------------------------------------------------------------------------------
-
-
-* 关于配置文件真实读取目录问题：
-  * 此设置可以在安装 eMule 的过程中进行选择，不过也可以在以后任何时候在『选项 - 扩展设置』里进行设置。请务必注意这个问题，否则可能会造成 SDC 未被正确加载。
-    * 在程序目录下保存配置和下载：程序目录下的 Config 文件夹内
-    * 每个用户的配置和下载是独立的：%UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
-    * 所有的用户共用相同的配置和下载：%AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
+加载方法
+* 将 eMule 关闭，把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，并重新启动 eMule
+  * 强烈建议使用这种加载方法，因为这种方法可以把全部新版的检测加载到 eMule 中
+  * 第 2 种方法重新加载后已经连接成功的客户端不会被重新检测，且新版本的所有检测不一定都能使用
+* 或者直接把解压出来的 antiLeech.dll.new 文件放到原来 antiLeech.dll 所在的目录，然后在反吸血选项 (Xtreme II) 中单击 Reload
 
 
 -------------------------------------------------------------------------------
 
 
-SDC 版本介绍：
+关于配置文件真实读取目录问题
+* 此设置可以在安装 eMule 的过程中进行选择，不过也可以在以后任何时候在『选项 - 扩展设置』里进行设置。请务必注意这个问题，否则可能会造成 SDC 未被正确加载。
+  * 在程序目录下保存配置和下载: 程序目录下的 Config 文件夹内
+  * 每个用户的配置和下载是独立的: %UserProfile%\AppData\Local\eMule\config 也就是 System:\Users\[您的用户名]\AppData\Local\eMule\config
+  * 所有的用户共用相同的配置和下载: %AllUsersProfile%\eMule\Config 也就是 System:\ProgramData\eMule\Config
 
-* bin：已编译的二进制程序，可直接在计算机上使用
-  * 按照不同的架构：
-    * x86：用于 32 位 (x86) 程序的 SDC 版本。多数使用的 eMule 程序均为 32 位，因此您应该使用 x86 版本而不是 x64 版本。
-    * x64：用于 64 位 (x64) 程序的 SDC 版本。提醒：适用于原生 x64 编译的 eMule 版本，而 x64 的 SDC 版本只能用于 64 位计算机上。
-      * 注意：SDC 的 x64 版本是专门为原生 x64 eMule 程序编译，因为现阶段绝大多数 eMule 程序的编译目标平台为 x86 所以您应该使用 x86 版本的 SDC 而非 x64 版本的 SDC！
-  * 按照不同的功能：
-    * Lite：Xtreme 官方 DLP 修补漏检版本。
-    * All-VeryCD-Mod：对所有 VeryCD 系列客户端进行检测的版本，其中所有 VeryCD Mod 和 easyMule 被加入了软性吸血列表。
-    * VeryCD-Tag：对所有昵称含有 [VeryCD] 进行检测的版本。
-    * VeryCD-EasyMule-Mod：EasyMule 被加入了软性吸血列表。
-    * VeryCD-Default-NickNames：所有昵称中含有 VeryCD 客户端默认昵称的 VeryCD Mod 和 easyMule 加入到软性吸血列表。
-* src：源代码
+
+-------------------------------------------------------------------------------
+
+
+SDC 版本介绍
+* bin: 已编译的二进制程序
+  * 按照不同的架构:
+    * x86: 用于 32 位 x86 程序的 SDC 版本。多数使用的 eMule 程序为 32 位，因此您应该使用 x86 版本而不是 x64 版本。
+    * x64: 用于 64 位 x64 程序的 SDC 版本。提醒: 适用于原生 x64 编译的 eMule 版本，而 x64 的 SDC 版本只能用于 64 位计算机上。
+      * 注意: SDC 的 x64 版本是专门为原生 x64 eMule 程序编译，因为现阶段绝大多数 eMule 程序的编译目标平台为 x86 所以您应该使用 x86 版本的 SDC 而非 x64 版本的 SDC！
+    * arm: 用于 32 位 ARM 程序的 SDC 版本。
+    * arm64: 用于 64 位 ARM64 程序的 SDC 版本。
+  * 按照不同的功能:
+    * Lite: Xtreme 官方 DLP 修补漏检版本。
+    * All-VeryCD-Mod: 对所有 VeryCD 系列客户端进行检测的版本，其中所有 VeryCD Mod 和 easyMule 被加入了软性吸血列表。
+    * VeryCD-Tag: 对所有昵称含有 [VeryCD] 进行检测的版本。
+    * VeryCD-EasyMule-Mod: EasyMule 被加入了软性吸血列表。
+    * VeryCD-Default-NickNames: 所有昵称中含有 VeryCD 客户端默认昵称的 VeryCD Mod 和 easyMule 加入到软性吸血列表。
+* src: 源代码
 
 
 -------------------------------------------------------------------------------
@@ -76,7 +78,7 @@ Q：加载失败如何解决？
 A：
   * 请检查文件名 antiLeech.dll.new 是否完全正确；
   * 请检查 antiLeech.dll.new 所放置的位置是否正确，一般放置在原 antiLeech.dll 的目录内；
-  * 请检查对应的版本是否正确，x86/x64版本的 SDC 只能应用在其设计的环境内，版本之间并不通用。
+  * 请检查对应的版本是否正确，x86/x64 版本的 SDC 只能应用在其设计的环境内，版本之间并不通用。
 
 Q：为何 SDC 的对应版本无法实现其对应的功能？
 A：
@@ -90,8 +92,7 @@ A：
 
 Q：发现了某些不应出现的误伤或漏检怎么办？
 A：
-  * 请首先确认是否应用「失效搭配方案黑名单」中的搭配，应用者请更换 eMule 客户端或其它系列的 DLP；
-  * 注意：如果使用以下搭配，将使 SDC 无法实现其应有正常的功能或者造成漏检，切记不要采用以下的失效搭配（这里提到的均为该 eMule Mod 的最新版本，其它旧版本同样不能保证可以正常工作）：
+  * 请首先确认是否应用「失效搭配方案黑名单」中的搭配，应用者请更换 eMule 客户端或其它系列的 DLP。注意：如果使用以下搭配，将使 SDC 无法实现其应有正常的功能或者造成漏检，切记不要采用以下的失效搭配（这里提到的均为该 eMule Mod 的最新版本，其它旧版本同样不能保证可以正常工作）：
     * eMule v0.48a eXcalibur 1.85.3 加载所有版本的 SDC
       * 后果：无法成功加载 DLP
       * 原因：eXcalibur 不支持 Xtreme 官方版 DLP
@@ -133,8 +134,8 @@ A：
 
 应用减分模式特别技巧：
 
-* 如果 eMule 客户端拥有「每个文件一个队列（多队列）」功能，请将其开启；
-  * 说明：「每个文件一个队列（多队列）」功能会适当对一些请求稀有文件上传的客户端的进行加分，因为上传队列得分是按比例扣减的，所以上传队列得分越高扣减的幅度也越大。
+* 如果 eMule 客户端拥有「每个文件一个队列(多队列)」功能，请将其开启；
+  * 说明：「每个文件一个队列(多队列)」功能会适当对一些请求稀有文件上传的客户端的进行加分，因为上传队列得分是按比例扣减的，所以上传队列得分越高扣减的幅度也越大。
 
 * 如果 eMule 客户端支持多积分系统，建议使用「Lovelace」积分系统，然后将所有惩罚吸血骡的选项打开；
   * 说明：选择一个合适的积分系统有利于 eMule 的文件交换及对吸血客户端的惩罚。

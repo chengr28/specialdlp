@@ -5,79 +5,134 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specialdlp", "specialdlp\specialdlp.vcxproj", "{3A9EE43B-4961-4F30-A565-A48EB043B6C4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auxiliary", "Auxiliary", "{7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{A37D4510-D187-410A-994D-6F13B1A1C778}"
-	ProjectSection(SolutionItems) = preProject
-		Auxiliary\Documents\Changelog.en.txt = Auxiliary\Documents\Changelog.en.txt
-		Auxiliary\Documents\Changelog.zh-Hans.txt = Auxiliary\Documents\Changelog.zh-Hans.txt
-		Auxiliary\Documents\Changelog.zh-Hant.txt = Auxiliary\Documents\Changelog.zh-Hant.txt
-		Auxiliary\Documents\ReadMe.en.html = Auxiliary\Documents\ReadMe.en.html
-		Auxiliary\Documents\ReadMe.en.md = Auxiliary\Documents\ReadMe.en.md
-		Auxiliary\Documents\ReadMe.en.txt = Auxiliary\Documents\ReadMe.en.txt
-		Auxiliary\Documents\ReadMe.zh-Hans.html = Auxiliary\Documents\ReadMe.zh-Hans.html
-		Auxiliary\Documents\ReadMe.zh-Hans.md = Auxiliary\Documents\ReadMe.zh-Hans.md
-		Auxiliary\Documents\ReadMe.zh-Hans.txt = Auxiliary\Documents\ReadMe.zh-Hans.txt
-		Auxiliary\Documents\ReadMe.zh-Hant.html = Auxiliary\Documents\ReadMe.zh-Hant.html
-		Auxiliary\Documents\ReadMe.zh-Hant.md = Auxiliary\Documents\ReadMe.zh-Hant.md
-		Auxiliary\Documents\ReadMe.zh-Hant.txt = Auxiliary\Documents\ReadMe.zh-Hant.txt
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Markdown", "Markdown", "{052D298E-CCE3-4839-9601-4D5463F87C19}"
-	ProjectSection(SolutionItems) = preProject
-		Auxiliary\Markdown\.gitattributes = Auxiliary\Markdown\.gitattributes
-		Auxiliary\Markdown\LICENSE = Auxiliary\Markdown\LICENSE
-		Auxiliary\Markdown\README.md = Auxiliary\Markdown\README.md
-		Auxiliary\Markdown\README.zh-Hans.md = Auxiliary\Markdown\README.zh-Hans.md
-		Auxiliary\Markdown\README.zh-Hant.md = Auxiliary\Markdown\README.zh-Hant.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7F6C2DC0-ACDB-4101-9F2C-219E2C2596E2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specialdlp", "specialdlp", "{AC73A027-5FAF-4DEC-93AC-F92A3326A654}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documents", "documents", "{480E715A-EA0B-47A0-BDCD-6484E835EF45}"
+	ProjectSection(SolutionItems) = preProject
+		documents\changelog.en.txt = documents\changelog.en.txt
+		documents\changelog.zh-hans.txt = documents\changelog.zh-hans.txt
+		documents\changelog.zh-hant.txt = documents\changelog.zh-hant.txt
+		documents\checksum.md = documents\checksum.md
+		documents\readme.en.html = documents\readme.en.html
+		documents\readme.en.md = documents\readme.en.md
+		documents\readme.en.txt = documents\readme.en.txt
+		documents\readme.zh-hans.html = documents\readme.zh-hans.html
+		documents\readme.zh-hans.md = documents\readme.zh-hans.md
+		documents\readme.zh-hans.txt = documents\readme.zh-hans.txt
+		documents\readme.zh-hant.html = documents\readme.zh-hant.html
+		documents\readme.zh-hant.md = documents\readme.zh-hant.md
+		documents\readme.zh-hant.txt = documents\readme.zh-hant.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{9A08E279-0E63-45E8-8D88-1076FDC2A6E3}"
+	ProjectSection(SolutionItems) = preProject
+		documents\git\.gitattributes = documents\git\.gitattributes
+		documents\git\license = documents\git\license
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{8DFDE115-8BC9-494A-B734-39CBF145169A}"
+	ProjectSection(SolutionItems) = preProject
+		documents\github\readme.md = documents\github\readme.md
+		documents\github\readme.zh-hans.md = documents\github\readme.zh-hans.md
+		documents\github\readme.zh-hant.md = documents\github\readme.zh-hant.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{E6BD94B7-6644-4965-A6B8-B08D0D8104A0}"
+	ProjectSection(SolutionItems) = preProject
+		documents\gitlab\readme.md = documents\gitlab\readme.md
+		documents\gitlab\readme.zh-hans.md = documents\gitlab\readme.zh-hans.md
+		documents\gitlab\readme.zh-hant.md = documents\gitlab\readme.zh-hant.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{B8B5EA5A-BA3F-4A22-A62C-3AE925BE11B6}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\hash.sh = scripts\hash.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release_All-VeryCD-Mod|ARM = Release_All-VeryCD-Mod|ARM
+		Release_All-VeryCD-Mod|ARM64 = Release_All-VeryCD-Mod|ARM64
 		Release_All-VeryCD-Mod|x64 = Release_All-VeryCD-Mod|x64
 		Release_All-VeryCD-Mod|x86 = Release_All-VeryCD-Mod|x86
+		Release_Lite|ARM = Release_Lite|ARM
+		Release_Lite|ARM64 = Release_Lite|ARM64
 		Release_Lite|x64 = Release_Lite|x64
 		Release_Lite|x86 = Release_Lite|x86
+		Release_VeryCD_Tag|ARM = Release_VeryCD_Tag|ARM
+		Release_VeryCD_Tag|ARM64 = Release_VeryCD_Tag|ARM64
 		Release_VeryCD_Tag|x64 = Release_VeryCD_Tag|x64
 		Release_VeryCD_Tag|x86 = Release_VeryCD_Tag|x86
+		Release_VeryCD-Default-NickNames|ARM = Release_VeryCD-Default-NickNames|ARM
+		Release_VeryCD-Default-NickNames|ARM64 = Release_VeryCD-Default-NickNames|ARM64
 		Release_VeryCD-Default-NickNames|x64 = Release_VeryCD-Default-NickNames|x64
 		Release_VeryCD-Default-NickNames|x86 = Release_VeryCD-Default-NickNames|x86
+		Release_VeryCD-EasyMule-Mod|ARM = Release_VeryCD-EasyMule-Mod|ARM
+		Release_VeryCD-EasyMule-Mod|ARM64 = Release_VeryCD-EasyMule-Mod|ARM64
 		Release_VeryCD-EasyMule-Mod|x64 = Release_VeryCD-EasyMule-Mod|x64
 		Release_VeryCD-EasyMule-Mod|x86 = Release_VeryCD-EasyMule-Mod|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM.Build.0 = Debug|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM64.Build.0 = Debug|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x64.ActiveCfg = Debug|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x64.Build.0 = Debug|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x86.ActiveCfg = Debug|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x86.Build.0 = Debug|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM.ActiveCfg = Release_All-VeryCD-Mod|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM.Build.0 = Release_All-VeryCD-Mod|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM64.ActiveCfg = Release_All-VeryCD-Mod|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM64.Build.0 = Release_All-VeryCD-Mod|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x64.ActiveCfg = Release_All-VeryCD-Mod|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x64.Build.0 = Release_All-VeryCD-Mod|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x86.ActiveCfg = Release_All-VeryCD-Mod|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x86.Build.0 = Release_All-VeryCD-Mod|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM.ActiveCfg = Release_Lite|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM.Build.0 = Release_Lite|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM64.ActiveCfg = Release_Lite|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM64.Build.0 = Release_Lite|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x64.ActiveCfg = Release_Lite|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x64.Build.0 = Release_Lite|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x86.ActiveCfg = Release_Lite|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x86.Build.0 = Release_Lite|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM.ActiveCfg = Release_VeryCD_Tag|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM.Build.0 = Release_VeryCD_Tag|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM64.ActiveCfg = Release_VeryCD_Tag|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM64.Build.0 = Release_VeryCD_Tag|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x64.ActiveCfg = Release_VeryCD_Tag|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x64.Build.0 = Release_VeryCD_Tag|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x86.ActiveCfg = Release_VeryCD_Tag|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x86.Build.0 = Release_VeryCD_Tag|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM.ActiveCfg = Release_VeryCD-Default-NickNames|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM.Build.0 = Release_VeryCD-Default-NickNames|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM64.ActiveCfg = Release_VeryCD-Default-NickNames|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM64.Build.0 = Release_VeryCD-Default-NickNames|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x64.ActiveCfg = Release_VeryCD-Default-NickNames|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x64.Build.0 = Release_VeryCD-Default-NickNames|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x86.ActiveCfg = Release_VeryCD-Default-NickNames|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x86.Build.0 = Release_VeryCD-Default-NickNames|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM.ActiveCfg = Release_VeryCD-EasyMule-Mod|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM.Build.0 = Release_VeryCD-EasyMule-Mod|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM64.ActiveCfg = Release_VeryCD-EasyMule-Mod|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM64.Build.0 = Release_VeryCD-EasyMule-Mod|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x64.ActiveCfg = Release_VeryCD-EasyMule-Mod|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x64.Build.0 = Release_VeryCD-EasyMule-Mod|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x86.ActiveCfg = Release_VeryCD-EasyMule-Mod|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x86.Build.0 = Release_VeryCD-EasyMule-Mod|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM.ActiveCfg = Release|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM.Build.0 = Release|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM64.ActiveCfg = Release|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM64.Build.0 = Release|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x64.ActiveCfg = Release|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x64.Build.0 = Release|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x86.ActiveCfg = Release|Win32
@@ -88,10 +143,11 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
-		{7D1AE1A0-C6C3-45A3-81B2-F83FF6595585} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
-		{A37D4510-D187-410A-994D-6F13B1A1C778} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
-		{052D298E-CCE3-4839-9601-4D5463F87C19} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
-		{7F6C2DC0-ACDB-4101-9F2C-219E2C2596E2} = {7D1AE1A0-C6C3-45A3-81B2-F83FF6595585}
+		{480E715A-EA0B-47A0-BDCD-6484E835EF45} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
+		{9A08E279-0E63-45E8-8D88-1076FDC2A6E3} = {480E715A-EA0B-47A0-BDCD-6484E835EF45}
+		{8DFDE115-8BC9-494A-B734-39CBF145169A} = {480E715A-EA0B-47A0-BDCD-6484E835EF45}
+		{E6BD94B7-6644-4965-A6B8-B08D0D8104A0} = {480E715A-EA0B-47A0-BDCD-6484E835EF45}
+		{B8B5EA5A-BA3F-4A22-A62C-3AE925BE11B6} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7287AF59-7DAB-4489-BEAB-9BB5AE40ABFE}

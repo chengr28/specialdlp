@@ -1,4 +1,7 @@
-# Newline format in Windows(CR-LF)
+# Newline format LF
+*.sh text eol=lf
+
+# Newline format CR-LF
 *.filters text eol=crlf
 *.rc text eol=crlf
 *.rc2 text eol=crlf

@@ -734,7 +734,7 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Hard(LPCTSTR modversion, LPCTSTR
 		wcsstr(modversion, L"DarkSky") || //Custom ModString
 		wcsstr(clientversion, L"eMule v5.6a") || //Fake official version [冰靈曦曉]
 		wcsstr(modversion, L"eMuleTorrent")) //GPL-Breaker [冰靈曦曉]
-			return L"[SDC]Bad ModString";
+			return L"[SDC] Bad ModString";
 #endif
 
 	return NULL;
@@ -793,10 +793,10 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Soft(LPCTSTR modversion, LPCTSTR
 
 //SDC Main
 #if defined(SPECIAL_DLP_VERSION)
-#if (defined(ALL_VERYCD_MOD) || defined(VERYCD_TAG))
+#if (defined(SDC_ALL_VERYCD_MOD) || defined(SDC_VERYCD_TAG))
 	if (!wcsstr(modversion, L"VeryCD 090304") && wcsstr(modversion, L"VeryCD")) //It will be checked in DLPCheckNameAndHashAndMod function.
-		return L"[SDC]All-VeryCD-Mod";
-#elif defined(VERYCD_EASYMULE_MOD)
+		return L"[SDC] All-VeryCD-Mod";
+#elif defined(SDC_VERYCD_EASYMULE_MOD)
 	if (wcsstr(modversion, L"easyMule") || //New versions
 		(wcsstr(modversion, L"VeryCD") && 
 	//Old versions released in 2007 and 2008
@@ -811,7 +811,7 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Soft(LPCTSTR modversion, LPCTSTR
 		wcsstr(modversion, L"1023") || wcsstr(modversion, L"1023") || wcsstr(modversion, L"1113") || 
 		wcsstr(modversion, L"1121") || wcsstr(modversion, L"1122") || wcsstr(modversion, L"1205") || 
 		wcsstr(modversion, L"1218"))))))
-			return L"[SDC]VeryCD-EasyMule-Mod";
+			return L"[SDC] VeryCD-EasyMule-Mod";
 #endif
 #endif
 
@@ -1148,7 +1148,7 @@ LPCTSTR __declspec(dllexport) DLPCheckUsername_Hard(LPCTSTR username)
 		wcsstr(username, L"28881.com") || //MTVP2P(2013) [雁蝎]
 		wcsstr(username, L"[CHN]shaohan") || //Xunlei Offline Download Server and Moblie System Apps [Glasses 王子]
 		wcsstr(username, L"HubbleKadTracker")) //GPL-Breaker [冰靈曦曉]
-			return L"[SDC]Bad UserName";
+			return L"[SDC] Bad UserName";
 #endif
 
 	return NULL;
@@ -1198,13 +1198,13 @@ LPCTSTR __declspec(dllexport) DLPCheckUsername_Soft(LPCTSTR username)
 		return _T("X-Treme");
 
 //Add by SDC team.
-#if defined(VERYCD_TAG)
+#if defined(SDC_VERYCD_TAG)
 	if (StrStrIW(username, L"[VeryCD]") && 
 	//It will be checked in DLPCheckUsername_Hard function.
 		!(wcsstr(username, L"a1[VeryCD]xthame") || 
 		(StrStrIW(username, L"[CHN][VeryCD]") && (StrStrIW(username, L"[Your") || StrStrIW(username, L"[username]"))) || 
 		wcsstr(username, L"[CHN][VeryCD]QQ")))
-			return L"[SDC]VeryCD-Tag";
+			return L"[SDC] VeryCD-Tag";
 #endif
 
 	return NULL;
@@ -1242,7 +1242,7 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 		_wcsicmp(userhash, refuserhash12) == 0 || 
 	//The official refuserhash13 with NickName "qobfxb" will be checked in DLPCheckUsername_Hard function.
 		(!wcsstr(username, L"qobfxb") && _wcsicmp(userhash, refuserhash13) == 0))
-			return L"[SDC]Community UserHash";
+			return L"[SDC] Community UserHash";
 #else //Official
 	if(_tcsicmp(userhash,refuserhash0)==0 || _tcsicmp(userhash,refuserhash1)==0 || _tcsicmp(userhash,refuserhash2)==0 
 		|| _tcsicmp(userhash,refuserhash6)==0 || _tcsicmp(userhash,refuserhash7)==0 || _tcsicmp(userhash,refuserhash8)==0
@@ -1264,7 +1264,7 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 #if defined(SPECIAL_DLP_VERSION)
 	static const wchar_t RefUserHash_5[] = L"DA1CEEE05B0E5319B3B48CAED24C6F4A";
 	if (!wcsstr(username, L"QQDownload") && _wcsicmp(userhash, RefUserHash_5) == 0) //The official refuserhash5 with NickName "QQDownload" will be checked in DLPCheckUsername_Hard function.
-		return L"[SDC]Bad UserHash";
+		return L"[SDC] Bad UserHash";
 #else //Official
 	static const TCHAR refuserhash5[] = _T("DA1CEEE05B0E5319B3B48CAED24C6F4A");
 	if (_tcsicmp(userhash, refuserhash5) == 0)
@@ -1317,7 +1317,13 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 				*/
 			
 				//Chek for Hex (e.g. X-Treme)
+			//SDC fixed
+			#if defined(SPECIAL_DLP_VERSION)
+				auto AddonLeft = addon.Left(addon.GetLength() - 1);
+				if (IsTypicalHex(AddonLeft))
+			#else //Official
 				if(IsTypicalHex(addon.Left(addon.GetLength()-1)))
+			#endif
 					return _T("Hex-Code-Addon");
 			}
 			//zz_fly :: start
@@ -1374,7 +1380,7 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 		(!wcsstr(modversion, L"xl build") && _wcsicmp(userhash, SDC_RefUserHash_14) == 0) || //The SDC_RefUserHash_14 with modstring "xl build" will be checked in DLPCheckModstring_Hard function.
 		(!wcsstr(username, L"[CHN][VeryCD]QQ") && _wcsicmp(userhash, SDC_RefUserHash_15) == 0) || //The SDC_RefUserHash_15 with NickName "[CHN][VeryCD]QQ" will be checked in DLPCheckUsername_Hard function.
 		(!wcsstr(username, L"[CHN]shaohan") && _wcsicmp(userhash, SDC_RefUserHash_16) == 0)) //The SDC_RefUserHash_16 with NickName "[CHN]shaohan" will be checked in DLPCheckUsername_Hard function.
-			return L"[SDC]Community UserHash";
+			return L"[SDC] Community UserHash";
 #endif
 
 	if(modversion.IsEmpty())
@@ -1404,10 +1410,10 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 
 //SDC Main
 #if defined(SPECIAL_DLP_VERSION)
-#if (defined(ALL_VERYCD_MOD) || defined(VERYCD_TAG))
+#if (defined(SDC_ALL_VERYCD_MOD) || defined(SDC_VERYCD_TAG))
 	if (wcsstr(modversion, L"VeryCD 090304") && !wcsstr(username, L"[CHN]shaohan")) //This version has been checked before DLPCheckModstring_Soft function.
-		return L"[SDC]All-VeryCD-Mod";
-#elif defined(VERYCD_DEFAULT_NICKNAMES)
+		return L"[SDC] All-VeryCD-Mod";
+#elif defined(SDC_VERYCD_DEFAULT_NICKNAMES)
 	if (wcsstr(modversion, L"VeryCD") && 
 	//They will be checked in DLPCheckModstring_Hard function.
 		!(wcsstr(modversion, L" 08") && 
@@ -1452,7 +1458,7 @@ LPCTSTR __declspec(dllexport) DLPCheckNameAndHashAndMod(CString username, CStrin
 		wcsstr(username, L"煦砅誑薊厙") || 
 	//2013-01 Updated
 		wcsstr(username, L"[easyMule]")))))
-			return L"[SDC]VeryCD-Default-NickNames";
+			return L"[SDC] VeryCD-Default-NickNames";
 #endif
 #endif
 
