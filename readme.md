@@ -2,7 +2,7 @@
 =====
 
 <p align="center">
-<a href="https://github.com/chengr28/specialdlp/blob/master/license"><img src="https://img.shields.io/github/license/chengr28/specialdlp"></a> <a href="https://img.shields.io/github/v/release/chengr28/specialdlp"><img src="https://img.shields.io/github/v/release/chengr28/specialdlp"></a>
+<a href="https://github.com/chengr28/specialdlp/blob/master/license"><img src="https://img.shields.io/github/license/chengr28/specialdlp"></a> <a href="https://github.com/chengr28/specialdlp/releases/latest"><img src="https://img.shields.io/github/v/release/chengr28/specialdlp"></a>
 </p>
 
 Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version. SDC's 5 variants put easyMule v2, easyMule v1 and/or eMule VeryCD Mod into "Soft Ban" or "Hard Ban" list because of GPL violation, private network, community leeching and other behaviors.
@@ -20,7 +20,6 @@ Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs 
 
 ## External Links
 
-* [Project in GitHub](https://github.com/chengr28/specialdlp)
 * [Project in GitLab](https://gitlab.com/chengr28/specialdlp)
 * [Project in Sourceforge](https://sourceforge.net/projects/specialdlp)
 * [SDC in eMuleFans 电骡爱好者](https://emulefans.com/news/plugin/dlp/sdc/)
