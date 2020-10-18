@@ -1,20 +1,26 @@
 ﻿﻿Strict DLP Chinese (SDC)
 =====
 
-### Releases
-[![GitHub license](https://img.shields.io/github/license/chengr28/specialdlp)](https://github.com/chengr28/specialdlp/blob/master/license)
-[![GitHub release](https://img.shields.io/github/v/release/chengr28/specialdlp)](https://github.com/chengr28/specialdlp/releases/latest)
+<p align="center">
+<a href="https://github.com/chengr28/specialdlp/blob/master/license"><img src="https://img.shields.io/github/license/chengr28/specialdlp"></a> <a href="https://img.shields.io/github/v/release/chengr28/specialdlp"><img src="https://img.shields.io/github/v/release/chengr28/specialdlp"></a>
+</p>
 
-### Usage
-**Click [here](https://github.com/chengr28/specialdlp/tree/master/specialdlp/documents) to visit documents folder.**
-* [简体中文介绍](readme.zh-hans.md)
-* [繁體中文介紹](readme.zh-hant.md)
+Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version. SDC's 5 variants put easyMule v2, easyMule v1 and/or eMule VeryCD Mod into "Soft Ban" or "Hard Ban" list because of GPL violation, private network, community leeching and other behaviors.
 
-### Summary
-Strict DLP Chinese (SDC) is a strict DLP based on the eMule Xtreme (official) version. SoftBan list in SDC includes the eMule VeryCD Mod and the easyMule (1) because of GPL-breaker, private network, community leecher and other behavior.
+<p align="center">
+<a href="readme.zh-hans.md">简体中文介绍</a> | <a href="readme.zh-hant.md">繁體中文介紹</a>
+</p>
 
-### Links
+* [Feature table for 5 SDC variants](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.en.md)
+* [Download a single SDC variant](https://github.com/chengr28/specialdlp/tree/binary)
+* [Releases Page: Download all SDC variant (7z/zip)](https://github.com/chengr28/specialdlp/releases)
+* [FAQs and other tips](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.en.txt)
+* [Changelog](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/changelog.en.txt)
+* [Checksum](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/checksum.md)
+
+## External Links
+
 * [Project in GitHub](https://github.com/chengr28/specialdlp)
 * [Project in GitLab](https://gitlab.com/chengr28/specialdlp)
 * [Project in Sourceforge](https://sourceforge.net/projects/specialdlp)
-* [eMuleFans 电骡爱好者](https://emulefans.com)
+* [SDC in eMuleFans 电骡爱好者](https://emulefans.com/news/plugin/dlp/sdc/)

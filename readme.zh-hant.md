@@ -1,18 +1,27 @@
 ﻿﻿Strict DLP Chinese (SDC)
 =====
 
-### Releases
-[![GitHub license](https://img.shields.io/github/license/chengr28/specialdlp)](https://github.com/chengr28/specialdlp/blob/master/license)
-[![GitHub release](https://img.shields.io/github/v/release/chengr28/specialdlp)](https://github.com/chengr28/specialdlp/releases/latest)
+<p align="center">
+<a href="https://github.com/chengr28/specialdlp/blob/master/license"><img src="https://img.shields.io/github/license/chengr28/specialdlp"></a> <a href="https://img.shields.io/github/v/release/chengr28/specialdlp"><img src="https://img.shields.io/github/v/release/chengr28/specialdlp"></a>
+</p>
 
-### Usage
-**請移步 [documents 目錄](https://github.com/chengr28/specialdlp/tree/master/specialdlp/documents) 閲讀。**
+Strict DLP Chinese (SDC) 是基於 eMule Xtreme Mod 的官方 DLP （動態反吸血驢保護，Dynamic Leech Protection）庫的嚴格版本。在官方 DLP 庫基礎上，SDC 將 easyMule 第2版、easyMule 第1版和 VeryCD Mod 之中的部分或全部加入了軟性或硬性屏蔽列表，原因是違反GPL、使用私有網路和社區客戶端等不良行為（詳見 [VeryCD 客戶端的問題](https://emulefans.com/strict-dlp-chinese-v44005-7/?variant=zh-tw#toc-verycd)）。
 
-### Summary
-Strict DLP Chinese (SDC) 是基於官方 eMule Xtreme DLP 的嚴格版本。在官方 eMule Xtreme DLP 的基礎上，將 VeryCD-Mod 和 VeryCD-EasyMule-Mod (第1版) 中的部分或全部加入了 SoftBan 清單，原因是 GPL-breaker、私有網路和社區用戶端等不良行為。
+<p align="center">
+<a href="readme.zh-hans.md">简体中文介绍</a> | <a href="readme.md">English</a>
+</p>
 
-### Links
-* [Project in GitHub](https://github.com/chengr28/specialdlp)
-* [Project in GitLab](https://gitlab.com/chengr28/specialdlp)
-* [Project in Sourceforge](https://sourceforge.net/projects/specialdlp)
-* [eMuleFans 电骡爱好者](https://emulefans.com)
+* [eMuleFans 電騾愛好者 上的 SDC 完整介紹文章](https://emulefans.com/strict-dlp-chinese-v44005-7/?variant=zh-tw)
+* [5個 SDC 版本的功能表格](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.zh-hant.md)
+* [下載某一 SDC 版本](https://github.com/chengr28/specialdlp/tree/binary)
+* [Releases 頁面：打包下載所有 SDC 版本](https://github.com/chengr28/specialdlp/releases)
+* [常見問題解答和其他說明](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.zh-hant.txt)
+* [更新日誌](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/changelog.zh-hant.txt)
+* [文件校驗碼](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/checksum.md)
+
+## 外部鏈接
+
+* [GitHub 項目主頁](https://github.com/chengr28/specialdlp)
+* [GitLab 項目主頁](https://gitlab.com/chengr28/specialdlp)
+* [Sourceforge 項目主頁](https://sourceforge.net/projects/specialdlp)
+* [eMuleFans 電騾愛好者上的 SDC 頁面](https://emulefans.com/news/plugin/dlp/sdc/?variant=zh-tw)
