@@ -18,7 +18,7 @@
 
 通常请使用 <code>x86</code> 版本。如果您非常确定您的 eMule 是其他指令集编译的程序才需要下载其他版本。
 
-您可以阅读[eMule Fans 电骡爱好者上的 SDC 完整介绍文章](https://emulefans.com/strict-dlp-chinese-v44005-7/)或者[5个 SDC 版本的功能表格](https://github.com/chengr28/specialdlp/blob/master/readme.zh-hans.md)以决定使用哪一个 SDC 版本（如 all-verycd、lite 等）。
+您可以阅读[eMule Fans 电骡爱好者上的 SDC 完整介绍文章](https://emulefans.com/strict-dlp-chinese-v44005-7/)或者[5个 SDC 版本的功能表格](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.zh-hans.md)以决定使用哪一个 SDC 版本（如 all-verycd、lite 等）。
 
 如果想下载上面列出的所有的版本，请至 [Releases 页](https://github.com/chengr28/specialdlp/releases)下载 7z/zip 打包文件。该页面还列出了所有文件的校验和。
 
