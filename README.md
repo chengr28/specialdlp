@@ -1,3 +1,9 @@
+# Strict DLP Chinese (SDC)
+
+<p align="center">
+<a href="README.zh-hans.md">简体中文介绍</a> | <a href="README.zh-hant.md">繁體中文介紹</a>
+</p>
+
 This branch stores compiled binary files of all versions and variants of the SDC (Strict DLP Chinese / Special DLP). They are listed below:
 
 |                 | x86      | x64      | arm      | arm64    |
@@ -7,6 +13,8 @@ This branch stores compiled binary files of all versions and variants of the SDC
 | verycd-nickname | [Download](https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/x64/verycd-nickname/antiLeechx64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/arm/verycd-nickname/antiLeecharm.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/arm64/verycd-nickname/antiLeecharm64.dll.new) |
 | easymule        | [Download](https://github.com/chengr28/specialdlp/raw/binary/x86/easymule/antiLeech.dll.new)        | [Download](https://github.com/chengr28/specialdlp/raw/binary/x64/easymule/antiLeechx64.dll.new)        | [Download](https://github.com/chengr28/specialdlp/raw/binary/arm/easymule/antiLeecharm.dll.new)        | [Download](https://github.com/chengr28/specialdlp/raw/binary/arm64/easymule/antiLeecharm64.dll.new)        |
 | lite            | [Download](https://github.com/chengr28/specialdlp/raw/binary/x86/lite/antiLeech.dll.new)            | [Download](https://github.com/chengr28/specialdlp/raw/binary/x64/lite/antiLeechx64.dll.new)            | [Download](https://github.com/chengr28/specialdlp/raw/binary/arm/lite/antiLeecharm.dll.new)            | [Download](https://github.com/chengr28/specialdlp/raw/binary/arm64/lite/antiLeecharm64.dll.new)            |
+
+When you click "Download", Google Chrome may display a warning "antiLeech.dll.new is not commonly downloaded and may be dangerous", click the Up Arrow icon "^", then click "Keep".
 
 You should always use <code>x86</code> version if you don't know what to use.
 

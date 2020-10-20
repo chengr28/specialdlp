@@ -1,3 +1,9 @@
+# Strict DLP Chinese (SDC)
+
+<p align="center">
+<a href="README.zh-hans.md">简体中文介绍</a> | <a href="README.md">English</a>
+</p>
+
 這裡儲存了所有 SDC（Strict DLP Chinese / Special DLP）版本和指令集版本的已編譯可直接使用的二進位制檔案。下載連結列舉如下：
 
 |                 | x86      | x64      | arm      | arm64    |
@@ -7,6 +13,8 @@
 | verycd-nickname | [下載](https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new) | [下載](https://github.com/chengr28/specialdlp/raw/binary/x64/verycd-nickname/antiLeechx64.dll.new) | [下載](https://github.com/chengr28/specialdlp/raw/binary/arm/verycd-nickname/antiLeecharm.dll.new) | [下載](https://github.com/chengr28/specialdlp/raw/binary/arm64/verycd-nickname/antiLeecharm64.dll.new) |
 | easymule        | [下載](https://github.com/chengr28/specialdlp/raw/binary/x86/easymule/antiLeech.dll.new)        | [下載](https://github.com/chengr28/specialdlp/raw/binary/x64/easymule/antiLeechx64.dll.new)        | [下載](https://github.com/chengr28/specialdlp/raw/binary/arm/easymule/antiLeecharm.dll.new)        | [下載](https://github.com/chengr28/specialdlp/raw/binary/arm64/easymule/antiLeecharm64.dll.new)        |
 | lite            | [下載](https://github.com/chengr28/specialdlp/raw/binary/x86/lite/antiLeech.dll.new)            | [下載](https://github.com/chengr28/specialdlp/raw/binary/x64/lite/antiLeechx64.dll.new)            | [下載](https://github.com/chengr28/specialdlp/raw/binary/arm/lite/antiLeecharm.dll.new)            | [下載](https://github.com/chengr28/specialdlp/raw/binary/arm64/lite/antiLeecharm64.dll.new)            |
+
+下載時，Google Chrome瀏覽器可能會顯示“antiLeech.dll.new不是常見的下載型別，可能存在危險”的警告，這時點選向上箭頭圖示“^”，然後點選“保留”即可。
 
 通常請使用 <code>x86</code> 版本。如果您非常確定您的 eMule 是其他指令集編譯的程式才需要下載其他版本。
 
