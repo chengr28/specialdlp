@@ -13,7 +13,7 @@ Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs 
 
 * [Feature table for 5 SDC variants](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.en.md)
 * [Download a single SDC variant](https://github.com/chengr28/specialdlp/tree/binary)
-* [Releases Page: Download all SDC variant (7z/zip)](https://github.com/chengr28/specialdlp/releases)
+* [Releases page: Download all SDC variant (7z/zip)](https://github.com/chengr28/specialdlp/releases)
 * [FAQs and other tips](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.en.txt)
 * [Changelog](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/changelog.en.txt)
 * [Checksum](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/checksum.md)
@@ -22,4 +22,4 @@ Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs 
 
 * [Project in GitLab](https://gitlab.com/chengr28/specialdlp)
 * [Project in Sourceforge](https://sourceforge.net/projects/specialdlp)
-* [SDC in eMuleFans 电骡爱好者](https://emulefans.com/news/plugin/dlp/sdc/)
+* [SDC in eMuleFans 电骡爱好者](https://emulefans.com/news/plugin/dlp/sdc)
