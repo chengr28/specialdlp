@@ -1,0 +1,11 @@
+# Binary attributes
+*.new binary
+
+# Text attributes
+*.def text eol=crlf
+*.filters text eol=crlf
+*.rc text eol=crlf
+*.rc2 text eol=crlf
+*.sh text eol=lf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
