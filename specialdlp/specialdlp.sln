@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28729.10
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specialdlp", "specialdlp\specialdlp.vcxproj", "{3A9EE43B-4961-4F30-A565-A48EB043B6C4}"
 EndProject
@@ -31,52 +31,77 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{9A08E279-0E6
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{8DFDE115-8BC9-494A-B734-39CBF145169A}"
-	ProjectSection(SolutionItems) = preProject
-		documents\github\readme.md = documents\github\readme.md
-		documents\github\readme.zh-hans.md = documents\github\readme.zh-hans.md
-		documents\github\readme.zh-hant.md = documents\github\readme.zh-hant.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{E6BD94B7-6644-4965-A6B8-B08D0D8104A0}"
-	ProjectSection(SolutionItems) = preProject
-		documents\gitlab\readme.md = documents\gitlab\readme.md
-		documents\gitlab\readme.zh-hans.md = documents\gitlab\readme.zh-hans.md
-		documents\gitlab\readme.zh-hant.md = documents\gitlab\readme.zh-hant.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{B8B5EA5A-BA3F-4A22-A62C-3AE925BE11B6}"
 	ProjectSection(SolutionItems) = preProject
-		scripts\hash.sh = scripts\hash.sh
+		scripts\checksum.sh = scripts\checksum.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "master", "master", "{20E40F21-E3D4-4516-8CE7-233D15C38844}"
+	ProjectSection(SolutionItems) = preProject
+		documents\git\github\master\readme.md = documents\git\github\master\readme.md
+		documents\git\github\master\readme.zh-hans.md = documents\git\github\master\readme.zh-hans.md
+		documents\git\github\master\readme.zh-hant.md = documents\git\github\master\readme.zh-hant.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{9E64FC2C-565E-4FC2-AB5B-1902C7C941E4}"
+	ProjectSection(SolutionItems) = preProject
+		documents\git\github\release\readme.md = documents\git\github\release\readme.md
+		documents\git\github\release\readme.zh-hans.md = documents\git\github\release\readme.zh-hans.md
+		documents\git\github\release\readme.zh-hant.md = documents\git\github\release\readme.zh-hant.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "master", "master", "{B32B3B46-0FF9-413B-AC4F-B48749C969B4}"
+	ProjectSection(SolutionItems) = preProject
+		documents\git\gitlab\master\readme.md = documents\git\gitlab\master\readme.md
+		documents\git\gitlab\master\readme.zh-hans.md = documents\git\gitlab\master\readme.zh-hans.md
+		documents\git\gitlab\master\readme.zh-hant.md = documents\git\gitlab\master\readme.zh-hant.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{41CB23C9-A1C9-4ABF-97D6-6969EA885078}"
+	ProjectSection(SolutionItems) = preProject
+		documents\git\gitlab\release\readme.md = documents\git\gitlab\release\readme.md
+		documents\git\gitlab\release\readme.zh-hans.md = documents\git\gitlab\release\readme.zh-hans.md
+		documents\git\gitlab\release\readme.zh-hant.md = documents\git\gitlab\release\readme.zh-hant.md
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
 		Debug|ARM64 = Debug|ARM64
+		Debug|ARM64EC = Debug|ARM64EC
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
-		Release_All-VeryCD-Mod|ARM = Release_All-VeryCD-Mod|ARM
-		Release_All-VeryCD-Mod|ARM64 = Release_All-VeryCD-Mod|ARM64
-		Release_All-VeryCD-Mod|x64 = Release_All-VeryCD-Mod|x64
-		Release_All-VeryCD-Mod|x86 = Release_All-VeryCD-Mod|x86
-		Release_Lite|ARM = Release_Lite|ARM
-		Release_Lite|ARM64 = Release_Lite|ARM64
-		Release_Lite|x64 = Release_Lite|x64
-		Release_Lite|x86 = Release_Lite|x86
-		Release_VeryCD_Tag|ARM = Release_VeryCD_Tag|ARM
-		Release_VeryCD_Tag|ARM64 = Release_VeryCD_Tag|ARM64
-		Release_VeryCD_Tag|x64 = Release_VeryCD_Tag|x64
-		Release_VeryCD_Tag|x86 = Release_VeryCD_Tag|x86
-		Release_VeryCD-Default-NickNames|ARM = Release_VeryCD-Default-NickNames|ARM
-		Release_VeryCD-Default-NickNames|ARM64 = Release_VeryCD-Default-NickNames|ARM64
-		Release_VeryCD-Default-NickNames|x64 = Release_VeryCD-Default-NickNames|x64
-		Release_VeryCD-Default-NickNames|x86 = Release_VeryCD-Default-NickNames|x86
-		Release_VeryCD-EasyMule-Mod|ARM = Release_VeryCD-EasyMule-Mod|ARM
-		Release_VeryCD-EasyMule-Mod|ARM64 = Release_VeryCD-EasyMule-Mod|ARM64
-		Release_VeryCD-EasyMule-Mod|x64 = Release_VeryCD-EasyMule-Mod|x64
-		Release_VeryCD-EasyMule-Mod|x86 = Release_VeryCD-EasyMule-Mod|x86
+		Release_SDC_ALL_VERYCD|ARM = Release_SDC_ALL_VERYCD|ARM
+		Release_SDC_ALL_VERYCD|ARM64 = Release_SDC_ALL_VERYCD|ARM64
+		Release_SDC_ALL_VERYCD|ARM64EC = Release_SDC_ALL_VERYCD|ARM64EC
+		Release_SDC_ALL_VERYCD|x64 = Release_SDC_ALL_VERYCD|x64
+		Release_SDC_ALL_VERYCD|x86 = Release_SDC_ALL_VERYCD|x86
+		Release_SDC_EASYMULE|ARM = Release_SDC_EASYMULE|ARM
+		Release_SDC_EASYMULE|ARM64 = Release_SDC_EASYMULE|ARM64
+		Release_SDC_EASYMULE|ARM64EC = Release_SDC_EASYMULE|ARM64EC
+		Release_SDC_EASYMULE|x64 = Release_SDC_EASYMULE|x64
+		Release_SDC_EASYMULE|x86 = Release_SDC_EASYMULE|x86
+		Release_SDC_LITE|ARM = Release_SDC_LITE|ARM
+		Release_SDC_LITE|ARM64 = Release_SDC_LITE|ARM64
+		Release_SDC_LITE|ARM64EC = Release_SDC_LITE|ARM64EC
+		Release_SDC_LITE|x64 = Release_SDC_LITE|x64
+		Release_SDC_LITE|x86 = Release_SDC_LITE|x86
+		Release_SDC_VERYCD_NICKNAME|ARM = Release_SDC_VERYCD_NICKNAME|ARM
+		Release_SDC_VERYCD_NICKNAME|ARM64 = Release_SDC_VERYCD_NICKNAME|ARM64
+		Release_SDC_VERYCD_NICKNAME|ARM64EC = Release_SDC_VERYCD_NICKNAME|ARM64EC
+		Release_SDC_VERYCD_NICKNAME|x64 = Release_SDC_VERYCD_NICKNAME|x64
+		Release_SDC_VERYCD_NICKNAME|x86 = Release_SDC_VERYCD_NICKNAME|x86
+		Release_SDC_VERYCD_TAG|ARM = Release_SDC_VERYCD_TAG|ARM
+		Release_SDC_VERYCD_TAG|ARM64 = Release_SDC_VERYCD_TAG|ARM64
+		Release_SDC_VERYCD_TAG|ARM64EC = Release_SDC_VERYCD_TAG|ARM64EC
+		Release_SDC_VERYCD_TAG|x64 = Release_SDC_VERYCD_TAG|x64
+		Release_SDC_VERYCD_TAG|x86 = Release_SDC_VERYCD_TAG|x86
 		Release|ARM = Release|ARM
 		Release|ARM64 = Release|ARM64
+		Release|ARM64EC = Release|ARM64EC
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
@@ -85,54 +110,68 @@ Global
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM.Build.0 = Debug|ARM
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM64.Build.0 = Debug|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM64EC.ActiveCfg = Debug|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|ARM64EC.Build.0 = Debug|ARM64EC
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x64.ActiveCfg = Debug|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x64.Build.0 = Debug|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x86.ActiveCfg = Debug|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Debug|x86.Build.0 = Debug|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM.ActiveCfg = Release_All-VeryCD-Mod|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM.Build.0 = Release_All-VeryCD-Mod|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM64.ActiveCfg = Release_All-VeryCD-Mod|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|ARM64.Build.0 = Release_All-VeryCD-Mod|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x64.ActiveCfg = Release_All-VeryCD-Mod|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x64.Build.0 = Release_All-VeryCD-Mod|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x86.ActiveCfg = Release_All-VeryCD-Mod|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_All-VeryCD-Mod|x86.Build.0 = Release_All-VeryCD-Mod|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM.ActiveCfg = Release_Lite|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM.Build.0 = Release_Lite|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM64.ActiveCfg = Release_Lite|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|ARM64.Build.0 = Release_Lite|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x64.ActiveCfg = Release_Lite|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x64.Build.0 = Release_Lite|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x86.ActiveCfg = Release_Lite|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_Lite|x86.Build.0 = Release_Lite|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM.ActiveCfg = Release_VeryCD_Tag|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM.Build.0 = Release_VeryCD_Tag|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM64.ActiveCfg = Release_VeryCD_Tag|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|ARM64.Build.0 = Release_VeryCD_Tag|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x64.ActiveCfg = Release_VeryCD_Tag|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x64.Build.0 = Release_VeryCD_Tag|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x86.ActiveCfg = Release_VeryCD_Tag|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD_Tag|x86.Build.0 = Release_VeryCD_Tag|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM.ActiveCfg = Release_VeryCD-Default-NickNames|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM.Build.0 = Release_VeryCD-Default-NickNames|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM64.ActiveCfg = Release_VeryCD-Default-NickNames|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|ARM64.Build.0 = Release_VeryCD-Default-NickNames|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x64.ActiveCfg = Release_VeryCD-Default-NickNames|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x64.Build.0 = Release_VeryCD-Default-NickNames|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x86.ActiveCfg = Release_VeryCD-Default-NickNames|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-Default-NickNames|x86.Build.0 = Release_VeryCD-Default-NickNames|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM.ActiveCfg = Release_VeryCD-EasyMule-Mod|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM.Build.0 = Release_VeryCD-EasyMule-Mod|ARM
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM64.ActiveCfg = Release_VeryCD-EasyMule-Mod|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|ARM64.Build.0 = Release_VeryCD-EasyMule-Mod|ARM64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x64.ActiveCfg = Release_VeryCD-EasyMule-Mod|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x64.Build.0 = Release_VeryCD-EasyMule-Mod|x64
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x86.ActiveCfg = Release_VeryCD-EasyMule-Mod|Win32
-		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_VeryCD-EasyMule-Mod|x86.Build.0 = Release_VeryCD-EasyMule-Mod|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|ARM.ActiveCfg = Release_SDC_ALL_VERYCD|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|ARM.Build.0 = Release_SDC_ALL_VERYCD|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|ARM64.ActiveCfg = Release_SDC_ALL_VERYCD|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|ARM64.Build.0 = Release_SDC_ALL_VERYCD|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|ARM64EC.ActiveCfg = Release_SDC_ALL_VERYCD|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|ARM64EC.Build.0 = Release_SDC_ALL_VERYCD|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|x64.ActiveCfg = Release_SDC_ALL_VERYCD|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|x64.Build.0 = Release_SDC_ALL_VERYCD|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|x86.ActiveCfg = Release_SDC_ALL_VERYCD|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_ALL_VERYCD|x86.Build.0 = Release_SDC_ALL_VERYCD|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|ARM.ActiveCfg = Release_SDC_EASYMULE|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|ARM.Build.0 = Release_SDC_EASYMULE|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|ARM64.ActiveCfg = Release_SDC_EASYMULE|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|ARM64.Build.0 = Release_SDC_EASYMULE|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|ARM64EC.ActiveCfg = Release_SDC_EASYMULE|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|ARM64EC.Build.0 = Release_SDC_EASYMULE|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|x64.ActiveCfg = Release_SDC_EASYMULE|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|x64.Build.0 = Release_SDC_EASYMULE|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|x86.ActiveCfg = Release_SDC_EASYMULE|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_EASYMULE|x86.Build.0 = Release_SDC_EASYMULE|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|ARM.ActiveCfg = Release_SDC_LITE|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|ARM.Build.0 = Release_SDC_LITE|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|ARM64.ActiveCfg = Release_SDC_LITE|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|ARM64.Build.0 = Release_SDC_LITE|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|ARM64EC.ActiveCfg = Release_SDC_LITE|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|ARM64EC.Build.0 = Release_SDC_LITE|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|x64.ActiveCfg = Release_SDC_LITE|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|x64.Build.0 = Release_SDC_LITE|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|x86.ActiveCfg = Release_SDC_LITE|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_LITE|x86.Build.0 = Release_SDC_LITE|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|ARM.ActiveCfg = Release_SDC_VERYCD_NICKNAME|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|ARM.Build.0 = Release_SDC_VERYCD_NICKNAME|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|ARM64.ActiveCfg = Release_SDC_VERYCD_NICKNAME|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|ARM64.Build.0 = Release_SDC_VERYCD_NICKNAME|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|ARM64EC.ActiveCfg = Release_SDC_VERYCD_NICKNAME|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|ARM64EC.Build.0 = Release_SDC_VERYCD_NICKNAME|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|x64.ActiveCfg = Release_SDC_VERYCD_NICKNAME|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|x64.Build.0 = Release_SDC_VERYCD_NICKNAME|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|x86.ActiveCfg = Release_SDC_VERYCD_NICKNAME|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_NICKNAME|x86.Build.0 = Release_SDC_VERYCD_NICKNAME|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|ARM.ActiveCfg = Release_SDC_VERYCD_TAG|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|ARM.Build.0 = Release_SDC_VERYCD_TAG|ARM
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|ARM64.ActiveCfg = Release_SDC_VERYCD_TAG|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|ARM64.Build.0 = Release_SDC_VERYCD_TAG|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|ARM64EC.ActiveCfg = Release_SDC_VERYCD_TAG|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|ARM64EC.Build.0 = Release_SDC_VERYCD_TAG|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|x64.ActiveCfg = Release_SDC_VERYCD_TAG|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|x64.Build.0 = Release_SDC_VERYCD_TAG|x64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|x86.ActiveCfg = Release_SDC_VERYCD_TAG|Win32
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release_SDC_VERYCD_TAG|x86.Build.0 = Release_SDC_VERYCD_TAG|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM.ActiveCfg = Release|ARM
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM.Build.0 = Release|ARM
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM64.ActiveCfg = Release|ARM64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM64.Build.0 = Release|ARM64
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM64EC.ActiveCfg = Release|ARM64EC
+		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|ARM64EC.Build.0 = Release|ARM64EC
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x64.ActiveCfg = Release|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x64.Build.0 = Release|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x86.ActiveCfg = Release|Win32
@@ -145,9 +184,13 @@ Global
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 		{480E715A-EA0B-47A0-BDCD-6484E835EF45} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 		{9A08E279-0E63-45E8-8D88-1076FDC2A6E3} = {480E715A-EA0B-47A0-BDCD-6484E835EF45}
-		{8DFDE115-8BC9-494A-B734-39CBF145169A} = {480E715A-EA0B-47A0-BDCD-6484E835EF45}
-		{E6BD94B7-6644-4965-A6B8-B08D0D8104A0} = {480E715A-EA0B-47A0-BDCD-6484E835EF45}
+		{8DFDE115-8BC9-494A-B734-39CBF145169A} = {9A08E279-0E63-45E8-8D88-1076FDC2A6E3}
+		{E6BD94B7-6644-4965-A6B8-B08D0D8104A0} = {9A08E279-0E63-45E8-8D88-1076FDC2A6E3}
 		{B8B5EA5A-BA3F-4A22-A62C-3AE925BE11B6} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
+		{20E40F21-E3D4-4516-8CE7-233D15C38844} = {8DFDE115-8BC9-494A-B734-39CBF145169A}
+		{9E64FC2C-565E-4FC2-AB5B-1902C7C941E4} = {8DFDE115-8BC9-494A-B734-39CBF145169A}
+		{B32B3B46-0FF9-413B-AC4F-B48749C969B4} = {E6BD94B7-6644-4965-A6B8-B08D0D8104A0}
+		{41CB23C9-A1C9-4ABF-97D6-6969EA885078} = {E6BD94B7-6644-4965-A6B8-B08D0D8104A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7287AF59-7DAB-4489-BEAB-9BB5AE40ABFE}

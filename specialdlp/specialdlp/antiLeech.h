@@ -3,8 +3,8 @@
 
 //Add by SDC team.
 #if defined(SPECIAL_DLP_VERSION)
-	#define DLPVERSION           44005
-	#define SDC_VERSION_DETACH   44,0,0,5
+	#define DLPVERSION              44005
+	#define SDC_VERSION_DETACHED    44,0,0,5
 #else //Official
 	#define DLPVERSION		44
 #endif

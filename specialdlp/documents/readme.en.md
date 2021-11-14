@@ -25,26 +25,6 @@
 		<td align=center>No</td>
 		<td align=center>Soft</td>
 		<td align=center>Hard</td>
-		<td align=center>N/A</td>
-		<td align=center>Yes</td>
-		<td align=center>Yes</td>
-	</tr>
-	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-tag/antiLeech.dll.new">verycd-tag</a></th>
-		<td align=center>Soft</td>
-		<td align=center>Soft</td>
-		<td align=center>Soft</td>
-		<td align=center>Hard</td>
-		<td align=center>Soft</td>
-		<td align=center>Yes</td>
-		<td align=center>Yes</td>
-	</tr>
-	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new">verycd-<br />nickname</a></th>
-		<td align=center>No</td>
-		<td align=center>No</td>
-		<td align=center>No</td>
-		<td align=center>Hard</td>
 		<td align=center>Soft</td>
 		<td align=center>Yes</td>
 		<td align=center>Yes</td>
@@ -70,6 +50,26 @@
 		<td align=center>Yes</td>
 	</tr>
 	<tr>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new">verycd-<br />nickname</a></th>
+		<td align=center>No</td>
+		<td align=center>No</td>
+		<td align=center>No</td>
+		<td align=center>Hard</td>
+		<td align=center>Soft</td>
+		<td align=center>Yes</td>
+		<td align=center>Yes</td>
+	</tr>
+	<tr>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-tag/antiLeech.dll.new">verycd-tag</a></th>
+		<td align=center>Soft</td>
+		<td align=center>Soft</td>
+		<td align=center>Soft</td>
+		<td align=center>Hard</td>
+		<td align=center>Soft</td>
+		<td align=center>Yes</td>
+		<td align=center>Yes</td>
+	</tr>
+	<tr>
 		<th colspan=2><a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/emule-xtreme/antiLeech.dll.new">Official DLP</a></th>
 		<td align=center>No</td>
 		<td align=center>No</td>
@@ -81,8 +81,8 @@
 	</tr>
 </table>
 
-* all-verycd (All-VeryCD-Mod): All VeryCD-Mod and VeryCD-EasyMule-Mod.
-* verycd-tag: All clients whose nick name has "[VeryCD]".
-* verycd-nickname (VeryCD-Default-NickNames): All VeryCD-Mod and VeryCD-EasyMule-Mod whose nicknames are in the black dafault list.
-* easymule (VeryCD-EasyMule-Mod): All VeryCD-EasyMule-Mod (not includes old VeryCD-Mod version).
+* all-verycd: All VeryCD-Mod and VeryCD-EasyMule-Mod.
+* easymule: All VeryCD-EasyMule-Mod (not includes old VeryCD-Mod version).
 * lite: Lite version of SDC, only fixs some bugs.
+* verycd-nickname: All VeryCD-Mod and VeryCD-EasyMule-Mod whose nicknames are in the black dafault list.
+* verycd-tag: All clients whose nick name has "[VeryCD]".

@@ -30,6 +30,9 @@
     <None Include="antiLeecharm64.def">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="antiLeecharm64ec.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="antiLeech.rc">
