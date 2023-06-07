@@ -28,6 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{9A08E279-0E6
 	ProjectSection(SolutionItems) = preProject
 		documents\git\.gitattributes = documents\git\.gitattributes
 		documents\git\license = documents\git\license
+		documents\git\license.specialdlpTester = documents\git\license.specialdlpTester
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{8DFDE115-8BC9-494A-B734-39CBF145169A}"
@@ -36,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{E6BD94
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{B8B5EA5A-BA3F-4A22-A62C-3AE925BE11B6}"
 	ProjectSection(SolutionItems) = preProject
-		scripts\checksum.sh = scripts\checksum.sh
+		scripts\checksum.py = scripts\checksum.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "master", "master", "{20E40F21-E3D4-4516-8CE7-233D15C38844}"
@@ -46,11 +47,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "master", "master", "{20E40F
 		documents\git\github\master\readme.zh-hant.md = documents\git\github\master\readme.zh-hant.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{9E64FC2C-565E-4FC2-AB5B-1902C7C941E4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "binary", "binary", "{9E64FC2C-565E-4FC2-AB5B-1902C7C941E4}"
 	ProjectSection(SolutionItems) = preProject
-		documents\git\github\release\readme.md = documents\git\github\release\readme.md
-		documents\git\github\release\readme.zh-hans.md = documents\git\github\release\readme.zh-hans.md
-		documents\git\github\release\readme.zh-hant.md = documents\git\github\release\readme.zh-hant.md
+		documents\git\github\binary\readme.md = documents\git\github\binary\readme.md
+		documents\git\github\binary\readme.zh-hans.md = documents\git\github\binary\readme.zh-hans.md
+		documents\git\github\binary\readme.zh-hant.md = documents\git\github\binary\readme.zh-hant.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "master", "master", "{B32B3B46-0FF9-413B-AC4F-B48749C969B4}"
@@ -60,12 +61,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "master", "master", "{B32B3B
 		documents\git\gitlab\master\readme.zh-hant.md = documents\git\gitlab\master\readme.zh-hant.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{41CB23C9-A1C9-4ABF-97D6-6969EA885078}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "binary", "binary", "{41CB23C9-A1C9-4ABF-97D6-6969EA885078}"
 	ProjectSection(SolutionItems) = preProject
-		documents\git\gitlab\release\readme.md = documents\git\gitlab\release\readme.md
-		documents\git\gitlab\release\readme.zh-hans.md = documents\git\gitlab\release\readme.zh-hans.md
-		documents\git\gitlab\release\readme.zh-hant.md = documents\git\gitlab\release\readme.zh-hant.md
+		documents\git\gitlab\binary\readme.md = documents\git\gitlab\binary\readme.md
+		documents\git\gitlab\binary\readme.zh-hans.md = documents\git\gitlab\binary\readme.zh-hans.md
+		documents\git\gitlab\binary\readme.zh-hant.md = documents\git\gitlab\binary\readme.zh-hant.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "targets", "targets", "{986C1212-FE51-4509-BD30-055C82410BBF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "specialdlpTester", "specialdlpTester\specialdlpTester.vcxproj", "{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -176,6 +181,76 @@ Global
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x64.Build.0 = Release|x64
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x86.ActiveCfg = Release|Win32
 		{3A9EE43B-4961-4F30-A565-A48EB043B6C4}.Release|x86.Build.0 = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|ARM.Build.0 = Debug|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|ARM64.Build.0 = Debug|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|ARM64EC.ActiveCfg = Debug|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|ARM64EC.Build.0 = Debug|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|x64.ActiveCfg = Debug|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|x64.Build.0 = Debug|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|x86.ActiveCfg = Debug|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Debug|x86.Build.0 = Debug|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|ARM.ActiveCfg = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|ARM.Build.0 = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|ARM64.ActiveCfg = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|ARM64.Build.0 = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|ARM64EC.ActiveCfg = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|ARM64EC.Build.0 = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|x64.ActiveCfg = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|x64.Build.0 = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|x86.ActiveCfg = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_ALL_VERYCD|x86.Build.0 = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|ARM.ActiveCfg = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|ARM.Build.0 = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|ARM64.ActiveCfg = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|ARM64.Build.0 = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|ARM64EC.ActiveCfg = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|ARM64EC.Build.0 = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|x64.ActiveCfg = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|x64.Build.0 = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|x86.ActiveCfg = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_EASYMULE|x86.Build.0 = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|ARM.ActiveCfg = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|ARM.Build.0 = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|ARM64.ActiveCfg = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|ARM64.Build.0 = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|ARM64EC.ActiveCfg = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|ARM64EC.Build.0 = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|x64.ActiveCfg = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|x64.Build.0 = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|x86.ActiveCfg = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_LITE|x86.Build.0 = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|ARM.ActiveCfg = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|ARM.Build.0 = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|ARM64.ActiveCfg = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|ARM64.Build.0 = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|ARM64EC.ActiveCfg = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|ARM64EC.Build.0 = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|x64.ActiveCfg = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|x64.Build.0 = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|x86.ActiveCfg = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_NICKNAME|x86.Build.0 = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|ARM.ActiveCfg = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|ARM.Build.0 = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|ARM64.ActiveCfg = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|ARM64.Build.0 = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|ARM64EC.ActiveCfg = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|ARM64EC.Build.0 = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|x64.ActiveCfg = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|x64.Build.0 = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|x86.ActiveCfg = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release_SDC_VERYCD_TAG|x86.Build.0 = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|ARM.ActiveCfg = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|ARM.Build.0 = Release|ARM
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|ARM64.ActiveCfg = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|ARM64.Build.0 = Release|ARM64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|ARM64EC.ActiveCfg = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|ARM64EC.Build.0 = Release|ARM64EC
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|x64.ActiveCfg = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|x64.Build.0 = Release|x64
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|x86.ActiveCfg = Release|Win32
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +266,8 @@ Global
 		{9E64FC2C-565E-4FC2-AB5B-1902C7C941E4} = {8DFDE115-8BC9-494A-B734-39CBF145169A}
 		{B32B3B46-0FF9-413B-AC4F-B48749C969B4} = {E6BD94B7-6644-4965-A6B8-B08D0D8104A0}
 		{41CB23C9-A1C9-4ABF-97D6-6969EA885078} = {E6BD94B7-6644-4965-A6B8-B08D0D8104A0}
+		{986C1212-FE51-4509-BD30-055C82410BBF} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
+		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7287AF59-7DAB-4489-BEAB-9BB5AE40ABFE}

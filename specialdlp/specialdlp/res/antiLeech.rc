@@ -1,7 +1,13 @@
 ﻿// Microsoft Visual C++ generated resource script.
 //
 
+//SDC team start
+#if defined(SPECIAL_DLP_VERSION)
 #include "resource.h"
+#else //Official
+#include "resource1.h"
+#endif
+//SDC team end
 #include "antiLeech.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
@@ -9,9 +15,11 @@
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
+
 #include "afxres.h"
 
 /////////////////////////////////////////////////////////////////////////////
+
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
@@ -19,8 +27,15 @@
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
 #ifdef _WIN32
-LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
-#pragma code_page(65001)
+//SDC team start
+#if defined(SPECIAL_DLP_VERSION)
+	LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+	#pragma code_page(65001)
+#else //Official
+	LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+	#pragma code_page(1252)
+#endif
+//SDC team end
 #endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
@@ -31,7 +46,13 @@ LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
 
 1 TEXTINCLUDE 
 BEGIN
+//SDC team start
+#if defined(SPECIAL_DLP_VERSION)
 	_T("resource.h\0")
+#else //Official
+	_T("resource1.h\0")
+#endif
+//SDC team end
 END
 
 2 TEXTINCLUDE 
@@ -46,41 +67,39 @@ BEGIN
 	_T("\0")
 END
 
-#endif    // APSTUDIO_INVOKED
-
+#endif // APSTUDIO_INVOKED
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
 //
 
-VS_VERSION_INFO VERSIONINFO
-
-//Add by SDC team.
+VS_VERSION_INFO			VERSIONINFO
+//SDC team start
 #if defined(SPECIAL_DLP_VERSION)
-	FILEVERSION       SDC_VERSION_DETACHED
-	PRODUCTVERSION    SDC_VERSION_DETACHED
+	FILEVERSION			SDC_VERSION_DETACHED
+	PRODUCTVERSION		SDC_VERSION_DETACHED
 #else //Official
-	FILEVERSION		DLPVERSION,0,0,0
-	PRODUCTVERSION	DLPVERSION,0,0,0
+	FILEVERSION			DLPVERSION,0,0,0
+	PRODUCTVERSION		DLPVERSION,0,0,0
 #endif
-
- FILEFLAGSMASK 0x17L
+//SDC team end
+FILEFLAGSMASK			0x17L
 #ifdef _DEBUG
- FILEFLAGS 0x1L
+	FILEFLAGS			0x1L
 #else
- FILEFLAGS 0x0L
+	FILEFLAGS			0x0L
 #endif
- FILEOS 0x4L
- FILETYPE 0x2L
- FILESUBTYPE 0x0L
+FILEOS					0x4L
+FILETYPE				0x2L
+FILESUBTYPE				0x0L
 
 BEGIN
 	BLOCK _T("StringFileInfo")
 	BEGIN
 		BLOCK _T("000004b0")
 		BEGIN
-		//Add by SDC team.
+		//SDC team start
 		#if defined(SPECIAL_DLP_VERSION)
 			VALUE _T("CompanyName"), _T("SDC Team")
 			VALUE _T("FileDescription"), _T("Strict DLP Chinese Dynamic Link Library (DLL)")
@@ -96,7 +115,7 @@ BEGIN
 			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames x86")
 		#elif defined(SDC_VERYCD_TAG)
 			VALUE _T("InternalName"), _T("VeryCD-Tag x86")
-		#else 
+		#else
 			VALUE _T("InternalName"), _T("Release x86")
 		#endif
 		#elif defined(WIN_X64)
@@ -110,7 +129,7 @@ BEGIN
 			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames x64")
 		#elif defined(SDC_VERYCD_TAG)
 			VALUE _T("InternalName"), _T("VeryCD-Tag x64")
-		#else 
+		#else
 			VALUE _T("InternalName"), _T("Release x64")
 		#endif
 		#elif (defined(WIN_ARM32) && !defined(WIN_ARM64))
@@ -124,7 +143,7 @@ BEGIN
 			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames ARM")
 		#elif defined(SDC_VERYCD_TAG)
 			VALUE _T("InternalName"), _T("VeryCD-Tag ARM")
-		#else 
+		#else
 			VALUE _T("InternalName"), _T("Release ARM")
 		#endif
 		#elif (defined(WIN_ARM64) && !defined(WIN_ARM64EC))
@@ -138,7 +157,7 @@ BEGIN
 			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames ARM64")
 		#elif defined(SDC_VERYCD_TAG)
 			VALUE _T("InternalName"), _T("VeryCD-Tag ARM64")
-		#else 
+		#else
 			VALUE _T("InternalName"), _T("Release ARM64")
 		#endif
 		#elif defined(WIN_ARM64EC)
@@ -152,12 +171,26 @@ BEGIN
 			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames ARM64EC")
 		#elif defined(SDC_VERYCD_TAG)
 			VALUE _T("InternalName"), _T("VeryCD-Tag ARM64EC")
-		#else 
+		#else
 			VALUE _T("InternalName"), _T("Release ARM64EC")
 		#endif
+		#else
+			VALUE _T("InternalName"), _T("Release")
 		#endif
-			VALUE _T("LegalCopyright"), _T("Copyright (C) 2009-2022 SDC Team")
+			VALUE _T("LegalCopyright"), _T("Copyright (C) 2009-2023 SDC Team")
+		#if (defined(WIN_X86) && !defined(WIN_X64))
 			VALUE _T("OriginalFilename"), _T("antiLeech.dll")
+		#elif defined(WIN_X64)
+			VALUE _T("OriginalFilename"), _T("antiLeechx64.dll")
+		#elif (defined(WIN_ARM32) && !defined(WIN_ARM64))
+			VALUE _T("OriginalFilename"), _T("antiLeecharm.dll")
+		#elif (defined(WIN_ARM64) && !defined(WIN_ARM64EC))
+			VALUE _T("OriginalFilename"), _T("antiLeecharm64.dll")
+		#elif defined(WIN_ARM64EC)
+			VALUE _T("OriginalFilename"), _T("antiLeecharm64ec.dll")
+		#else
+			VALUE _T("OriginalFilename"), _T("antiLeech.dll")
+		#endif
 			VALUE _T("ProductName"), _T("Strict DLP Chinese Dynamic Link Library (DLL)")
 			VALUE _T("ProductVersion"), chSTR(DLPVERSION)
 		#else //Official
@@ -170,6 +203,7 @@ BEGIN
 			VALUE "ProductName", " antiLeech Dynamic Link Library (DLL)"
 			VALUE "ProductVersion", chSTR(DLPVERSION)
 		#endif
+		//SDC team end
 		END
 	END
 	BLOCK _T("VarFileInfo")
@@ -178,10 +212,8 @@ BEGIN
 	END
 END
 
-#endif    // Deutsch (Deutschland) resources
+#endif // Deutsch (Deutschland) resources
 /////////////////////////////////////////////////////////////////////////////
-
-
 
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -189,6 +221,5 @@ END
 // Generated from the TEXTINCLUDE 3 resource.
 //
 
-
 /////////////////////////////////////////////////////////////////////////////
-#endif    // not APSTUDIO_INVOKED
+#endif // not APSTUDIO_INVOKED

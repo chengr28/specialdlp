@@ -13,37 +13,35 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Module-Definition Files">
+      <UniqueIdentifier>{3c5dedcd-c503-4a5f-8fa4-ecfbb52de66e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\antiLeech.rc2">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="antiLeech.def">
-      <Filter>Source Files</Filter>
+    <None Include="def\antiLeech.def">
+      <Filter>Module-Definition Files</Filter>
     </None>
-    <None Include="antiLeechx64.def">
-      <Filter>Source Files</Filter>
+    <None Include="def\antiLeecharm.def">
+      <Filter>Module-Definition Files</Filter>
     </None>
-    <None Include="antiLeecharm.def">
-      <Filter>Source Files</Filter>
+    <None Include="def\antiLeecharm64.def">
+      <Filter>Module-Definition Files</Filter>
     </None>
-    <None Include="antiLeecharm64.def">
-      <Filter>Source Files</Filter>
+    <None Include="def\antiLeecharm64ec.def">
+      <Filter>Module-Definition Files</Filter>
     </None>
-    <None Include="antiLeecharm64ec.def">
-      <Filter>Source Files</Filter>
+    <None Include="def\antiLeechx64.def">
+      <Filter>Module-Definition Files</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="antiLeech.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="antiLeech.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="res\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,5 +49,10 @@
     <ClCompile Include="antiLeech.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\antiLeech.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
