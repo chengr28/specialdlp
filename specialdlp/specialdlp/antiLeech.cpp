@@ -87,7 +87,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 
 //SDC team start
 #if defined(SPECIAL_DLP_VERSION)
-DWORD __declspec(dllexport) CantiLeech::GetDLPVersion(void)
+DWORD __declspec(dllexport) GetDLPVersion(void)
 {
 	return DLPVERSION;
 }

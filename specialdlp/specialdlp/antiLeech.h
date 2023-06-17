@@ -9,17 +9,15 @@
 #endif
 //SDC team end
 
+//SDC team start
+#if defined(SPECIAL_DLP_VERSION)
+//Nothing to do.
+#else //Official
 class CantiLeech
 {
 public:
 	BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved);
-//SDC team start
-#if defined(SPECIAL_DLP_VERSION)
-	DWORD __declspec(dllexport) GetDLPVersion(void);
-#else //Official
 	DWORD __declspec(dllexport) GetDLPVersion() {return DLPVERSION;}
-#endif
-//SDC team end
 //drop old version support
 /*
 	LPCTSTR __declspec(dllexport) DLPCheckModstring(LPCTSTR modversion, LPCTSTR clientversion);
@@ -36,17 +34,12 @@ public:
 	LPCTSTR __declspec(dllexport) DLPCheckUserhash(const PBYTE userhash);
 	LPCTSTR __declspec(dllexport) DLPCheckHelloTag(UINT tagnumber);
 	LPCTSTR __declspec(dllexport) DLPCheckInfoTag(UINT tagnumber);
-//SDC team start
-#if defined(SPECIAL_DLP_VERSION)
-	//Nothing to do.
-#else //Official
 	void __declspec(dllexport) TestFunc(void);
-#endif
-//SDC team end
 
 private:
 	const bool IsTypicalHex(CString & addon) const;
 };
+#endif
 
 //<<< new tags from eMule 0.04x
 #define CT_UNKNOWNx00			0x00 //Hybrid Horde protocol
