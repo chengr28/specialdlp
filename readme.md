@@ -20,9 +20,9 @@ You should always use <code>x86</code> version if you don't know what to use.
 
 You can read [Feature table for 5 SDC variants](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.en.md) before choosing a variant (all-verycd, lite, etc.).
 
-If you want to get all the versions and variants listed above, download the 7z/zip file in the [Releases page](https://github.com/chengr28/specialdlp/releases). That page also lists checksum of all the files.
+If you want to get all the versions and variants listed above, download the 7z/zip file in the [releases page](https://github.com/chengr28/specialdlp/releases). That page also lists checksum of all the files.
 
 Useful links:
 * [Back to GitHub repo home](https://github.com/chengr28/specialdlp)
 * [GitLab repo](https://gitlab.com/chengr28/specialdlp)
-* [eMuleFans page](https://emulefans.com/strict-dlp-chinese-v44005-8)
+* [eMuleFans page](https://emulefans.com/strict-dlp-chinese-v44005-10)

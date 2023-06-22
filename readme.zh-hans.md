@@ -14,15 +14,15 @@
 | verycd-nickname | [下载](https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/x64/verycd-nickname/antiLeechx64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/arm/verycd-nickname/antiLeecharm.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/arm64/verycd-nickname/antiLeecharm64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/arm64ec/verycd-nickname/antiLeecharm64ec.dll.new) |
 | verycd-tag      | [下载](https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-tag/antiLeech.dll.new)      | [下载](https://github.com/chengr28/specialdlp/raw/binary/x64/verycd-tag/antiLeechx64.dll.new)      | [下载](https://github.com/chengr28/specialdlp/raw/binary/arm/verycd-tag/antiLeecharm.dll.new)      | [下载](https://github.com/chengr28/specialdlp/raw/binary/arm64/verycd-tag/antiLeecharm64.dll.new)      | [下载](https://github.com/chengr28/specialdlp/raw/binary/arm64ec/verycd-tag/antiLeecharm64ec.dll.new)      |
 
-下载时，Google Chrome 浏览器可能会显示 “antiLeech.dll.new 不是常见的下载类型，可能存在危险” 的警告，这时点击向上箭头图标 “^”，然后点击“保留”即可。
+下载时，Google Chrome 浏览器可能会显示 “antiLeech.dll.new 不是常见的下载类型，可能存在危险” 的警告，这时点击向上箭头图标 “^”，然后点击 “保留” 即可。
 
 通常请使用 <code>x86</code> 版本。如果您非常确定您的 eMule 是其他指令集编译的程序才需要下载其他版本。
 
-您可以阅读 [eMuleFans 电骡爱好者上的 SDC 完整介绍文章](https://emulefans.com/strict-dlp-chinese-v44005-8)或者 [5 个 SDC 版本的功能表格](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.zh-hans.md)以决定使用哪一个 SDC 版本（如 all-verycd、lite 等）。
+您可以阅读 [eMuleFans 电骡爱好者上的 SDC 完整介绍文章](https://emulefans.com/strict-dlp-chinese-v44005-10) 或者 [5 个 SDC 版本的功能表格](https://github.com/chengr28/specialdlp/blob/master/specialdlp/documents/readme.zh-hans.md)以决定使用哪一个 SDC 版本（如 all-verycd、lite 等）。
 
-如果想下载上面列出的所有的版本，请至 [Releases 页](https://github.com/chengr28/specialdlp/releases)下载 7z/zip 打包文件，该页面还列出了所有文件的校验和。
+如果想下载上面列出的所有的版本，请至 [releases 页](https://github.com/chengr28/specialdlp/releases) 下载 7z/zip 打包文件，该页面还列出了所有文件的校验和。
 
 链接：
 * [回到 GitHub 项目主页](https://github.com/chengr28/specialdlp)
 * [GitLab 项目主页](https://gitlab.com/chengr28/specialdlp)
-* [eMuleFans 电骡爱好者页面](https://emulefans.com/strict-dlp-chinese-v44005-8)
+* [eMuleFans 电骡爱好者页面](https://emulefans.com/strict-dlp-chinese-v44005-10)
