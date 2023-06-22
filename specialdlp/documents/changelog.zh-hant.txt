@@ -1,90 +1,97 @@
-﻿eMule Xtreme (官方版) DLP
+﻿eMule Xtreme DLP (官方版)
 最新版本: 44
 更新時間: 2011-04-16
 
 Strict DLP Chinese (SDC)
-最新版本: 44005 Update 8
-更新時間: 2021-11-15
+最新版本: 44005 Update 10
+更新時間: 2023-06-23
 
 
 -------------------------------------------------------------------------------
 
 
-Strict DLP Chinese v44005 Update 8 更新日誌 (2017-01-29 ~ 2017-02-23 ~ 2017-03-25 ~ 2018-01-03 ~ 2018-08-31 ~ 2019-04-27 ~ 2019-12-14 ~ 2020-10-13 ~ 2021-11-15):
+Strict DLP Chinese v44005 Update 10 更新日誌 (2017-01-29 ~ 2017-02-23 ~ 2017-03-25 ~ 2018-01-03 ~ 2018-08-31 ~ 2019-04-27 ~ 2019-12-14 ~ 2020-10-13 ~ 2021-11-15 ~ 2023-06-23):
 
-* 添加對 eMule v5.6a 的檢測 [冰靈曦曉]
-* 添加對 eMuleTorrent 的檢測 [冰靈曦曉]
-* 添加對 HubbleKadTracker 的檢測 [冰靈曦曉]
-* 添加 All-VeryCD-Mod&Tag 版本
-* 添加緩解 CPU Spectre 漏洞的措施
-* 添加對 ARM/ARM64/ARM64EC 架構的支援
-* 修復 x64 版本 DLL 模組定義檔案導入錯誤的問題
-* 專案升級到 Visual Studio 2022
-* 移除所有可能導致誤殺的高級檢測 [javasboy]
-* 移除對 Subversion/SVN 的支援
-* 注意：由於編譯器已經升級，我們無法確保 DLL 檔案在生命周期已經結束的 Windows 版本中的正常使用，我們建議您升級到仍在生命週期的 Windows 版本。
-* Release checksum (SHA3-256):
-  * x86:
-    * all-verycd: 64C680BC1394B3E9321377BB1850DB13D594CF3D4875343A02ADD0F4940EB930
-    * easymule: AE5DE4E322F4751BB7F0240708E1A1E2ADA7A4A9EC89149A814F3905AD9698E4
-    * lite: D7BD9DBBD44431AA967E72123013554734C78E7453EDFBE328037EB4A6A27A03
-    * verycd-nickname: A04CF405DB2992A88F63221BF04F7110F146A8A1BB48D1C51976D9179DA3E300
-    * verycd-tag: D66417E7A38A61211875CE48A377C8305E9C8A7FBDF4CDFFCFC0F23C0EA8C95C
-  * x64:
-    * all-verycd: A26893B15E3139F2E237B3EC7CB7BDEF318B2214FE9238BFA74D237E2D499117
-    * easymule: 47A2175D4C30D5A31E59632A22A59D3AF258C0A471AD80DF0CCD40CEA22059EB
-    * lite: 29FF9800D5E20EE6B21EADBD4D0F68A248380998B774D23EDF9C7BAEE01700F4
-    * verycd-nickname: 0525B55DECBA9C1FB67871FFF52735CF54337A007CA9FB0B9E7264DE6389FCA5
-    * verycd-tag: A31F6F16D79828AE634AE1173CE3F24232E8C4AB8E27336168374E86AE6F012D
-  * ARM:
-    * all-verycd: D809A4BF147EADF8DE7BC629D3966E2A96DE1E6E03BCA4FCFA34A88B6FDBE152
-    * easymule: 69C8A5B0DA8EF193FDEC1A4974A21804CB15B40E223D4806FEA650FC54179B67
-    * lite: 93075FB80A0D4A343CD06281BA2CAF4CA0C1A1B5540C116EAC1DC3446C3F0FAB
-    * verycd-nickname: A74D602B2E436102531C995E73BAC77ADED3FC11E7F828C578A96F46BECCF624
-    * verycd-tag: EE1A2CEA41EE4AD875F766E0A82503842FF986F1A34E550578AB224B617A1EDD
-  * ARM64:
-    * all-verycd: BEAABC7AD8AD5B362B579113ACDAF98D320F7421FEC8ED5564DFCED1DEDA1932
-    * easymule: 9D6642B341277E2BE53C4CE7CB934076F25812F9C60043F75EC6CCF41B425D40
-    * lite: D213C7A77ADCDDBEF5E839A14BA45F829D18BD51045985010DFCF5DC3EDCE0FD
-    * verycd-nickname: 40697CA546F8AE14AF439E396E7BE71F9C8C389E49ADA6682CE8CB9696D8B707
-    * verycd-tag: 5FBB1111382F0599C297DDAD35D8878FC87832294BA8B59C085089DC00EC9A4E
-  * ARM64EC:
-    * all-verycd: 70EB72AE0099816F60BDB1071CA793176DE72ED1ED1956A0E985246AB56C45FB
-    * easymule: 044996DE859F79B0B56AA55D9B69B18D8F129BB70A2383DF3CD0D5B7F3853142
-    * lite: 76DB8413F792F99009DB71789EAD739DD31C33F0B91B35993149F1DA816A2FF5
-    * verycd-nickname: 854119C472CA55307E18F73185BB6EE0867F1007558E76136553E1D8BD44CE2D
-    * verycd-tag: BA6F722704BCFCC35A2795BDC419017555E766D9EEA0ACA38B49179447D63903
-* Release checksum (SHA2-256):
-  * x86:
-    * all-verycd: DD3191ED3DB34FB1EFDE40E6D388E19CC5A86CEAC36A02563D79D458E19A6B73
-    * easymule: 7AE17DF6BA1BAF628919E95D2820FF49D78D5DEDD8FF3C0456D857541FEE0252
-    * lite: C2D0EE52C6A1CAEAA76F949AB41634386571F2AFC58449F2B960767CB75206D4
-    * verycd-nickname: A35852A058BDA9136AABAC9930FD34EA4F66E774B2709C667CAA87C10411C13A
-    * verycd-tag: 2128C139826A3D00A1F22A42C7DE697806F46F5C6C5860C2CC200F16E64FDEB7
-  * x64:
-    * all-verycd: 997B14FDB09386C281FC7BA0221212ACB5D4AF85E9BD7D2AE1268A4301D762E5
-    * easymule: D05CFD322B585B1834F0B2231DB8D78AE72E5E3E69761B6772B8BBAE65EB9AEF
-    * lite: 94A3302083E273B971E31743DFACD9EE5F3974C006C79EAE3E46064E29D61E37
-    * verycd-nickname: 481A8CA31F6023F4F8037C0CBEAEB01AD81601D17C59329B104940448CFC74A0
-    * verycd-tag: E551E51793F39B3494C889885952370F1547B27FD52C6250F81946084158F5D4
-  * ARM:
-    * all-verycd: 2B4C7B1BC1293639BDE4B0F49290BF33E420BF83DAC815376A8A83A3396B7B2E
-    * easymule: 29FC9B483AF13BECF21B716E1648987AA3E2D2EBA92DA297ACDD1E014E9458DB
-    * lite: 716F81318D3C43E8ADD7B58552D1B4A9C727250488AB96C45E31C426BB360DD8
-    * verycd-nickname: 0F8B0F409467F8DF5C55AA4140032203AA73E4CDAEE83BB753DA010F2169B2F5
-    * verycd-tag: EC0AF4CAE8359D0DB9FA3E73DDB3F4E9F76731527570EA85CF9A9DC38FCADCD7
-  * ARM64:
-    * all-verycd: 33584B553CB6F04F8F9D6A56F59B6C8B130F9F4A2FACFE00C0D39C14AA185949
-    * easymule: 147ABB93977AD169DCC88CC398AC1CC6553F58BC341BAA6579F6FD8198A5FA74
-    * lite: 636F75DBA9444DD86B83C77EB06B0F37E250DF24429A13C7AE59693575918318
-    * verycd-nickname: 406B1B0C7C5079D9141F0ADCDFFDF250C39EFB141C98FA05E97951A114099D27
-    * verycd-tag: A2857804736AA90634EA81AD94DEA89B6E6755D5EA2E1EAC002E980871B4C1AF
-  * ARM64EC:
-    * all-verycd: ECAA90BB0BECACDBF412F27F7587F84BAB4F28A7FC2F2A248F5A4E496E35F194
-    * easymule: C47F7E2564CF318D0B6BB847148D19311A514967350849C18479FB9E6AE579B6
-    * lite: 29B6D30AACC0ACB24535099174DE0D14F32D40F44821D702C5B8C03E35507D9B
-    * verycd-nickname: 5A9646CB7CE88914C42036A4CC894F585DCC0DFF201347FFD09BC627099A19B9
-    * verycd-tag: 1F3B278FD9211D126DD9FB0AB1C0A85694FB78226321B1F559A4527EAE40315D
+* 新增功能
+  * 對 eMule v5.6a 的檢測 [冰靈曦曉]
+  * 對 eMuleTorrent 的檢測 [冰靈曦曉]
+  * 對 HubbleKadTracker 的檢測 [冰靈曦曉]
+  * 版本類型 All-VeryCD-Mod&Tag
+* 專案和二進位檔案現代化試驗計劃
+  * 使用試驗計劃的二進位檔案時如果遇到任何問題，歡迎在任何途徑進行反饋，試驗計劃內的新特性在沒有出現重大問題的情況下可能將直接進入正式版本中
+  * 硬體
+    * 啟用對 CPU Spectre 漏洞緩解措施的支援
+    * 添加對 ARM/ARM64/ARM64EC CPU 架構的支援
+    * 升級對 CPU 指令集的要求以提升運算性能，最低的 CPU 指令集要求如下
+      * x86: AVX
+      * x64: AVX
+      * ARM: VFPv4
+      * ARM64: ARMv8.0-A
+      * ARM64EC = ARM64 + x64
+    * ARM64EC 架構下二進位檔案將被編譯為 Arm64X PE 格式
+  * 軟體
+    * 將自帶的 MFC 庫切換為動態連結
+  * 二進位檔案校驗添加 SHA-3 的支援
+  * 項目文件升級到 Visual Studio 2022
+* 修復問題
+  * 重建可能導致誤殺的高級檢測 [javasboy]
+  * 修復部分檢測被錯誤標示為 <SDC> 的問題
+  * 修復 x64 版本 DLL 模組定義檔案匯入錯誤的問題
+  * 注意：我們無法確保（包括非試驗計劃在內的）二進位檔案在生命周期已經結束的 Windows 版本中的正常使用，我們建議您升級到仍在生命週期中的版本
+* 移除功能
+  * 對 Subversion/SVN 的支援
+* Release checksum (SHA-3_256):
+  * arm\all-verycd\antiLeecharm.dll.new: 558668f90cc2fd0508a5b6688a18ea146670345c9af662fe90e637f8d6ab7b91
+  * arm\easymule\antiLeecharm.dll.new: 553641759f004090cf3589be47a05400410b196afddaeed0b459a4289c7f2447
+  * arm\lite\antiLeecharm.dll.new: df4468731048ec1ebe5921ab51dc30daea7656d5eb11a1b70ce20e3ca2f7c871
+  * arm\verycd-nickname\antiLeecharm.dll.new: 39f79f329be20f097a234b5ab0b3a3451f84c4315c6a9d188d628333277894bf
+  * arm\verycd-tag\antiLeecharm.dll.new: e285a82ac99e0ea25e65fcabebf6bf0d0ea9f51353a47bbc6a2b7e816a08b83b
+  * arm64\all-verycd\antiLeecharm64.dll.new: 6e2abccde108ddaea370bab7edd9a99f3d9bb8fdf13be3409221b614322f0d48
+  * arm64\easymule\antiLeecharm64.dll.new: f42665e60532892bb60f5d8c946f29df9b8589f37c20a13097417d98988f7c39
+  * arm64\lite\antiLeecharm64.dll.new: 3853985ea6aa0f6bc4e1f0e0c3be9f8292d3dbfbb12e888f33bced28a0254796
+  * arm64\verycd-nickname\antiLeecharm64.dll.new: eee9507cfc0f91bc7b4da6082998b744e0f0f3963d81e052838faa71c907faee
+  * arm64\verycd-tag\antiLeecharm64.dll.new: 0b112c77b7d8477eb468b346113660b64b65a8f3b411a5f089d17025420567a9
+  * arm64ec\all-verycd\antiLeecharm64ec.dll.new: 63d1328166ddb2dc6158054a5a5a7aa12dca933b1398e53086b541f22c02aeca
+  * arm64ec\easymule\antiLeecharm64ec.dll.new: cc9497106232fdf8df2fc8e953e22554e942ba90244f14f794378a08c33a0bf5
+  * arm64ec\lite\antiLeecharm64ec.dll.new: 0c04eaf49ea907fe54d673926d85aed1c0be925599e5d54432bd39cd9a16200d
+  * arm64ec\verycd-nickname\antiLeecharm64ec.dll.new: be1f17b089bb1fea384c29a6afb0cdccd795f4095919e0cdb34ee9571fae9154
+  * arm64ec\verycd-tag\antiLeecharm64ec.dll.new: c660f6f1e186a4f0d1b3bef40bac274d53abbc0dd9f6e98981ddff974a9b783b
+  * x64\all-verycd\antiLeechx64.dll.new: 5eb3c7c9fa2b4c74cddf1c89013ed758f52a3a540374b4f2f18d0a14a72510b5
+  * x64\easymule\antiLeechx64.dll.new: 91cd7423974fb79c09063fc4677b4df016a476961b9e9b6445fdb4fbdf77c24f
+  * x64\lite\antiLeechx64.dll.new: 9504692f0f144b4fa9123131a15365ff1e84f302ac2525faf6751611650ccb5e
+  * x64\verycd-nickname\antiLeechx64.dll.new: 3c679354090b9d79ea8fca8de29fefc9b2b365ecc2f8b19c78cf4f182f79822b
+  * x64\verycd-tag\antiLeechx64.dll.new: d9fd32dc751c5d9e51dc50d6a30cb61364b2e41f6357994a81c6a0823eab16cd
+  * x86\all-verycd\antiLeech.dll.new: e33224d9994ee6f3ad0751f950441c9bc6afad8fc8b4fb3dce85ec248b865283
+  * x86\easymule\antiLeech.dll.new: 987923a08d4274b7485307c2cbd799aa3e00294b2fe82598ccb9e0faf05d1966
+  * x86\lite\antiLeech.dll.new: c4f406a234f20e106bfa0d054a3b9a225186690756ac734e824d89f360a3a327
+  * x86\verycd-nickname\antiLeech.dll.new: 0109fb45db8b24550a83c9b8b74defc45183fd0f3d54e0e5e768d352a8d8acbe
+  * x86\verycd-tag\antiLeech.dll.new: 3e62988ccd8756523ce432e56ee66025cd1a844249cb2657fc314ea4d74776e7
+* Release checksum (SHA-2_256):
+  * arm\all-verycd\antiLeecharm.dll.new: d22fcf5de341d775fa4edfedcd2de36931759052d00f83513ccffcafda56d329
+  * arm\easymule\antiLeecharm.dll.new: 3d687c633edf4ab4e2af784f24092738618d54105a0bd1bce8c9827f569fe4f4
+  * arm\lite\antiLeecharm.dll.new: c485098c7e4605cf5e53c7244329ddd87da58cf2b024cdbddd846cac9e04b33f
+  * arm\verycd-nickname\antiLeecharm.dll.new: 4f298eb229bcc3788bbe6f341b02e7c55449bb1abc25f2dfa5e63b6d9cb9dcea
+  * arm\verycd-tag\antiLeecharm.dll.new: 166fa5431a175ddb47929575f5e6568ea48e686e3505b3da22e7efc0f479ccc2
+  * arm64\all-verycd\antiLeecharm64.dll.new: ec7bf2be8d86cf03b3706098fadbb51ac0131515b1a97c5b83fd63d39c87a6cf
+  * arm64\easymule\antiLeecharm64.dll.new: cbaa81cc37d0ab539404c6e7256b29010b4ec9064e69e84a528bdcffc0f21586
+  * arm64\lite\antiLeecharm64.dll.new: 1a00b3d67c4beee6e6e0269fc8cb94aefa9bc0b70bc24cf8ca868910614ca6a0
+  * arm64\verycd-nickname\antiLeecharm64.dll.new: 93408f4c72d4810aa81eb4e341eff46a4d8277ea7b2539fb6768861e31c17fdf
+  * arm64\verycd-tag\antiLeecharm64.dll.new: be2209455e18c6a601961894cc047670ffff59dbcb7667a6f6bdb3e392644b0b
+  * arm64ec\all-verycd\antiLeecharm64ec.dll.new: 8a36ad445405fd0bd924f734ab6e9ccd8dfaa5555a4a4a2ed7839caeb94d0d3f
+  * arm64ec\easymule\antiLeecharm64ec.dll.new: 856a682a33a5519e92ab70792cf738249e191e6f1b36ca48e8e39ecc4873a0a6
+  * arm64ec\lite\antiLeecharm64ec.dll.new: cad29fa47c114c4a093839bfe5284227771f46c5d6f898e5e651436dcad98f3a
+  * arm64ec\verycd-nickname\antiLeecharm64ec.dll.new: f9071ec3de1c2c365dcbe8dead4d5f42b867dfe4d0706b6dd7547bac37a05619
+  * arm64ec\verycd-tag\antiLeecharm64ec.dll.new: 7654ede4e7ab5018fe499d1131db9b32420c1e21e32815ef9d6358324e1e2d81
+  * x64\all-verycd\antiLeechx64.dll.new: d2cad970a9c525bb54cd5717da27a10193da3f8321bf88de2650bdf85deeb403
+  * x64\easymule\antiLeechx64.dll.new: f06df55a9b49c85c0812d44cf2373069a7abdd4428d98d37e07de0c8fbafb088
+  * x64\lite\antiLeechx64.dll.new: ef36631e0278488c053f9afb7ae737d4768085f38b1f34714c6ebe51f5a292f8
+  * x64\verycd-nickname\antiLeechx64.dll.new: db19095937fb04967486d2e39fc0fd9ee4b40b8181cdf5d4d7822242c5310ebf
+  * x64\verycd-tag\antiLeechx64.dll.new: f003bbdf85c7298e7556e156ace03eb9efdc4f4919963ab16ef2ea13e374c5bd
+  * x86\all-verycd\antiLeech.dll.new: 0dda123753b08d3db713f06f15f54d61e8bcc7ff5f54d114f499433e8544b103
+  * x86\easymule\antiLeech.dll.new: b4bf4548d5b770d66288bf60b45e66a6a787a3b71bd9198a1afd614a77710e30
+  * x86\lite\antiLeech.dll.new: 849827de0d8d566a760c79e178beddf3d3ae3e3c34ae859a6d2b5dadac70f3a8
+  * x86\verycd-nickname\antiLeech.dll.new: 0e36cda37cb3d0f7c8f1bb056f021067f23a1815fe67902bf538bb5930a27def
+  * x86\verycd-tag\antiLeech.dll.new: f203e7cc0f577d6461ce31ec966a84452193105e2bc985cc1fa007b578867469
 
 
 -------------------------------------------------------------------------------

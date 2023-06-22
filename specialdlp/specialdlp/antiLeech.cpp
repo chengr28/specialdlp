@@ -884,7 +884,7 @@ LPCTSTR __declspec(dllexport) DLPCheckModstring_Soft(LPCTSTR modversion, LPCTSTR
 #if defined(SPECIAL_DLP_VERSION)
 #if (defined(SDC_ALL_VERYCD) || defined(SDC_VERYCD_TAG))
 	if (wcsstr(modversion, L"VeryCD") && 
-		!wcsstr(modversion, L"VeryCD 090304")) //They will be handled by DLPCheckNameAndHashAndMod function.
+		!wcsstr(modversion, L"VeryCD 090304") //They will be handled by DLPCheckNameAndHashAndMod function.
 	)
 		return L"<SDC> All-VeryCD-Mod";
 #elif defined(SDC_EASYMULE)
