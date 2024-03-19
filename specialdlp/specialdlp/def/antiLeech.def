@@ -1,6 +1,6 @@
 ﻿; antiLeech.def : Deklariert die Modulparameter für die DLL.
 
-LIBRARY		"antiLeech"
+LIBRARY							"antiLeech"
 
 EXPORTS
 ; SDC team start

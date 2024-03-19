@@ -130,7 +130,7 @@ The way to reducing score is a proportion method. This option is useful to remov
 * Set credit system to "Lovelace" and turn all the punishing rules on.
 Please DO NOT set the credit system to eMule official, because there are not any punishment rules.
 
-* Turn "Upload BAN" on.
+* Turn "Upload Ban" on.
 It can refuse SoftBan leechers downloading from us, but we will not refuse their uploading.
 
 * Change reducing score proportion to maximum.

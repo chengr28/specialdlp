@@ -1,48 +1,46 @@
 ﻿// Strict DLP Chinese (SDC) is a strict DLP based on the eMule Xtreme (official) version.
-// Copyright (C) 2009-2023  SDC Team
+// Copyright (C) 2009-2024 SDC Team
 // 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
+// This program is free software: you can redistribute it and/or modify 
+// it under the terms of the GNU General Public License as published by 
+// the Free Software Foundation, either version 3 of the License, or 
 // (at your option) any later version.
 // 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// This program is distributed in the hope that it will be useful, 
+// but WITHOUT ANY WARRANTY; without even the implied warranty of 
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
 // GNU General Public License for more details.
 // 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+// You should have received a copy of the GNU General Public License 
+// along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 
+//External dependency
+//No dependency
+
+//Internal dependency
 #include "specialdlpTester.h"
 
-//Main function
-int main(const int argc, const char * argv[])
+//Namespace definition
+//No definition
+
+//Function: Main
+int main(
+//	const int argc, 
+//	const char * const argv[]
+	void
+)
 {
-//Environment setting
-	setlocale(LC_ALL, ".UTF-8");
+//Set locale environment.
+	std::setlocale(LC_ALL, SDC_LOCALE_SETTING);
 
 //Load library file.
-#if (defined(WIN_X86) && !defined(WIN_X64))
-	const auto LibraryInstance = LoadLibraryExW(L"antiLeech.dll", NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-#elif defined(WIN_X64)
-	const auto LibraryInstance = LoadLibraryExW(L"antiLeechx64.dll", NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-#elif (defined(WIN_ARM32) && !defined(WIN_ARM64))
-	const auto LibraryInstance = LoadLibraryExW(L"antiLeecharm.dll", NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-#elif (defined(WIN_ARM64) && !defined(WIN_ARM64EC))
-	const auto LibraryInstance = LoadLibraryExW(L"antiLeecharm64.dll", NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-#elif defined(WIN_ARM64EC)
-	const auto LibraryInstance = LoadLibraryExW(L"antiLeecharm64ec.dll", NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-#else
-	const auto LibraryInstance = LoadLibraryExW(L"antiLeech.dll", NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-#endif
+	const auto LibraryInstance = LoadLibraryExA(SDC_LIBRARY_NAME, NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
 	if (LibraryInstance == NULL)
 	{
-		std::cout << "Error code: " << GetLastError() << std::endl;
+		std::cout << "Error: Load library file failed, error code is " << GetLastError() << "." << std::endl;
+		PressReturnToEnd();
 
-		std::cout << std::endl;
-		std::system("pause");
 		return EXIT_FAILURE;
 	}
 
@@ -63,38 +61,35 @@ int main(const int argc, const char * argv[])
 		DLPCheckInfoTag == nullptr
 	)
 	{
-		std::cout << "Error code: " << GetLastError() << std::endl;
+		std::cout << "Error: Load function from library failed, error code is " << GetLastError() << "." << std::endl;
 		FreeLibrary(LibraryInstance);
+		PressReturnToEnd();
 
-		std::cout << std::endl;
-		std::system("pause");
+		return EXIT_FAILURE;
+	}
+
+//Print library location.
+	auto LocationBuffer(std::make_unique<wchar_t[]>(SDC_PATH_MAXSIZE + sizeof(std::uint8_t)));
+	if (GetModuleFileNameW(LibraryInstance, LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0 || 
+		wcsnlen(LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0)
+	{
+		std::cout << "Error: Load module name from library failed, error code is " << GetLastError() << "." << std::endl;
+		FreeLibrary(LibraryInstance);
+		PressReturnToEnd();
+
 		return EXIT_FAILURE;
 	}
 	else {
-	//Print library location.
-		auto LocationBuffer(std::make_unique<wchar_t[]>(PATH_MAX_SIZE));
-		size_t LocationLength = GetModuleFileNameW(LibraryInstance, LocationBuffer.get(), PATH_MAX_SIZE - 1U);
-		if (LocationLength <= 0 || wcsnlen(LocationBuffer.get(), PATH_MAX_SIZE) <= 0)
-		{
-			std::cout << "Error code: " << GetLastError() << std::endl;
-			FreeLibrary(LibraryInstance);
-
-			std::cout << std::endl;
-			std::system("pause");
-			return EXIT_FAILURE;
-		}
-		else {
-			std::wcout << L"File location: \"" << LocationBuffer.get() << L"\"" << std::endl;
-			std::cout << std::endl;
-			LocationBuffer.reset();
-		}
-
-	//Print library version.
-		std::cout << "Dynamic Anti-Leecher Protection v" << GetDLPVersion() << " loaded." << std::endl;
+		std::wcout << L"File location: \"" << LocationBuffer.get() << L"\"" << std::endl;
 		std::cout << std::endl;
+		LocationBuffer.reset();
 	}
 
-//Enter parameters.
+//Print library version.
+	std::cout << "Dynamic Anti-Leecher Protection v" << GetDLPVersion() << " loaded." << std::endl;
+	std::cout << std::endl;
+
+//Prepare parameter.
 	std::wstring StringClientVersion(L"");
 	std::wstring StringModVersion(L"");
 	std::wstring StringUserName(L"");
@@ -104,7 +99,7 @@ int main(const int argc, const char * argv[])
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Example: " << std::endl;
-	std::cout << "Client version = \"eMule v0.60d\"" << std::endl;
+	std::cout << "Client version = \"eMule v0.70a\"" << std::endl;
 	std::cout << "Mod version = \"Xtreme 8.1\"" << std::endl;
 	std::cout << "User name = \"Hello World!\"" << std::endl;
 	std::cout << "User hash = \"0123456789ABCDE0123456789ABCDE01\"" << std::endl;
@@ -127,10 +122,10 @@ int main(const int argc, const char * argv[])
 	std::getline(std::wcin, StringMessageText);
 	std::cout << std::endl;
 	std::cout << "Tag number: ";
-	std::wcin >> TagNumber;
+	std::wcin >> std::noskipws >> TagNumber;
 	std::cout << std::endl;
 
-//Print parameters.
+//Print parameter.
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Client version = \"";
@@ -153,24 +148,24 @@ int main(const int argc, const char * argv[])
 	std::cout << "\"" << std::endl;
 	std::cout << std::endl;
 
-//Prepare parameters.
+//Check parameter.
 	LPCWSTR PointClientVersion = nullptr;
 	LPCWSTR PointModVersion = nullptr;
 	LPCWSTR PointUserName = nullptr;
 	LPCWSTR PointUserHash = nullptr;
 	LPCWSTR PointMessageText = nullptr;
-	if (!StringClientVersion.empty())
+	if (StringClientVersion.empty() == false)
 		PointClientVersion = StringClientVersion.c_str();
-	if (!StringModVersion.empty())
+	if (StringModVersion.empty() == false)
 		PointModVersion = StringModVersion.c_str();
-	if (!StringUserName.empty())
+	if (StringUserName.empty() == false)
 		PointUserName = StringUserName.c_str();
-	if (!StringUserHash.empty())
+	if (StringUserHash.empty() == false)
 		PointUserHash = StringUserHash.c_str();
-	if (!StringMessageText.empty())
+	if (StringMessageText.empty() == false)
 		PointMessageText = StringMessageText.c_str();
 
-//Run the test with parameters, the order is from eMule Xtreme 8.1 sources.
+//Run the test, the order is from eMule Xtreme 8.1 sources.
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
 	LPCWSTR Reason = nullptr;
@@ -239,16 +234,26 @@ int main(const int argc, const char * argv[])
 	}
 
 //No any leechers reported.
-	std::cout << "No any leechers reported." << std::endl;
+	std::cout << "No reported." << std::endl;
 
 //Jump here to end.
 JumpToEnd:
 
-//Free library file.
+//Free library file and pause to show the result.
 	FreeLibrary(LibraryInstance);
+	PressReturnToEnd();
 
-//Pause and exit.
-	std::cout << std::endl;
-	std::system("pause");
 	return EXIT_SUCCESS;
+}
+
+//Function: Press "Return" to end.
+static void PressReturnToEnd(
+	void
+)
+{
+	std::cout << std::endl << "Press \"Return\" to end." << std::endl;
+	std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
+	std::cin.get();
+
+	return;
 }

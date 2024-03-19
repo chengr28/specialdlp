@@ -1,5 +1,5 @@
 ﻿// Microsoft Visual C++ generated resource script.
-//
+// 
 
 //SDC team start
 #if defined(SPECIAL_DLP_VERSION)
@@ -12,9 +12,9 @@
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
-//
+// 
 // Generated from the TEXTINCLUDE 2 resource.
-//
+// 
 
 #include "afxres.h"
 
@@ -30,19 +30,19 @@
 //SDC team start
 #if defined(SPECIAL_DLP_VERSION)
 	LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
-	#pragma code_page(65001)
+#pragma code_page(65001)
 #else //Official
 	LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
-	#pragma code_page(1252)
+#pragma code_page(1252)
 #endif
 //SDC team end
 #endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
-//
+// 
 // TEXTINCLUDE
-//
+// 
 
 1 TEXTINCLUDE 
 BEGIN
@@ -70,9 +70,9 @@ END
 #endif // APSTUDIO_INVOKED
 
 /////////////////////////////////////////////////////////////////////////////
-//
+// 
 // Version
-//
+// 
 
 VS_VERSION_INFO			VERSIONINFO
 //SDC team start
@@ -102,7 +102,7 @@ BEGIN
 		//SDC team start
 		#if defined(SPECIAL_DLP_VERSION)
 			VALUE _T("CompanyName"), _T("SDC Team")
-			VALUE _T("FileDescription"), _T("Strict DLP Chinese Dynamic Link Library (DLL)")
+			VALUE _T("FileDescription"), _T("Strict DLP Chinese Dynamic Link Library (SDC DLL)")
 			VALUE _T("FileVersion"), chSTR(DLPVERSION)
 		#if (defined(WIN_X86) && !defined(WIN_X64))
 		#if defined(SDC_ALL_VERYCD)
@@ -177,7 +177,7 @@ BEGIN
 		#else
 			VALUE _T("InternalName"), _T("Release")
 		#endif
-			VALUE _T("LegalCopyright"), _T("Copyright (C) 2009-2023 SDC Team")
+			VALUE _T("LegalCopyright"), _T("Copyright (C) 2009-2024 SDC Team")
 		#if (defined(WIN_X86) && !defined(WIN_X64))
 			VALUE _T("OriginalFilename"), _T("antiLeech.dll")
 		#elif defined(WIN_X64)
@@ -191,7 +191,7 @@ BEGIN
 		#else
 			VALUE _T("OriginalFilename"), _T("antiLeech.dll")
 		#endif
-			VALUE _T("ProductName"), _T("Strict DLP Chinese Dynamic Link Library (DLL)")
+			VALUE _T("ProductName"), _T("Strict DLP Chinese Dynamic Link Library (SDC DLL)")
 			VALUE _T("ProductVersion"), chSTR(DLPVERSION)
 		#else //Official
 			VALUE "CompanyName", "http://xtreme-mod.net"
@@ -217,9 +217,9 @@ END
 
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
-//
+// 
 // Generated from the TEXTINCLUDE 3 resource.
-//
+// 
 
 /////////////////////////////////////////////////////////////////////////////
 #endif // not APSTUDIO_INVOKED
