@@ -1,7 +1,7 @@
-# Binary attributes
+# Attribute: Binary
 *.new binary
 
-# Text attributes
+# Attribute: Text
 *.def text eol=crlf
 *.filters text eol=crlf
 *.rc text eol=crlf
