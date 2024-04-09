@@ -48,23 +48,23 @@
 BEGIN
 //SDC team start
 #if defined(SPECIAL_DLP_VERSION)
-	_T("resource.h\0")
+	"resource.h\0"
 #else //Official
-	_T("resource1.h\0")
+	"resource1.h\0"
 #endif
 //SDC team end
 END
 
 2 TEXTINCLUDE 
 BEGIN
-	_T("#include ""afxres.h""\r\n")
-	_T("\0")
+	"#include ""afxres.h""\r\n"
+	"\0"
 END
 
 3 TEXTINCLUDE 
 BEGIN
-	_T("\r\n")
-	_T("\0")
+	"\r\n"
+	"\0"
 END
 
 #endif // APSTUDIO_INVOKED
@@ -77,8 +77,8 @@ END
 VS_VERSION_INFO			VERSIONINFO
 //SDC team start
 #if defined(SPECIAL_DLP_VERSION)
-	FILEVERSION			SDC_VERSION_DETACHED
-	PRODUCTVERSION		SDC_VERSION_DETACHED
+	FILEVERSION			SDC_RESOURCE_VERSION
+	PRODUCTVERSION		SDC_RESOURCE_VERSION
 #else //Official
 	FILEVERSION			DLPVERSION,0,0,0
 	PRODUCTVERSION		DLPVERSION,0,0,0
@@ -87,7 +87,7 @@ VS_VERSION_INFO			VERSIONINFO
 FILEFLAGSMASK			0x17L
 #ifdef _DEBUG
 	FILEFLAGS			0x1L
-#else
+#else 
 	FILEFLAGS			0x0L
 #endif
 FILEOS					0x4L
@@ -95,104 +95,20 @@ FILETYPE				0x2L
 FILESUBTYPE				0x0L
 
 BEGIN
-	BLOCK _T("StringFileInfo")
+	BLOCK "StringFileInfo"
 	BEGIN
-		BLOCK _T("000004b0")
+		BLOCK "000004b0"
 		BEGIN
 		//SDC team start
 		#if defined(SPECIAL_DLP_VERSION)
-			VALUE _T("CompanyName"), _T("SDC Team")
-			VALUE _T("FileDescription"), _T("Strict DLP Chinese Dynamic Link Library (SDC DLL)")
-			VALUE _T("FileVersion"), chSTR(DLPVERSION)
-		#if (defined(WIN_X86) && !defined(WIN_X64))
-		#if defined(SDC_ALL_VERYCD)
-			VALUE _T("InternalName"), _T("All-VeryCD-Mod x86")
-		#elif defined(SDC_EASYMULE)
-			VALUE _T("InternalName"), _T("VeryCD-EasyMule-Mod x86")
-		#elif defined(SDC_LITE)
-			VALUE _T("InternalName"), _T("Lite x86")
-		#elif defined(SDC_VERYCD_NICKNAME)
-			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames x86")
-		#elif defined(SDC_VERYCD_TAG)
-			VALUE _T("InternalName"), _T("VeryCD-Tag x86")
-		#else
-			VALUE _T("InternalName"), _T("Release x86")
-		#endif
-		#elif defined(WIN_X64)
-		#if defined(SDC_ALL_VERYCD)
-			VALUE _T("InternalName"), _T("All-VeryCD-Mod x64")
-		#elif defined(SDC_EASYMULE)
-			VALUE _T("InternalName"), _T("VeryCD-EasyMule-Mod x64")
-		#elif defined(SDC_LITE)
-			VALUE _T("InternalName"), _T("Lite x64")
-		#elif defined(SDC_VERYCD_NICKNAME)
-			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames x64")
-		#elif defined(SDC_VERYCD_TAG)
-			VALUE _T("InternalName"), _T("VeryCD-Tag x64")
-		#else
-			VALUE _T("InternalName"), _T("Release x64")
-		#endif
-		#elif (defined(WIN_ARM32) && !defined(WIN_ARM64))
-		#if defined(SDC_ALL_VERYCD)
-			VALUE _T("InternalName"), _T("All-VeryCD-Mod ARM")
-		#elif defined(SDC_EASYMULE)
-			VALUE _T("InternalName"), _T("VeryCD-EasyMule-Mod ARM")
-		#elif defined(SDC_LITE)
-			VALUE _T("InternalName"), _T("Lite ARM")
-		#elif defined(SDC_VERYCD_NICKNAME)
-			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames ARM")
-		#elif defined(SDC_VERYCD_TAG)
-			VALUE _T("InternalName"), _T("VeryCD-Tag ARM")
-		#else
-			VALUE _T("InternalName"), _T("Release ARM")
-		#endif
-		#elif (defined(WIN_ARM64) && !defined(WIN_ARM64EC))
-		#if defined(SDC_ALL_VERYCD)
-			VALUE _T("InternalName"), _T("All-VeryCD-Mod ARM64")
-		#elif defined(SDC_EASYMULE)
-			VALUE _T("InternalName"), _T("VeryCD-EasyMule-Mod ARM64")
-		#elif defined(SDC_LITE)
-			VALUE _T("InternalName"), _T("Lite ARM64")
-		#elif defined(SDC_VERYCD_NICKNAME)
-			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames ARM64")
-		#elif defined(SDC_VERYCD_TAG)
-			VALUE _T("InternalName"), _T("VeryCD-Tag ARM64")
-		#else
-			VALUE _T("InternalName"), _T("Release ARM64")
-		#endif
-		#elif defined(WIN_ARM64EC)
-		#if defined(SDC_ALL_VERYCD)
-			VALUE _T("InternalName"), _T("All-VeryCD-Mod ARM64EC")
-		#elif defined(SDC_EASYMULE)
-			VALUE _T("InternalName"), _T("VeryCD-EasyMule-Mod ARM64EC")
-		#elif defined(SDC_LITE)
-			VALUE _T("InternalName"), _T("Lite ARM64EC")
-		#elif defined(SDC_VERYCD_NICKNAME)
-			VALUE _T("InternalName"), _T("VeryCD-Default-NickNames ARM64EC")
-		#elif defined(SDC_VERYCD_TAG)
-			VALUE _T("InternalName"), _T("VeryCD-Tag ARM64EC")
-		#else
-			VALUE _T("InternalName"), _T("Release ARM64EC")
-		#endif
-		#else
-			VALUE _T("InternalName"), _T("Release")
-		#endif
-			VALUE _T("LegalCopyright"), _T("Copyright (C) 2009-2024 SDC Team")
-		#if (defined(WIN_X86) && !defined(WIN_X64))
-			VALUE _T("OriginalFilename"), _T("antiLeech.dll")
-		#elif defined(WIN_X64)
-			VALUE _T("OriginalFilename"), _T("antiLeechx64.dll")
-		#elif (defined(WIN_ARM32) && !defined(WIN_ARM64))
-			VALUE _T("OriginalFilename"), _T("antiLeecharm.dll")
-		#elif (defined(WIN_ARM64) && !defined(WIN_ARM64EC))
-			VALUE _T("OriginalFilename"), _T("antiLeecharm64.dll")
-		#elif defined(WIN_ARM64EC)
-			VALUE _T("OriginalFilename"), _T("antiLeecharm64ec.dll")
-		#else
-			VALUE _T("OriginalFilename"), _T("antiLeech.dll")
-		#endif
-			VALUE _T("ProductName"), _T("Strict DLP Chinese Dynamic Link Library (SDC DLL)")
-			VALUE _T("ProductVersion"), chSTR(DLPVERSION)
+			VALUE "CompanyName", SDC_RESOURCE_COMPANY_NAME
+			VALUE "FileDescription", SDC_RESOURCE_FILE_DESCRIPTION
+			VALUE "FileVersion", chSTR(DLPVERSION)
+			VALUE "InternalName", SDC_RESOURCE_INTERNAL_NAME
+			VALUE "LegalCopyright", SDC_RESOURCE_LEGAL_COPYRIGHT
+			VALUE "OriginalFilename", SDC_RESOURCE_ORIGINAL_FILE_NAME
+			VALUE "ProductName", SDC_RESOURCE_PRODUCT_NAME
+			VALUE "ProductVersion", chSTR(DLPVERSION)
 		#else //Official
 			VALUE "CompanyName", "http://xtreme-mod.net"
 			VALUE "FileDescription", "antiLeech Dynamic Link Library (DLL)"
@@ -206,9 +122,9 @@ BEGIN
 		//SDC team end
 		END
 	END
-	BLOCK _T("VarFileInfo")
+	BLOCK "VarFileInfo"
 	BEGIN
-		VALUE _T("Translation"), 0x0, 1200
+		VALUE "Translation", 0x0, 1200
 	END
 END
 

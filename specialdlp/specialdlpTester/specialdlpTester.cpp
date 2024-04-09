@@ -1,4 +1,4 @@
-﻿// Strict DLP Chinese (SDC) is a strict DLP based on the eMule Xtreme (official) version.
+﻿// Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
 // Copyright (C) 2009-2024 SDC Team
 // 
 // This program is free software: you can redistribute it and/or modify 
@@ -35,8 +35,8 @@ int main(
 	std::setlocale(LC_ALL, SDC_LOCALE_SETTING);
 
 //Load library file.
-	const auto LibraryInstance = LoadLibraryExA(SDC_LIBRARY_NAME, NULL, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-	if (LibraryInstance == NULL)
+	const auto LibraryInstance = LoadLibraryExA(SDC_LIBRARY_NAME, nullptr, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
+	if (LibraryInstance == nullptr)
 	{
 		std::cout << "Error: Load library file failed, error code is " << GetLastError() << "." << std::endl;
 		PressReturnToEnd();
@@ -52,12 +52,12 @@ int main(
 	const auto DLPCheckUsername_Soft = reinterpret_cast<DLPCHECKUSERNAME_SOFT>(GetProcAddress(LibraryInstance, "DLPCheckUsername_Soft"));
 	const auto DLPCheckNameAndHashAndMod = reinterpret_cast<DLPCHECKNAMEANDHASHANDMOD>(GetProcAddress(LibraryInstance, "DLPCheckNameAndHashAndMod"));
 	const auto DLPCheckMessageSpam = reinterpret_cast<DLPCHECKMESSAGESPAM>(GetProcAddress(LibraryInstance, "DLPCheckMessageSpam"));
-	const auto DLPCheckUserhash = reinterpret_cast<DLPCHECKUSERHASH>(GetProcAddress(LibraryInstance, "DLPCheckUserhash"));
+//	const auto DLPCheckUserhash = reinterpret_cast<DLPCHECKUSERHASH>(GetProcAddress(LibraryInstance, "DLPCheckUserhash")); //No more AJ check.
 	const auto DLPCheckHelloTag = reinterpret_cast<DLPCHECKHELLOTAG>(GetProcAddress(LibraryInstance, "DLPCheckHelloTag"));
 	const auto DLPCheckInfoTag = reinterpret_cast<DLPCHECKINFOTAG>(GetProcAddress(LibraryInstance, "DLPCheckInfoTag"));
 	if (GetDLPVersion == nullptr || DLPCheckModstring_Hard == nullptr || DLPCheckModstring_Soft == nullptr || 
 		DLPCheckUsername_Hard == nullptr || DLPCheckUsername_Soft == nullptr || DLPCheckNameAndHashAndMod == nullptr || 
-		DLPCheckMessageSpam == nullptr || DLPCheckUserhash == nullptr || DLPCheckHelloTag == nullptr || 
+		DLPCheckMessageSpam == nullptr || /* DLPCheckUserhash == nullptr || */ DLPCheckHelloTag == nullptr || 
 		DLPCheckInfoTag == nullptr
 	)
 	{
@@ -197,13 +197,15 @@ int main(
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
-	Reason = DLPCheckUserhash(nullptr); //No more AJ check.
+/* No more AJ check.
+	Reason = DLPCheckUserhash(nullptr);
 	if (Reason != nullptr)
 	{
 		std::cout << "<AJ-Ban> DLPCheckUserhash: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
+*/
 	Reason = DLPCheckNameAndHashAndMod(PointUserName, PointUserHash, PointModVersion);
 	if (Reason != nullptr)
 	{

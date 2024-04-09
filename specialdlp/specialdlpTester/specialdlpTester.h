@@ -1,4 +1,4 @@
-﻿// Strict DLP Chinese (SDC) is a strict DLP based on the eMule Xtreme (official) version.
+﻿// Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
 // Copyright (C) 2009-2024 SDC Team
 // 
 // This program is free software: you can redistribute it and/or modify 
@@ -44,7 +44,7 @@
 #define SDC_LIBRARY_NAME							("antiLeecharm64.dll")
 #elif defined(WIN_ARM64EC)
 #define SDC_LIBRARY_NAME							("antiLeecharm64ec.dll")
-#else
+#else 
 #define SDC_LIBRARY_NAME							("antiLeech.dll")
 #endif
 typedef DWORD(__cdecl * GETDLPVERSION)(void);
@@ -54,7 +54,7 @@ typedef LPCWSTR(__cdecl * DLPCHECKUSERNAME_HARD)(LPCWSTR username);
 typedef LPCWSTR(__cdecl * DLPCHECKUSERNAME_SOFT)(LPCWSTR username);
 typedef LPCWSTR(__cdecl * DLPCHECKNAMEANDHASHANDMOD)(const CString username, const CString & userhash, const CString & modversion);
 typedef LPCWSTR(__cdecl * DLPCHECKMESSAGESPAM)(LPCWSTR messagetext);
-typedef LPCWSTR(__cdecl * DLPCHECKUSERHASH)(const PBYTE userhash);
+//typedef LPCWSTR(__cdecl * DLPCHECKUSERHASH)(const PBYTE userhash); //No more AJ check.
 typedef LPCWSTR(__cdecl * DLPCHECKHELLOTAG)(const UINT tagnumber);
 typedef LPCWSTR(__cdecl * DLPCHECKINFOTAG)(const UINT tagnumber);
 
