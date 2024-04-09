@@ -1,4 +1,5 @@
 # Attribute: Binary
+*.exe binary
 *.new binary
 
 # Attribute: Text
