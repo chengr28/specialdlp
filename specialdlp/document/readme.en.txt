@@ -29,7 +29,7 @@ Different between SDC and eMule Xtreme DLP (official)
 
 Usage﻿
 * Shutdown eMule first. Unpack the "antiLeech.dll.new" to the directory where original "antiLeech.dll" located, then run eMule.
-  * This is the recommended. In this way, all new DLP features will be completely loaded.
+  * This is recommended, all new DLP features will be completely loaded.
 * OR: Unpack the "antiLeech.dll.new" the directory where original "antiLeech.dll" located. Enter eMule - Options - AntiLeech and click "reload".
 
 
@@ -48,13 +48,13 @@ You can select one of below mode, which decides configuration folder location in
 
 SDC versions
 * bin: Binary files.
-  * Architecture:
-    * x86: 32-bit eMule version. Most of eMule are 32-bit, so you should use this one.
+  * Architectures:
+    * x86: 32-bit eMule version. Most of eMule are 32-bit, you should use this one.
     * x64: 64-bit eMule version. It's only for 64-bit eMule.
     * arm: 32-bit ARM version.
     * arm64: 64-bit ARM version.
     * arm64ec: 64-bit ARM (EC) version.
-  * Methods:
+  * Variants:
     * all-verycd: All VeryCD-Mod and VeryCD-EasyMule-Mod.
     * easymule: All VeryCD-EasyMule-Mod (not includes old VeryCD-Mod version).
     * lite: Lite version of SDC, only fixs some bugs.
@@ -79,9 +79,9 @@ A:
   * Please check the "antiLeech.dll" location.
   * Please check the platform of system and version of eMule (x86/x64/arm/arm64/arm64ec).
 
-Q: It seems banned or reduce-score result is not expected.
+Q: It seems I select banned mode but get reduce-score, or get opposite situation.
 A: 
-  * Please check the SDC version whether you need.
+  * Please check the SDC variant whether you need.
   * Please turn "Anti-Banned" off or set it to "0".
 
 Q: What is antiLeech.dll.old?
@@ -107,12 +107,12 @@ A:
 Q: Would the download speed be reduced when using SDC?
 A: Sometimes "Ban" mode will and "Reduce Score" mode is never.
 
-Q: Would the very bad leechers be passed or be false reduced score when using "Reduce Score" mode?
+Q: Would the bad leechers be passed or be false reduced score when using "Reduce Score" mode?
 A: 
   * No. All leechers in HardBan list will be banned. No effect if it's in "Reduce Score" mode.
   * Notice: It will be unlikely happened because of eMule antiLeech sequence check.
 
-Q: Why leechers appear in upload queue?
+Q: Why leechers are still in upload queue?
 A: The "Reduce Score" mode does not ban all leechers﻿.
 
 Q: Would SDC fix bugs in eMule Xtreme DLP (official)?
@@ -124,20 +124,20 @@ A: Yes, we will also report to eMule Xtreme developer team.
 
 Recommendation for using "Reduce Score" mode:
 
-* Turn "One File One Queue" on.
+* Enable "One File One Queue".
 The way to reducing score is a proportion method. This option is useful to remove leechers from queue.
 
-* Set credit system to "Lovelace" and turn all the punishing rules on.
+* Set credit system to "Lovelace" and enable all the punishing rules.
 Please DO NOT set the credit system to eMule official, because there are not any punishment rules.
 
-* Turn "Upload Ban" on.
+* Enable "Upload Ban".
 It can refuse SoftBan leechers downloading from us, but we will not refuse their uploading.
 
 * Change reducing score proportion to maximum.
 It can remove SoftBan leechers from upload queue effectively.
 
-* Turn "Anti-Banned" off or set it to "0".
+* Disable "Anti-Banned" or set it to "0".
 It will remove some leechers from banned list, even in HardBan.
 
-* Restart eMule if you change DLP mode.
+* Restart eMule if you change DLP banning method.
 AntiLeech is not running in connection life cycle. Some leechers which were connected will not be banned or reduced score after new DLP was loaded or changing mode ("Ban" and "Reduce Score") settings.

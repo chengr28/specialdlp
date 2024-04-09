@@ -1,4 +1,4 @@
-﻿## Feature table for 5 SDC variants
+﻿## Feature table for SDC variants
 
 <p align="center">
 <a href="readme.zh-hans.md">简体中文介绍</a> | <a href="readme.zh-hant.md">繁體中文介紹</a>
@@ -6,7 +6,7 @@
 
 <table>
 	<tr>
-		<th colspan=2 rowspan=2>DLP version<br />(click to download)</th>
+		<th colspan=2 rowspan=2>Variants<br />(click to download)</th>
 		<th colspan=6>Banning method</th>
 		<th rowspan=2>Fix<br />official<br />bugs</th>
 	</tr>
@@ -20,7 +20,7 @@
 	</tr>
 	<tr>
 		<th rowspan=5>SDC</th>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/all-verycd/antiLeech.dll.new">all-verycd</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/all-verycd/antiLeech.dll.new">all-verycd</a></th>
 		<td align=center>Soft</td>
 		<td align=center>No</td>
 		<td align=center>Soft</td>
@@ -30,27 +30,27 @@
 		<td align=center>Yes</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/easymule/antiLeech.dll.new">easymule</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/easymule/antiLeech.dll.new">easymule</a></th>
 		<td align=center>No</td>
 		<td align=center>No</td>
 		<td align=center>Soft</td>
-		<td align=center>Hard</td>
-		<td align=center>N/A</td>
-		<td align=center>Yes</td>
-		<td align=center>Yes</td>
-	</tr>
-	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/lite/antiLeech.dll.new">lite</a></th>
-		<td align=center>No</td>
-		<td align=center>No</td>
-		<td align=center>No</td>
 		<td align=center>Hard</td>
 		<td align=center>N/A</td>
 		<td align=center>Yes</td>
 		<td align=center>Yes</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new">verycd-<br />nickname</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/lite/antiLeech.dll.new">lite</a></th>
+		<td align=center>No</td>
+		<td align=center>No</td>
+		<td align=center>No</td>
+		<td align=center>Hard</td>
+		<td align=center>N/A</td>
+		<td align=center>Yes</td>
+		<td align=center>Yes</td>
+	</tr>
+	<tr>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/verycd-nickname/antiLeech.dll.new">verycd-<br />nickname</a></th>
 		<td align=center>No</td>
 		<td align=center>No</td>
 		<td align=center>No</td>
@@ -60,7 +60,7 @@
 		<td align=center>Yes</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-tag/antiLeech.dll.new">verycd-tag</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/verycd-tag/antiLeech.dll.new">verycd-tag</a></th>
 		<td align=center>Soft</td>
 		<td align=center>Soft</td>
 		<td align=center>Soft</td>

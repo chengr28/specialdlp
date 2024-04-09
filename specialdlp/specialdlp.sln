@@ -86,127 +86,156 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x64", "x64", "{E7AEA776-F51
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "all-verycd", "all-verycd", "{3B492BC9-AB45-4FA3-B139-8E5D63694A1B}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm\all-verycd\antiLeecharm.dll.new = target\arm\all-verycd\antiLeecharm.dll.new
+		target\specialdlp\arm\all-verycd\antiLeecharm.dll.new = target\specialdlp\arm\all-verycd\antiLeecharm.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "all-verycd", "all-verycd", "{84E72D04-DAE7-4A3B-9651-D0E569F2637B}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\all-verycd\antiLeecharm64.dll.new = target\arm64\all-verycd\antiLeecharm64.dll.new
+		target\specialdlp\arm64\all-verycd\antiLeecharm64.dll.new = target\specialdlp\arm64\all-verycd\antiLeecharm64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "all-verycd", "all-verycd", "{64E43285-EC0A-4774-B6F3-F049AB3D9C77}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64ec\all-verycd\antiLeecharm64ec.dll.new = target\arm64ec\all-verycd\antiLeecharm64ec.dll.new
+		target\specialdlp\arm64ec\all-verycd\antiLeecharm64ec.dll.new = target\specialdlp\arm64ec\all-verycd\antiLeecharm64ec.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "all-verycd", "all-verycd", "{FA9A2E71-4D1C-4F6C-9ED7-19F71A2361C9}"
 	ProjectSection(SolutionItems) = preProject
-		target\x64\all-verycd\antiLeechx64.dll.new = target\x64\all-verycd\antiLeechx64.dll.new
+		target\specialdlp\x64\all-verycd\antiLeechx64.dll.new = target\specialdlp\x64\all-verycd\antiLeechx64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "all-verycd", "all-verycd", "{B88B61A4-43CF-43CB-B004-48C4C82C710D}"
 	ProjectSection(SolutionItems) = preProject
-		target\x86\all-verycd\antiLeech.dll.new = target\x86\all-verycd\antiLeech.dll.new
+		target\specialdlp\x86\all-verycd\antiLeech.dll.new = target\specialdlp\x86\all-verycd\antiLeech.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "easymule", "easymule", "{8C9E3DDD-1451-4ACA-9F26-890525648515}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm\easymule\antiLeecharm.dll.new = target\arm\easymule\antiLeecharm.dll.new
+		target\specialdlp\arm\easymule\antiLeecharm.dll.new = target\specialdlp\arm\easymule\antiLeecharm.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "easymule", "easymule", "{6DCD3A66-7E1B-4E02-B571-F80A2DB27F80}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\easymule\antiLeecharm64.dll.new = target\arm64\easymule\antiLeecharm64.dll.new
+		target\specialdlp\arm64\easymule\antiLeecharm64.dll.new = target\specialdlp\arm64\easymule\antiLeecharm64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "easymule", "easymule", "{0E4F029D-F819-45CB-9CB4-1246F28C75CE}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\easymule\antiLeecharm64.dll.new = target\arm64\easymule\antiLeecharm64.dll.new
+		target\specialdlp\arm64ec\easymule\antiLeecharm64ec.dll.new = target\specialdlp\arm64ec\easymule\antiLeecharm64ec.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "easymule", "easymule", "{8045DD46-3BF2-4473-B6D1-4A7D4E73DF47}"
 	ProjectSection(SolutionItems) = preProject
-		target\x64\easymule\antiLeechx64.dll.new = target\x64\easymule\antiLeechx64.dll.new
+		target\specialdlp\x64\easymule\antiLeechx64.dll.new = target\specialdlp\x64\easymule\antiLeechx64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "easymule", "easymule", "{A61B8F5F-7952-4F1C-89BB-EFC2B29C4139}"
 	ProjectSection(SolutionItems) = preProject
-		target\x86\easymule\antiLeech.dll.new = target\x86\easymule\antiLeech.dll.new
+		target\specialdlp\x86\easymule\antiLeech.dll.new = target\specialdlp\x86\easymule\antiLeech.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lite", "lite", "{F43A64FB-007E-4730-B13B-8D7C420B0514}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm\lite\antiLeecharm.dll.new = target\arm\lite\antiLeecharm.dll.new
+		target\specialdlp\arm\lite\antiLeecharm.dll.new = target\specialdlp\arm\lite\antiLeecharm.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lite", "lite", "{8CF411EA-E1FE-486D-B361-7D67AF965C36}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\lite\antiLeecharm64.dll.new = target\arm64\lite\antiLeecharm64.dll.new
+		target\specialdlp\arm64\lite\antiLeecharm64.dll.new = target\specialdlp\arm64\lite\antiLeecharm64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lite", "lite", "{DF2390FA-F296-4D39-A1E7-721BD74EF879}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64ec\lite\antiLeecharm64ec.dll.new = target\arm64ec\lite\antiLeecharm64ec.dll.new
+		target\specialdlp\arm64ec\lite\antiLeecharm64ec.dll.new = target\specialdlp\arm64ec\lite\antiLeecharm64ec.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lite", "lite", "{0E424596-8104-4E2E-86DD-7C8C37CF5069}"
 	ProjectSection(SolutionItems) = preProject
-		target\x64\lite\antiLeechx64.dll.new = target\x64\lite\antiLeechx64.dll.new
+		target\specialdlp\x64\lite\antiLeechx64.dll.new = target\specialdlp\x64\lite\antiLeechx64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lite", "lite", "{6576DC3E-7B3E-49DC-BA57-5D65F9D0B36C}"
 	ProjectSection(SolutionItems) = preProject
-		target\x86\lite\antiLeech.dll.new = target\x86\lite\antiLeech.dll.new
+		target\specialdlp\x86\lite\antiLeech.dll.new = target\specialdlp\x86\lite\antiLeech.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-nickname", "verycd-nickname", "{7D8D64E2-874B-4058-9290-56BB7B559965}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm\verycd-nickname\antiLeecharm.dll.new = target\arm\verycd-nickname\antiLeecharm.dll.new
+		target\specialdlp\arm\verycd-nickname\antiLeecharm.dll.new = target\specialdlp\arm\verycd-nickname\antiLeecharm.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-nickname", "verycd-nickname", "{A749225A-1CE2-474C-814B-7C7A2BEE39A6}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\verycd-nickname\antiLeecharm64.dll.new = target\arm64\verycd-nickname\antiLeecharm64.dll.new
+		target\specialdlp\arm64\verycd-nickname\antiLeecharm64.dll.new = target\specialdlp\arm64\verycd-nickname\antiLeecharm64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-nickname", "verycd-nickname", "{B231876B-7D77-4BDA-91E0-CEA49C1B4C4B}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\verycd-nickname\antiLeecharm64.dll.new = target\arm64\verycd-nickname\antiLeecharm64.dll.new
+		target\specialdlp\arm64ec\verycd-nickname\antiLeecharm64ec.dll.new = target\specialdlp\arm64ec\verycd-nickname\antiLeecharm64ec.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-nickname", "verycd-nickname", "{6FC868E7-13B9-4D57-8930-18E70C6D20AE}"
 	ProjectSection(SolutionItems) = preProject
-		target\x64\verycd-nickname\antiLeechx64.dll.new = target\x64\verycd-nickname\antiLeechx64.dll.new
+		target\specialdlp\x64\verycd-nickname\antiLeechx64.dll.new = target\specialdlp\x64\verycd-nickname\antiLeechx64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-nickname", "verycd-nickname", "{CC7CE055-6255-4BAE-AA48-C76F13C4173F}"
 	ProjectSection(SolutionItems) = preProject
-		target\x86\verycd-nickname\antiLeech.dll.new = target\x86\verycd-nickname\antiLeech.dll.new
+		target\specialdlp\x86\verycd-nickname\antiLeech.dll.new = target\specialdlp\x86\verycd-nickname\antiLeech.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-tag", "verycd-tag", "{F6FA0316-D6BD-4B9D-8B96-E4085957791F}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm\verycd-tag\antiLeecharm.dll.new = target\arm\verycd-tag\antiLeecharm.dll.new
+		target\specialdlp\arm\verycd-tag\antiLeecharm.dll.new = target\specialdlp\arm\verycd-tag\antiLeecharm.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-tag", "verycd-tag", "{535CA565-4D68-4746-94F2-05CC99B4B4F9}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64\verycd-tag\antiLeecharm64.dll.new = target\arm64\verycd-tag\antiLeecharm64.dll.new
+		target\specialdlp\arm64\verycd-tag\antiLeecharm64.dll.new = target\specialdlp\arm64\verycd-tag\antiLeecharm64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-tag", "verycd-tag", "{CC1A0640-0B66-4BAE-A21F-DEF5ABA2EB0F}"
 	ProjectSection(SolutionItems) = preProject
-		target\arm64ec\verycd-tag\antiLeecharm64ec.dll.new = target\arm64ec\verycd-tag\antiLeecharm64ec.dll.new
+		target\specialdlp\arm64ec\verycd-tag\antiLeecharm64ec.dll.new = target\specialdlp\arm64ec\verycd-tag\antiLeecharm64ec.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-tag", "verycd-tag", "{CD182508-EAF9-4DE3-BD8E-280C658ECD7E}"
 	ProjectSection(SolutionItems) = preProject
-		target\x64\verycd-tag\antiLeechx64.dll.new = target\x64\verycd-tag\antiLeechx64.dll.new
+		target\specialdlp\x64\verycd-tag\antiLeechx64.dll.new = target\specialdlp\x64\verycd-tag\antiLeechx64.dll.new
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verycd-tag", "verycd-tag", "{07E5158B-45D6-4017-A4E3-D249D49986DF}"
 	ProjectSection(SolutionItems) = preProject
-		target\x86\verycd-tag\antiLeech.dll.new = target\x86\verycd-tag\antiLeech.dll.new
+		target\specialdlp\x86\verycd-tag\antiLeech.dll.new = target\specialdlp\x86\verycd-tag\antiLeech.dll.new
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specialdlp", "specialdlp", "{998CF04B-AC9B-4E3B-AEFE-334D29BE777E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specialdlpTester", "specialdlpTester", "{E574BDA1-E294-4643-936D-6691A9E116FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "arm", "arm", "{476BB462-4E1F-4AE9-9692-CE65F9A0DED2}"
+	ProjectSection(SolutionItems) = preProject
+		target\specialdlpTester\arm\specialdlpTester_arm.exe = target\specialdlpTester\arm\specialdlpTester_arm.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "arm64", "arm64", "{1F57BF46-24B8-4ED6-956C-D66D886B98D0}"
+	ProjectSection(SolutionItems) = preProject
+		target\specialdlpTester\arm64\specialdlpTester_arm64.exe = target\specialdlpTester\arm64\specialdlpTester_arm64.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "arm64ec", "arm64ec", "{427CA8C4-01C7-49D1-B942-9FF82E13B408}"
+	ProjectSection(SolutionItems) = preProject
+		target\specialdlpTester\arm64ec\specialdlpTester_arm64ec.exe = target\specialdlpTester\arm64ec\specialdlpTester_arm64ec.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x64", "x64", "{C032E0CC-8853-42E3-8087-E4DB90C94BFF}"
+	ProjectSection(SolutionItems) = preProject
+		target\specialdlpTester\x64\specialdlpTester_x64.exe = target\specialdlpTester\x64\specialdlpTester_x64.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x86", "x86", "{DE7F5C42-B61D-487A-B9E6-95193B266430}"
+	ProjectSection(SolutionItems) = preProject
+		target\specialdlpTester\x86\specialdlpTester.exe = target\specialdlpTester\x86\specialdlpTester.exe
 	EndProjectSection
 EndProject
 Global
@@ -406,11 +435,11 @@ Global
 		{986C1212-FE51-4509-BD30-055C82410BBF} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 		{BEB0CD3F-35F6-48C5-8FFA-F6CFF7EA2225} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
 		{48BF678A-CF1F-42E8-B024-E0990C1F206B} = {AC73A027-5FAF-4DEC-93AC-F92A3326A654}
-		{CF942649-6102-4E94-8918-D362AE6A9A62} = {986C1212-FE51-4509-BD30-055C82410BBF}
-		{0085204F-D0FB-489B-874D-EE492513EEAE} = {986C1212-FE51-4509-BD30-055C82410BBF}
-		{8F32A07B-C968-4B28-A540-9E43E5504221} = {986C1212-FE51-4509-BD30-055C82410BBF}
-		{357299DC-7753-4EAB-BBFD-D4CA50B91BCC} = {986C1212-FE51-4509-BD30-055C82410BBF}
-		{E7AEA776-F51F-4964-BE93-798EC240BFC9} = {986C1212-FE51-4509-BD30-055C82410BBF}
+		{CF942649-6102-4E94-8918-D362AE6A9A62} = {998CF04B-AC9B-4E3B-AEFE-334D29BE777E}
+		{0085204F-D0FB-489B-874D-EE492513EEAE} = {998CF04B-AC9B-4E3B-AEFE-334D29BE777E}
+		{8F32A07B-C968-4B28-A540-9E43E5504221} = {998CF04B-AC9B-4E3B-AEFE-334D29BE777E}
+		{357299DC-7753-4EAB-BBFD-D4CA50B91BCC} = {998CF04B-AC9B-4E3B-AEFE-334D29BE777E}
+		{E7AEA776-F51F-4964-BE93-798EC240BFC9} = {998CF04B-AC9B-4E3B-AEFE-334D29BE777E}
 		{3B492BC9-AB45-4FA3-B139-8E5D63694A1B} = {CF942649-6102-4E94-8918-D362AE6A9A62}
 		{84E72D04-DAE7-4A3B-9651-D0E569F2637B} = {0085204F-D0FB-489B-874D-EE492513EEAE}
 		{64E43285-EC0A-4774-B6F3-F049AB3D9C77} = {8F32A07B-C968-4B28-A540-9E43E5504221}
@@ -436,6 +465,13 @@ Global
 		{CC1A0640-0B66-4BAE-A21F-DEF5ABA2EB0F} = {8F32A07B-C968-4B28-A540-9E43E5504221}
 		{CD182508-EAF9-4DE3-BD8E-280C658ECD7E} = {E7AEA776-F51F-4964-BE93-798EC240BFC9}
 		{07E5158B-45D6-4017-A4E3-D249D49986DF} = {357299DC-7753-4EAB-BBFD-D4CA50B91BCC}
+		{998CF04B-AC9B-4E3B-AEFE-334D29BE777E} = {986C1212-FE51-4509-BD30-055C82410BBF}
+		{E574BDA1-E294-4643-936D-6691A9E116FD} = {986C1212-FE51-4509-BD30-055C82410BBF}
+		{476BB462-4E1F-4AE9-9692-CE65F9A0DED2} = {E574BDA1-E294-4643-936D-6691A9E116FD}
+		{1F57BF46-24B8-4ED6-956C-D66D886B98D0} = {E574BDA1-E294-4643-936D-6691A9E116FD}
+		{427CA8C4-01C7-49D1-B942-9FF82E13B408} = {E574BDA1-E294-4643-936D-6691A9E116FD}
+		{C032E0CC-8853-42E3-8087-E4DB90C94BFF} = {E574BDA1-E294-4643-936D-6691A9E116FD}
+		{DE7F5C42-B61D-487A-B9E6-95193B266430} = {E574BDA1-E294-4643-936D-6691A9E116FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7287AF59-7DAB-4489-BEAB-9BB5AE40ABFE}

@@ -1,4 +1,4 @@
-﻿## 5 个 SDC 版本的功能表格
+﻿## 不同 SDC 版本的功能表格
 
 <p align="center">
 <a href="readme.en.md">English</a> | <a href="readme.zh-hant.md">繁體中文介紹</a>
@@ -16,11 +16,11 @@
 		<th>easyMule<br />v1</th>
 		<th>easyMule<br />v2</th>
 		<th>默认昵称的<br />VeryCD Mod 和 <br />easyMule v1</th>
-		<th>其他更多<br />吸血驴</th>
+		<th>其它更多<br />吸血驴</th>
 	</tr>
 	<tr>
 		<th rowspan=5>SDC</th>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/all-verycd/antiLeech.dll.new">all-verycd</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/all-verycd/antiLeech.dll.new">all-verycd</a></th>
 		<td align=center>软</td>
 		<td align=center>无</td>
 		<td align=center>软</td>
@@ -30,27 +30,27 @@
 		<td align=center>是</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/easymule/antiLeech.dll.new">easymule</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/easymule/antiLeech.dll.new">easymule</a></th>
 		<td align=center>无</td>
 		<td align=center>无</td>
 		<td align=center>软</td>
 		<td align=center>硬</td>
-		<td align=center>无特别进行区分</td>
+		<td align=center>没有特别进行区分</td>
 		<td align=center>是</td>
 		<td align=center>是</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/lite/antiLeech.dll.new">lite</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/lite/antiLeech.dll.new">lite</a></th>
 		<td align=center>无</td>
 		<td align=center>无</td>
 		<td align=center>无</td>
 		<td align=center>硬</td>
-		<td align=center>无特别进行区分</td>
+		<td align=center>没有特别进行区分</td>
 		<td align=center>是</td>
 		<td align=center>是</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-nickname/antiLeech.dll.new">verycd-<br />nickname</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/verycd-nickname/antiLeech.dll.new">verycd-<br />nickname</a></th>
 		<td align=center>无</td>
 		<td align=center>无</td>
 		<td align=center>无</td>
@@ -60,7 +60,7 @@
 		<td align=center>是</td>
 	</tr>
 	<tr>
-		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/x86/verycd-tag/antiLeech.dll.new">verycd-tag</a></th>
+		<th><a href="https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/verycd-tag/antiLeech.dll.new">verycd-tag</a></th>
 		<td align=center>软</td>
 		<td align=center>软</td>
 		<td align=center>软</td>
@@ -75,7 +75,7 @@
 		<td align=center>无</td>
 		<td align=center>无</td>
 		<td align=center>硬</td>
-		<td align=center>无特别进行区分</td>
+		<td align=center>没有特别进行区分</td>
 		<td align=center>无</td>
 		<td align=center>否</td>
 	</tr>

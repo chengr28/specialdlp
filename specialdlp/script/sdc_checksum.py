@@ -1,5 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
-# Strict DLP Chinese (SDC) is a strict DLP based on the eMule Xtreme (official) version.
+# Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
 # Copyright (C) 2009-2024 SDC Team
 # 
 # This program is free software: you can redistribute it and/or modify 
@@ -24,14 +24,14 @@
 import hashlib
 import os
 
-# Mark file and store file location.
+# Mark file location.
 root_path = os.getcwd()
 file_list = []
-for current_path, sub_folders, files in os.walk(root_path):
-	for filename in files:
+for current_path, sub_folder, file in os.walk(root_path):
+	for filename in file:
 		file_list.append(os.path.join(current_path, filename))
 
-# Hash file and store result.
+# Hash files and store the result.
 result_list_text_sha3 = []
 result_list_text_sha2 = []
 result_list_markdown_sha3 = []
@@ -49,7 +49,7 @@ for filename_index in file_list:
 		result_list_text_sha2.append(r"  * sha2_256(" + filename_index + r") = " + digest_result + "\n")
 		result_list_markdown_sha2.append(r"sha2_256(" + filename_index + r") | " + digest_result + r" |" + "\n")
 
-# Write result to text file.
+# Write the result to text file.
 writefile_name = r"checksum.txt"
 writefile_handle = open(writefile_name, mode = r"w", encoding = r"utf_8_sig")
 writefile_handle.write(r"* Release checksum" + "\n")
@@ -59,10 +59,10 @@ for result_index in result_list_text_sha2:
 	writefile_handle.write(result_index)
 writefile_handle.close()
 
-# Write result to markdown file.
+# Write the result to markdown file.
 writefile_name = r"checksum.md"
 writefile_handle = open(writefile_name, mode = r"w", encoding = r"utf_8_sig")
-writefile_handle.write(r"Algorithm(Filename) | Hash |" + "\n")
+writefile_handle.write(r"Algorithm(File) | Hash |" + "\n")
 writefile_handle.write(r":--- | :--- |" + "\n")
 for result_index in result_list_markdown_sha3:
 	writefile_handle.write(result_index)
@@ -71,4 +71,5 @@ for result_index in result_list_markdown_sha2:
 writefile_handle.close()
 
 # Pause to show the result.
+print()
 input("Press \"Return\" to end.")
