@@ -18,7 +18,7 @@ Strict DLP Chinese v44006 更新日誌 (2024-04-13):
 * 專案和二進位檔現代化試驗計劃
   * 硬體
     * 啟用對 CPU Spectre 漏洞緩解措施的支援。
-    * 添加對 ARM/ARM64/ARM64EC CPU 架構的支援。
+    * 添加對 ARM 和 ARM64 和 ARM64EC 架構 CPU 的支援。
     * 升級對 CPU 指令集的要求以提升運算性能，最低的 CPU 指令集要求如下：
       * x86: SSE2
       * x64: SSE2
@@ -28,7 +28,7 @@ Strict DLP Chinese v44006 更新日誌 (2024-04-13):
     * ARM64EC 架構下二進位檔將被編譯為 Arm64X PE 格式。
   * 二進位檔校驗添加 SHA-3 的支援。
   * 項目文件升級到 Visual Studio 2022。
-  * 注意：我們無法確保（包括非試驗計劃在內的）二進位檔在生命周期已經結束的 Windows 版本中的正常使用，我們建議您升級到仍在生命週期中的版本。
+  * 注意：SDC Team 無法確保（包括非試驗計劃在內的）二進位檔在生命周期已經結束的 Windows 版本中的正常使用，我們建議您升級到仍在生命週期中的版本。
 * 修改
   * 命中 SDC 檢測的用戶端將被標記為以 <SDC> 開頭的記錄。
 * Release checksum
@@ -479,7 +479,7 @@ Strict DLP Chinese v44002 Update 1 更新日誌 (2012-12-29 ~ 2013-01-17)：
 * 為 Non-Standard ModString 檢測添加一個算法。
 * 修復一個官方版本中可能導致錯誤懲罰的 UserHash 檢測。 [Ejack]
 * 修復 VeryCD-Default-List-NickName 檢測可能造成的漏檢。
-* 優化對虛假 X-Ray/VeryCD-EasyMule-Mod 的算法防止可能發生的誤傷。
+* 優化對虛假 X-Ray 和 VeryCD-EasyMule-Mod 的算法防止可能發生的誤傷。
 * 優化 Israel Community 檢測的算法。
 * 使用 Visual Studio 2012 編譯。
 * 說明和更新日誌新增中文（繁體）語言。 [風之水]
@@ -544,7 +544,7 @@ Strict DLP Chinese v42001 更新日誌 (2010-07-02)：
 
 * 基於官方 DLP v42 製作。
 * 添加一個 SDC 版本（Lite）。
-* 更新 Israel Community/Fake X-Ray 的檢測程式碼。
+* 更新 Israel Community 和 Fake X-Ray 的檢測程式碼。
 
 
 ----------------------------------------------------------------------------------------------------
@@ -552,7 +552,7 @@ Strict DLP Chinese v42001 更新日誌 (2010-07-02)：
 
 Strict DLP Chinese v41002 更新日誌 (2010-06-14)：
 
-* 將Develop的補充檢測合併到正式版本中。
+* 將 Develop 的補充檢測合併到正式版本中。
 * 添加對部分 Xunlei 離線下載服務器的檢測。 [angvil]
 * 添加對部分 Tencent 離線下載服務器的檢測。 [angvil]
 * 添加對 MTVP2P 的暱稱檢測。
@@ -560,7 +560,7 @@ Strict DLP Chinese v41002 更新日誌 (2010-06-14)：
 * 添加對部分不表明真實身份的用戶端的檢測。 [tetris]
 * 添加對 Unbuyi 的檢測。 [一馬]
 * 改進對 EYE888 的檢測。
-* 將 Israel Community/Fake X-Ray 檢測程式碼添加到正式版本中（註釋狀態）。
+* 將 Israel Community 和 Fake X-Ray 檢測程式碼添加到正式版本中（註釋狀態）。
 * 修改 Official-Fix 版本的描述信息避免混淆。
 
 
@@ -573,7 +573,7 @@ Base 部分：
 * 基於官方 DLP v41 製作。
 * 添加對 eMule-GIFC 的檢測。 [DargonD]
 * 添加對 “qobfxb” 的暱稱檢測。 [DargonD]
-* 添加對 EYE888/btbbt[.]com/Greendown[.]cn 的暱稱檢測。 [FzH]
+* 添加對 EYE888 和 btbbt[.]com 和 Greendown[.]cn 的暱稱檢測。 [FzH]
 * 添加對 Bad UserHash 的檢測：
  * Community UserHash [FzH/DargonD]
   5E02F74DBA0E8A19DBF6733F0AE66F4A / B6491292AE0E07AC8C6045CAC2DD6F9F / 596B305E050EA842CE38DF3811216F3F
@@ -584,7 +584,7 @@ Base 部分：
  * Multi UserHash [DargonD]
   66B002DADE0E6DBEDF4FCCAA380E6FD4 / AAEE84C0C30E247CBB99B459255D6F99
 * 添加對 WebeSo Smule 的檢測。 [寂寞驴]
-* 添加對Fake X-Ray Mod 的檢測。 [**Riso64Bit**]
+* 添加對 Fake X-Ray Mod 的檢測。 [**Riso64Bit**]
 * 移除一個 SDC 版本（VeryCD-EasyMule2-Mod&VeryCD-MiniMule-Mod）。
 * 移除彈射檢測。
 * 修改其餘幾處細節與雜項。
@@ -603,7 +603,7 @@ Develop1 部分：
 
 Strict DLP Chinese v39005 更新日誌 (2010-01-09)：
 
-* 添加對 VeryCD-MiniMule-Mod 的檢測（HardBan[徹底屏蔽]）。
+* 添加對 VeryCD-MiniMule-Mod 的檢測（HardBan 徹底屏蔽）。
 
 
 ----------------------------------------------------------------------------------------------------

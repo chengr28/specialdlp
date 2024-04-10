@@ -6,7 +6,7 @@
 
 <table>
 	<tr>
-		<th colspan=2 rowspan=2>Variants<br />(click to download)</th>
+		<th colspan=2 rowspan=2>DLP variant<br />(click to download)</th>
 		<th colspan=6>Banning method</th>
 		<th rowspan=2>Fix<br />official<br />bugs</th>
 	</tr>

@@ -13,7 +13,7 @@ Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs 
 
 * [Feature table for SDC variants](https://github.com/chengr28/specialdlp/blob/master/specialdlp/document/readme.en.md)
 * [Download a single SDC variant](https://github.com/chengr28/specialdlp/tree/binary)
-* [Releases page: Download all SDC variant (7z/zip)](https://github.com/chengr28/specialdlp/releases)
+* [Releases page: Download all SDC variants in a signle package](https://github.com/chengr28/specialdlp/releases)
 * [FAQs and other tips](https://github.com/chengr28/specialdlp/blob/master/specialdlp/document/readme.en.txt)
 * [Changelog](https://github.com/chengr28/specialdlp/blob/master/specialdlp/document/changelog.en.txt)
 * [Checksum](https://github.com/chengr28/specialdlp/blob/master/specialdlp/document/checksum.md)

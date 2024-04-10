@@ -24,7 +24,7 @@ https://sourceforge.net/projects/specialdlp
 
 Different between SDC and eMule Xtreme DLP (official)
 * All SDC are based on eMule Xtreme DLP (official).
-* VeryCD-Mod and VeryCD-EasyMule-Mod (1.0) are in SoftBan list because of GPL-Breaker, private network, and community clients.
+* VeryCD-Mod and VeryCD-EasyMule-Mod (1.0) are in Soft Ban list because of GPL-Breaker, private network, and community clients.
 
 
 Usage﻿
@@ -40,7 +40,7 @@ About the real configuration folder
 You can select one of below mode, which decides configuration folder location in eMule. The option is in eMule - Options - Extended.
 * "Each user has its own configuration and downloads": %UserProfile%\AppData\Local\eMule\config ([System Drive]:\Users\[username]\AppData\Local\eMule\config)
 * "Everyone has the same configuration and downloads": %AllUsersProfile%\eMule\config ([System Drive]:\ProgramData\eMule\config)
-* "Store config and downloads in the program directory": The folder is in program folder.
+* "Store config and downloads in the program directory": The folder is in eMule program folder.
 
 
 -------------------------------------------------------------------------------
@@ -49,7 +49,7 @@ You can select one of below mode, which decides configuration folder location in
 SDC versions
 * bin: Binary files.
   * Architectures:
-    * x86: 32-bit eMule version. Most of eMule are 32-bit, you should use this one.
+    * x86: 32-bit eMule version. Most of eMule programs are 32-bit, you should use this one.
     * x64: 64-bit eMule version. It's only for 64-bit eMule.
     * arm: 32-bit ARM version.
     * arm64: 64-bit ARM version.
@@ -71,7 +71,7 @@ FAQ:
 Q: How can I detect SDC was loaded successfully?
 A: 
   * Check the antiLeech version in eMule - Options - Xtreme II/AntiLeech.
-  * Please continue to read below if problem still appears.
+  * Please continue to read below if problem can't be solved.
 
 Q: What can I do if SDC loads failed?
 A: 
@@ -82,7 +82,7 @@ A:
 Q: It seems I select banned mode but get reduce-score, or get opposite situation.
 A: 
   * Please check the SDC variant whether you need.
-  * Please turn "Anti-Banned" off or set it to "0".
+  * Please disable "Anti-Banned" or set it to "0".
 
 Q: What is antiLeech.dll.old?
 A: It's deprecated file and can be deleted.
@@ -97,7 +97,7 @@ A:
 Q: What is the "Ban" mode and the "Reduce Score" mode?
 A: 
   * "Ban" mode: Ban all clients which is a leecher.
-  * "Reduce Score" mode: Reduce the queue score of SoftBan leechers, not includes HardBan leechers.
+  * "Reduce Score" mode: Reduce the queue score of Soft Ban leechers, not includes Hard Ban leechers.
 
 Q: How to set "Ban" mode and "Reduce Score" mode?
 A: 
@@ -109,7 +109,7 @@ A: Sometimes "Ban" mode will and "Reduce Score" mode is never.
 
 Q: Would the bad leechers be passed or be false reduced score when using "Reduce Score" mode?
 A: 
-  * No. All leechers in HardBan list will be banned. No effect if it's in "Reduce Score" mode.
+  * No, all leechers in Hard Ban list will be banned. No effect if it's in "Reduce Score" mode.
   * Notice: It will be unlikely happened because of eMule antiLeech sequence check.
 
 Q: Why leechers are still in upload queue?
@@ -131,13 +131,13 @@ The way to reducing score is a proportion method. This option is useful to remov
 Please DO NOT set the credit system to eMule official, because there are not any punishment rules.
 
 * Enable "Upload Ban".
-It can refuse SoftBan leechers downloading from us, but we will not refuse their uploading.
+It can refuse Soft Ban leechers downloading from us, but we will not refuse their uploading.
 
-* Change reducing score proportion to maximum.
-It can remove SoftBan leechers from upload queue effectively.
+* Set reducing score proportion to maximum.
+It can remove Soft Ban leechers from upload queue effectively.
 
 * Disable "Anti-Banned" or set it to "0".
-It will remove some leechers from banned list, even in HardBan.
+It will remove some leechers from banned list, even in Hard Ban.
 
 * Restart eMule if you change DLP banning method.
 AntiLeech is not running in connection life cycle. Some leechers which were connected will not be banned or reduced score after new DLP was loaded or changing mode ("Ban" and "Reduce Score") settings.

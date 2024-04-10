@@ -24,7 +24,7 @@ https://sourceforge.net/projects/specialdlp
 
 SDC 与官方 DLP 的主要差别
 * 所有 SDC 是基于官方 eMule Xtreme DLP 的严格版本。
-* 在官方 eMule Xtreme DLP 的基础上，SDC 将 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第 1 版）中的部分或全部加入了 SoftBan 列表，原因是 GPL-Breaker、私有网络和社区客户端等不良行为。
+* 在官方 eMule Xtreme DLP 的基础上，SDC 将 VeryCD-Mod 和 VeryCD-EasyMule-Mod（第 1 版）中的部分或全部加入了 Soft Ban 列表，原因是 GPL-Breaker、私有网络和社区客户端等不良行为。
 
 
 加载方法
@@ -97,7 +97,7 @@ A：
 Q：何谓「屏蔽模式」和「减分模式」？
 A：
   * 「屏蔽模式」是将对象全部屏蔽的意思，也就是常说的彻底封杀所有吸血骡；
-  * 「减分模式」是将被定义为 SoftBan 的对象减少其积分的意思。
+  * 「减分模式」是将被定义为 Soft Ban 的对象减少其积分的意思。
 
 Q：如何应用「屏蔽模式」和「减分模式」？
 A：应用方法：
@@ -109,7 +109,7 @@ A：使用「屏蔽模式」时可能会有一定的影响，而使用「减分�
 
 Q：如果使用「减分模式」是否会错误对某些行为恶劣的吸血客户端进行减分？
 A：
-  * 不会，因为 DLP 中分为「HardBan」和「SoftBan」的机制。被定义为 HardBan 的对象，无论反吸血参数如何设置，都会被彻底屏蔽而不会被错误减分；
+  * 不会，因为 DLP 中分为「Hard Ban」和「Soft Ban」的机制。被定义为 Hard Ban 的对象，无论反吸血参数如何设置，都会被彻底屏蔽而不会被错误减分；
   * 提示：受限于 eMule 客户端调用 DLP 的顺序问题，某些本应被彻底屏蔽的客户端可能被错误减少积分，这个问题暂时无法解决。
 
 Q：为何使用 SDC 的「减分模式」后发现上传队列依然存在大量被减分的客户端？

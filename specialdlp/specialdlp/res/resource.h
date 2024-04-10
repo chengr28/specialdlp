@@ -112,6 +112,6 @@
 #else 
 #define SDC_RESOURCE_ORIGINAL_FILE_NAME		"antiLeech.dll"
 #endif
-#define SDC_RESOURCE_PRODUCT_NAME			"Strict DLP Chinese Dynamic Leech Protection Dynamic Link Library (SDC DLP DLL)"
+#define SDC_RESOURCE_PRODUCT_NAME			"Strict Dynamic Leech Protection Chinese Dynamic Link Library (SDC DLL)"
 #endif
 //SDC team end

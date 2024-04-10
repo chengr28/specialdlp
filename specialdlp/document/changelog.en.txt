@@ -18,8 +18,8 @@ Strict DLP Chinese v44006 changelog (2024-04-13):
 * Next generation project and binary roadmap
   * Hardware
     * Enable CPU Spectre mitigations.
-    * New ARM/ARM64/ARM64EC architectures support.
-    * New CPU instruction set requirements:
+    * New ARM, ARM64, and ARM64EC architectures support.
+    * New CPU instruction set extension requirements:
       * x86: SSE2
       * x64: SSE2
       * ARM: VFPv4
@@ -28,7 +28,7 @@ Strict DLP Chinese v44006 changelog (2024-04-13):
     * ARM64EC is now Arm64X PE format.
   * Add SHA-3 release checksum.
   * Update to Visual Studio 2022.
-  * Notice: We have no idea to ensure that the binary (including normal version) can run normally in an end-of-support Windows. We strongly recommend that you should upgrade to a new system which is still in lifecycle.
+  * Notice: SDC Team can't ensure that the binary (including normal version) is able to run normally in an end-of-support Windows. We strongly recommend that you should upgrade to a new system which is still in lifecycle.
 * Change
   * Clients which were marked by SDC will show in log, start with <SDC>.
 * Release checksum
@@ -106,7 +106,7 @@ Strict DLP Chinese v44005 Update 11 changelog (2017-01-29 ~ 2017-02-23 ~ 2017-03
   * Add a new All-VeryCD-Mod&Tag variant.
 * Fix
   * Rebuild advanced check. [javasboy]
-  * Fix some original checks which were marked to [SDC] incorrectly.
+  * Fix some original checks which were incorrectly marked to [SDC].
   * Fix module-definition file in x64 release.
 * Remove
   * Subversion/SVN support
@@ -423,7 +423,7 @@ Strict DLP Chinese v44005 Update 11 changelog (2017-01-29 ~ 2017-02-23 ~ 2017-03
 Strict DLP Chinese v44004 changelog (2016-10-10):
 
 * Update to Visual Studio 2015.
-* Fix segmentation fault.
+* Fix a segmentation fault.
 * Windows Vista (x86/x64) is required since this update.
 * Release Hash[SHA-3(256)]:
   * x64
@@ -452,17 +452,17 @@ Strict DLP Chinese v44003 Update 2 changelog (2014-01-04 ~ 2014-02-08 ~ 2015-04-
 * Fix a bug of Xunlei Offline Download Server and Mobile Apps check in All-VeryCD-Mod version. [pandaleo]
 * New return tag "[SDC]"
 * Remove ED2000 check.
-* New Fake ModString check
+* Improve Fake ModString check.
 * Improve Ghost Mod check.
 * Rebuild Israel Community to Fake ModString(Type 1). [无敌稻草人]
-* Rename VeryCD-Default-List-NickName to VeryCD-Default-NickNames.
+* Rename a variant from VeryCD-Default-List-NickName to VeryCD-Default-NickNames.
 * New combined variants code. [犟驴子]
 * Update to Visual Studio 2013.
-* Source files are now using UTF-8.
+* All source files are now using UTF-8.
 * 64-Bit/x64 version now only support Vista and newer Windows systems.
   * 32-Bit/x86 version support NT kernel based systems and newer Windows systems.
-  * Please watch SDC versions in ReadMe documents.
-* English in ReadMe and Changelog [luke lucky/Damn Sure]
+  * Please read SDC versions in ReadMe documents.
+* Add English language in ReadMe and Changelog. [luke lucky/Damn Sure]
 
 
 ----------------------------------------------------------------------------------------------------
@@ -474,15 +474,15 @@ Strict DLP Chinese v44002 Update 1 changelog (2012-12-29 ~ 2013-01-17):
 * New THC check [Bill Lee]
 * New P2PSearcher check [dark]
 * New SpeedyP2P client check
-* Update VeryCD-Default-List-NickName list
-* Active Ghost Mod check.
-* New Non-Standard ModString check.
+* Update VeryCD-Default-List-NickName list.
+* Enable Ghost Mod check.
+* Improve Non-Standard ModString check.
 * Fix a false UserHash check in official version. [Ejack]
 * Fix a bug in VeryCD-Default-List-NickName check.
 * Improve Fake X-Ray and VeryCD-EasyMule-Mod check.
 * Improve Israel Community check.
 * Update to Visual Studio 2012.
-* Chinese(Traditional) language in ReadMe and Changelog [風之水]
+* Add Chinese(Traditional) language in ReadMe and Changelog. [風之水]
 
 
 ----------------------------------------------------------------------------------------------------
@@ -491,7 +491,7 @@ Strict DLP Chinese v44002 Update 1 changelog (2012-12-29 ~ 2013-01-17):
 Strict DLP Chinese v44001 changelog (2011-04-17):
 
 * Update to v44.
-* New Non-Standard ModString check.
+* Improve Non-Standard ModString check.
 * Improve VeryCD-Default-List-NickName check.
 
 
@@ -500,10 +500,10 @@ Strict DLP Chinese v44001 changelog (2011-04-17):
 
 Strict DLP Chinese v43002 changelog (2011-03-18):
 
-* Active Non-Standard ModString check.
+* Enable Non-Standard ModString check.
 * Improve some checks. [PERSMULE]
 * Fix a bug in Lite version.
-* Move Changelog files from release to source archive.
+* Move Changelog from release to source package file.
 
 
 ----------------------------------------------------------------------------------------------------
@@ -522,18 +522,18 @@ Strict DLP Chinese v42002 changelog (2010-11-07):
 * New Fake MorphCA check [DargonD]
 * New "0.50a" check [DargonD]
 * New "ED2000[.]COM" check
-* New Bad UserHash check:
+* Add some new Bad UserHash check:
  * Community UserHash
   D0D897BD360EEFF329903E04990B6F86
  * Tencent Offline Downloading Server UserHash
   36725093E00E9350F7680C871E946FD1
-* Active Israel Community check.
-* Move Non-Standard ModString check to release (in comment status).
+* Enable Israel Community check.
+* Non-Standard ModString check has been merged to release (inactive status).
 * Improve FlashGet check.
-* Add New QQDownload check in Bad Userhash.
+* Fix a bug of QQDownload check in Bad Userhash.
 * Improve VeryCD check.
-* Remove Fake X-Ray check (in comment status).
-* Official-Fix is replaced by Lite version.
+* Remove Fake X-Ray check (inactive status).
+* Official-Fix was replaced by Lite version.
 * Typo fix
 
 
@@ -552,7 +552,7 @@ Strict DLP Chinese v42001 changelog (2010-07-02):
 
 Strict DLP Chinese v41002 changelog (2010-06-14):
 
-* Develop part merges to release.
+* Develop part has been merged to release.
 * New Xunlei Offline Downloading Server check [angvil]
 * New Tencent Offline Downloading Server check [angvil]
 * New MTVP2P check
@@ -560,8 +560,8 @@ Strict DLP Chinese v41002 changelog (2010-06-14):
 * New fake clients check [tetris]
 * New Unbuyi check [一馬]
 * Improve "EYE888" check.
-* Move Israel Community and Fake X-Ray check to release (in comment status).
-* Change introduction of Official-Fix version.
+* Israel Community and Fake X-Ray check has been merged to release (inactive status).
+* Change description of Official-Fix version.
 
 
 ----------------------------------------------------------------------------------------------------
@@ -574,7 +574,7 @@ Base part
 * New eMule-GIFC check [DargonD]
 * New "qobfxb" check [DargonD]
 * New "EYE888", "btbbt[.]com" and "Greendown[.]cn" check [FzH]
-* New Bad UserHash check:
+* Add some new Bad UserHash check:
  * Community UserHash [FzH/DargonD]
   5E02F74DBA0E8A19DBF6733F0AE66F4A / B6491292AE0E07AC8C6045CAC2DD6F9F / 596B305E050EA842CE38DF3811216F3F
  * Invalid UserHash [CHNP2P/DargonD]
@@ -593,9 +593,9 @@ Base part
 
 Develop1 part
 * Improve Israel Community check.
-* Add new algorithm to Non-Standard ModString check. [反迅雷/茄头/angvil/**Riso64Bit**]
-* Add new algorithm to Fake ModString check. [反迅雷]
-* Remove duplicated code.
+* Improve Non-Standard ModString check. [反迅雷/茄头/angvil/**Riso64Bit**]
+* Improve Fake ModString check. [反迅雷]
+* Remove duplicated check.
 
 
 ----------------------------------------------------------------------------------------------------
@@ -603,7 +603,7 @@ Develop1 part
 
 Strict DLP Chinese v39005 changelog (2010-01-09):
 
-* Add new VeryCD-MiniMule-Mod check to HardBan list.
+* Add new VeryCD-MiniMule-Mod check to Hard Ban list.
 
 
 ----------------------------------------------------------------------------------------------------
@@ -612,11 +612,11 @@ Strict DLP Chinese v39005 changelog (2010-01-09):
 Strict DLP Chinese v39004 changelog (2009-12-31):
 
 Base part
-* Add new Bad UserHash "CB42F563EE0EA7907395420CAC146FF5" check. [DargonD]
-* Change VeryCD EasyMule2 Mod check to HardBan list.
-* Release with SSE2.
+* Add a new Bad UserHash "CB42F563EE0EA7907395420CAC146FF5" check. [DargonD]
+* Move VeryCD EasyMule2 Mod check to Hard Ban list.
+* Release with instruction set extension SSE2.
 * Renew source files.
-* Archive now includes source files.
+* Package file is now including source files.
 * Typo fix
 
 --------------------
@@ -627,16 +627,16 @@ Develop1 part
 * New Fake X-Ray check
 * New Custom ModString check
 * New Fake ModString check
-* Add a new Custom ModString check.
-* Fix bugs from SDC 39004 Beta version [Dolphin/DargonD/茄头/alisa/dilxat]
-* Move Custom ModString check to correct order.
-* Remove Pushing check in QQDownload check.
+* Improve Custom ModString check.
+* Fix bugs from SDC 39004 Beta version. [Dolphin/DargonD/茄头/alisa/dilxat]
+* Move Custom ModString check to new location.
+* Remove temporary Pushing check in QQDownload check.
 
 Develop2 part
-* Add a new Israel Community and Fake ModString check.
-* Custom ModString check development [rifleman/dilxat]
-* Israel Community check development from Magic Angelyzer Mod [dilxat]
-* Custom ModString check development from Sivka Mod [angvil]
+* Improve Israel Community check and Fake ModString check.
+* Fix a bug in Custom ModString check. [rifleman/dilxat]
+* Fix a bug in Israel Community check, which incorrectly marks Magic Angelyzer Mod. [dilxat]
+* Fix a bug in Custom ModString check, which incorrectly marks Sivka Mod. [angvil]
 * Renew source files.
 * Typo fix
 
@@ -648,8 +648,8 @@ Strict DLP Chinese v39003 changelog (2009-11-14):
 
 * Add a new SDC variant.
 * Fix a bug.
-* Improve binary configuration.
-* Renew readme documents.
+* Improve binary file configurations.
+* Rewrite readme documents.
 * Source and document files are now using UTF-8.
-* Archives are now using 7-Zip format.
+* Package file is now using 7-Zip format.
 * Typo fix
