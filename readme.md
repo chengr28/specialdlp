@@ -4,7 +4,7 @@
 <a href="readme.zh-hans.md">简体中文介绍</a> | <a href="readme.zh-hant.md">繁體中文介紹</a>
 </p>
 
-This branch stores compiled binary files of all versions and variants of the SDC (Strict DLP Chinese). They are listed below:
+This branch stores all binary files of the SDC (Strict DLP Chinese). They are listed below:
 
 | variant | x86 | x64 | arm | arm64 | arm64ec |
 |-----------------|----------|----------|----------|----------|----------|
@@ -20,9 +20,9 @@ You should always use <code>x86</code> version if you don't know what to use.
 
 You can read [Feature table for SDC variants](https://github.com/chengr28/specialdlp/blob/master/specialdlp/document/readme.en.md) before choosing a variant (all-verycd, lite, etc.).
 
-If you want to get all the versions and variants listed above, download the 7z/zip file in the [releases page](https://github.com/chengr28/specialdlp/releases). That page also lists checksum of all the files.
+If you want to get all the versions and variants listed above, download the package file in the [releases page](https://github.com/chengr28/specialdlp/releases). That page also lists checksum of all binary files.
 
 Useful links:
 * [Back to GitHub repo home](https://github.com/chengr28/specialdlp)
 * [GitLab repo](https://gitlab.com/chengr28/specialdlp)
-* [eMuleFans page](https://emulefans.com/strict-dlp-chinese-v44006)
+* [SDC in eMuleFans 电骡爱好者](https://www.emulefans.com/news/plugin/dlp/sdc)

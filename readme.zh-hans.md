@@ -20,9 +20,9 @@
 
 您可以阅读 [eMuleFans 电骡爱好者上的 SDC 完整介绍文章](https://emulefans.com/strict-dlp-chinese-v44006) 或者 [不同 SDC 版本的功能表格](https://github.com/chengr28/specialdlp/blob/master/specialdlp/document/readme.zh-hans.md)以决定使用哪一个 SDC 版本（如 all-verycd、lite 等）。
 
-如果想下载上面列出的所有的版本，请至 [releases 页](https://github.com/chengr28/specialdlp/releases) 下载 7z/zip 打包文件，该页面还列出了所有文件的校验和。
+如果想下载上面列出的所有的版本，请至 [releases 页](https://github.com/chengr28/specialdlp/releases) 下载打包好的文件，该页面还列出了所有文件的校验和。
 
 链接：
 * [回到 GitHub 项目主页](https://github.com/chengr28/specialdlp)
 * [GitLab 项目主页](https://gitlab.com/chengr28/specialdlp)
-* [eMuleFans 电骡爱好者页面](https://emulefans.com/strict-dlp-chinese-v44006)
+* [eMuleFans 电骡爱好者上的 SDC 页面](https://www.emulefans.com/news/plugin/dlp/sdc)
