@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 # Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
-# Copyright (C) 2009-2024 SDC Team
+# Copyright (C) 2009-2025 SDC Team
 # 
 # This program is free software: you can redistribute it and/or modify 
 # it under the terms of the GNU General Public License as published by 
@@ -31,7 +31,7 @@ for current_path, sub_folder, file in os.walk(root_path):
 	for filename in file:
 		file_list.append(os.path.join(current_path, filename))
 
-# Hash files and store the result.
+# Hash file and store result.
 result_list_text_sha3 = []
 result_list_text_sha2 = []
 result_list_markdown_sha3 = []
@@ -49,7 +49,7 @@ for filename_index in file_list:
 		result_list_text_sha2.append(r"  * sha2_256(" + filename_index + r") = " + digest_result + "\n")
 		result_list_markdown_sha2.append(r"sha2_256(" + filename_index + r") | " + digest_result + r" |" + "\n")
 
-# Write the result to text file.
+# Write result to text file.
 writefile_name = r"checksum.txt"
 writefile_handle = open(writefile_name, mode = r"w", encoding = r"utf_8_sig")
 writefile_handle.write(r"* Release checksum" + "\n")
@@ -59,7 +59,7 @@ for result_index in result_list_text_sha2:
 	writefile_handle.write(result_index)
 writefile_handle.close()
 
-# Write the result to markdown file.
+# Write result to markdown file.
 writefile_name = r"checksum.md"
 writefile_handle = open(writefile_name, mode = r"w", encoding = r"utf_8_sig")
 writefile_handle.write(r"Algorithm(File) | Hash |" + "\n")

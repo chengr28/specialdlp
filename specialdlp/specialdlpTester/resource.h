@@ -1,5 +1,5 @@
 ﻿// Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
-// Copyright (C) 2009-2024 SDC Team
+// Copyright (C) 2009-2025 SDC Team
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU General Public License as published by 
@@ -33,7 +33,6 @@
 #endif
 #endif
 
-
 //External dependency
 //No dependency
 
@@ -55,11 +54,14 @@
 #define SDC_TESTER_RESOURCE_FILE_VERSION_COMMA		44,0,0,6
 #define SDC_TESTER_RESOURCE_FILE_VERSION_STRING		"44006"
 #define SDC_TESTER_RESOURCE_INTERNAL_NAME			"specialdlpTester.exe"
-#define SDC_TESTER_RESOURCE_LEGAL_COPYRIGHT			"Copyright (C) 2009-2024 SDC Team"
+#define SDC_TESTER_RESOURCE_LEGAL_COPYRIGHT			"Copyright (C) 2009-2025 SDC Team"
 #define SDC_TESTER_RESOURCE_ORIGINAL_FILE_NAME		SDC_TESTER_RESOURCE_INTERNAL_NAME
 #define SDC_TESTER_RESOURCE_PRODUCT_NAME			"Strict DLP Chinese (SDC) Tester"
 #define SDC_TESTER_RESOURCE_PRODUCT_VERSION_COMMA	SDC_TESTER_RESOURCE_FILE_VERSION_COMMA
 #define SDC_TESTER_RESOURCE_PRODUCT_VERSION_STRING	SDC_TESTER_RESOURCE_FILE_VERSION_STRING
+
+//Template definition
+//No definition
 
 //Class definition
 //No definition

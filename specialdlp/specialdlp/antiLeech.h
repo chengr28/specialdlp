@@ -1,18 +1,14 @@
-﻿#pragma once
+﻿//SDC team start
+#ifndef SDC_INCLUDE_ANTILEECH_H
+#define SDC_INCLUDE_ANTILEECH_H
 
-//SDC team start
 #if defined(SPECIAL_DLP_VERSION)
 #define DLPVERSION							44006
 #define SDC_RESOURCE_VERSION				44,0,0,6
 #else //Official
+#pragma once
 #define DLPVERSION							44
-#endif
-//SDC team end
 
-//SDC team start
-#if defined(SPECIAL_DLP_VERSION)
-//Do nothing.
-#else //Official
 class CantiLeech
 {
 public:
@@ -40,6 +36,7 @@ private:
 	const bool IsTypicalHex(CString & addon) const;
 };
 #endif
+//SDC team end
 
 //<<< new tags from eMule 0.04x
 #define CT_UNKNOWNx00						0x00		//Hybrid Horde protocol
@@ -118,3 +115,7 @@ private:
 #define ET_MOD_UNKNOWNxC9					0xC9		//Bionic 0.20 Beta]
 #define ET_MOD_UNKNOWNxDA					0xDA		//Rumata (rus)(Plus v1f) - leecher mod?
 //>>> eWombat [SNAFU_V3]
+
+//SDC team start
+#endif
+//SDC team end

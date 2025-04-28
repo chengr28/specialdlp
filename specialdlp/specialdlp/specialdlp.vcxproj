@@ -883,6 +883,7 @@
       <EnableModules>true</EnableModules>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
+      <PreprocessorDefinitions>WIN32;WIN_X86;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
@@ -914,6 +915,7 @@
       <EnableModules>true</EnableModules>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
+      <PreprocessorDefinitions>WIN32;WIN_ARM32;_ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
@@ -945,6 +947,7 @@
       <EnableModules>true</EnableModules>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
+      <PreprocessorDefinitions>WIN32;WIN64;WIN_X86;WIN_X64;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
@@ -976,6 +979,7 @@
       <EnableModules>true</EnableModules>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
+      <PreprocessorDefinitions>WIN32;WIN64;WIN_ARM32;WIN_ARM64;WIN_ARM64EC;_AMD64_;_ARM64EC_;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
@@ -1007,6 +1011,7 @@
       <EnableModules>true</EnableModules>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
+      <PreprocessorDefinitions>WIN32;WIN64;WIN_ARM32;WIN_ARM64;_ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>

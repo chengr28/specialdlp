@@ -1,5 +1,5 @@
 ﻿// Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
-// Copyright (C) 2009-2024 SDC Team
+// Copyright (C) 2009-2025 SDC Team
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU General Public License as published by 
@@ -21,6 +21,9 @@
 //Internal dependency
 #include "specialdlpTester.h"
 
+//Global variable
+//No variable
+
 //Namespace definition
 //No definition
 
@@ -31,37 +34,42 @@ int main(
 	void
 )
 {
-//Set locale environment.
-	std::setlocale(LC_ALL, SDC_LOCALE_SETTING);
+//Set program environment.
+	if (_set_errno(0);
+		std::setlocale(LC_ALL, SDC_LOCALE_SETTING) == nullptr) [[unlikely]]
+	{
+		std::cout << "Set locale failed, error code is " << errno << "." << std::endl;
+		PressReturnToEnd();
+
+		return EXIT_FAILURE;
+	}
 
 //Load library file.
-	const auto LibraryInstance = LoadLibraryExA(SDC_LIBRARY_NAME, nullptr, LOAD_LIBRARY_SEARCH_APPLICATION_DIR);
-	if (LibraryInstance == nullptr)
+	const auto LibraryInstance{LoadLibraryExA(SDC_LIBRARY_NAME, nullptr, LOAD_LIBRARY_SEARCH_APPLICATION_DIR)};
+	if (LibraryInstance == nullptr) [[unlikely]]
 	{
-		std::cout << "Error: Load library file failed, error code is " << GetLastError() << "." << std::endl;
+		std::cout << "Load library file failed, error code is " << GetLastError() << "." << std::endl;
 		PressReturnToEnd();
 
 		return EXIT_FAILURE;
 	}
 
 //Load function from library.
-	const auto GetDLPVersion = reinterpret_cast<GETDLPVERSION>(GetProcAddress(LibraryInstance, "GetDLPVersion"));
-	const auto DLPCheckModstring_Hard = reinterpret_cast<DLPCHECKMODSTRING_HARD>(GetProcAddress(LibraryInstance, "DLPCheckModstring_Hard"));
-	const auto DLPCheckModstring_Soft = reinterpret_cast<DLPCHECKMODSTRING_SOFT>(GetProcAddress(LibraryInstance, "DLPCheckModstring_Soft"));
-	const auto DLPCheckUsername_Hard = reinterpret_cast<DLPCHECKUSERNAME_HARD>(GetProcAddress(LibraryInstance, "DLPCheckUsername_Hard"));
-	const auto DLPCheckUsername_Soft = reinterpret_cast<DLPCHECKUSERNAME_SOFT>(GetProcAddress(LibraryInstance, "DLPCheckUsername_Soft"));
-	const auto DLPCheckNameAndHashAndMod = reinterpret_cast<DLPCHECKNAMEANDHASHANDMOD>(GetProcAddress(LibraryInstance, "DLPCheckNameAndHashAndMod"));
-	const auto DLPCheckMessageSpam = reinterpret_cast<DLPCHECKMESSAGESPAM>(GetProcAddress(LibraryInstance, "DLPCheckMessageSpam"));
-//	const auto DLPCheckUserhash = reinterpret_cast<DLPCHECKUSERHASH>(GetProcAddress(LibraryInstance, "DLPCheckUserhash")); //No more AJ check.
-	const auto DLPCheckHelloTag = reinterpret_cast<DLPCHECKHELLOTAG>(GetProcAddress(LibraryInstance, "DLPCheckHelloTag"));
-	const auto DLPCheckInfoTag = reinterpret_cast<DLPCHECKINFOTAG>(GetProcAddress(LibraryInstance, "DLPCheckInfoTag"));
+	const auto GetDLPVersion{reinterpret_cast<const GETDLPVERSION>(GetProcAddress(LibraryInstance, "GetDLPVersion"))};
+	const auto DLPCheckModstring_Hard{reinterpret_cast<const DLPCHECKMODSTRING_HARD>(GetProcAddress(LibraryInstance, "DLPCheckModstring_Hard"))};
+	const auto DLPCheckModstring_Soft{reinterpret_cast<const DLPCHECKMODSTRING_SOFT>(GetProcAddress(LibraryInstance, "DLPCheckModstring_Soft"))};
+	const auto DLPCheckUsername_Hard{reinterpret_cast<const DLPCHECKUSERNAME_HARD>(GetProcAddress(LibraryInstance, "DLPCheckUsername_Hard"))};
+	const auto DLPCheckUsername_Soft{reinterpret_cast<const DLPCHECKUSERNAME_SOFT>(GetProcAddress(LibraryInstance, "DLPCheckUsername_Soft"))};
+	const auto DLPCheckNameAndHashAndMod{reinterpret_cast<const DLPCHECKNAMEANDHASHANDMOD>(GetProcAddress(LibraryInstance, "DLPCheckNameAndHashAndMod"))};
+	const auto DLPCheckMessageSpam{reinterpret_cast<const DLPCHECKMESSAGESPAM>(GetProcAddress(LibraryInstance, "DLPCheckMessageSpam"))};
+	const auto DLPCheckHelloTag{reinterpret_cast<const DLPCHECKHELLOTAG>(GetProcAddress(LibraryInstance, "DLPCheckHelloTag"))};
+	const auto DLPCheckInfoTag{reinterpret_cast<const DLPCHECKINFOTAG>(GetProcAddress(LibraryInstance, "DLPCheckInfoTag"))};
 	if (GetDLPVersion == nullptr || DLPCheckModstring_Hard == nullptr || DLPCheckModstring_Soft == nullptr || 
 		DLPCheckUsername_Hard == nullptr || DLPCheckUsername_Soft == nullptr || DLPCheckNameAndHashAndMod == nullptr || 
-		DLPCheckMessageSpam == nullptr || /* DLPCheckUserhash == nullptr || */ DLPCheckHelloTag == nullptr || 
-		DLPCheckInfoTag == nullptr
-	)
+		DLPCheckMessageSpam == nullptr || DLPCheckHelloTag == nullptr || DLPCheckInfoTag == nullptr
+	) [[unlikely]]
 	{
-		std::cout << "Error: Load function from library failed, error code is " << GetLastError() << "." << std::endl;
+		std::cout << "Load function from library failed, error code is " << GetLastError() << "." << std::endl;
 		FreeLibrary(LibraryInstance);
 		PressReturnToEnd();
 
@@ -71,9 +79,9 @@ int main(
 //Print library location.
 	auto LocationBuffer(std::make_unique<wchar_t[]>(SDC_PATH_MAXSIZE + sizeof(std::uint8_t)));
 	if (GetModuleFileNameW(LibraryInstance, LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0 || 
-		wcsnlen(LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0)
+		wcsnlen(LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0) [[unlikely]]
 	{
-		std::cout << "Error: Load module name from library failed, error code is " << GetLastError() << "." << std::endl;
+		std::cout << "Load module name from library failed, error code is " << GetLastError() << "." << std::endl;
 		FreeLibrary(LibraryInstance);
 		PressReturnToEnd();
 
@@ -90,21 +98,21 @@ int main(
 	std::cout << std::endl;
 
 //Prepare parameter.
-	std::wstring StringClientVersion(L"");
-	std::wstring StringModVersion(L"");
-	std::wstring StringUserName(L"");
-	std::wstring StringUserHash(L"");
-	std::wstring StringMessageText(L"");
-	unsigned int TagNumber = 0;
+	std::wstring StringClientVersion;
+	std::wstring StringModVersion;
+	std::wstring StringUserName;
+	std::wstring StringUserHash;
+	std::wstring StringMessageText;
+	unsigned int TagNumber{0};
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Example: " << std::endl;
-	std::cout << "Client version = \"eMule v0.70a\"" << std::endl;
-	std::cout << "Mod version = \"Xtreme 8.1\"" << std::endl;
-	std::cout << "User name = \"Hello World!\"" << std::endl;
-	std::cout << "User hash = \"0123456789ABCDE0123456789ABCDE01\"" << std::endl;
-	std::cout << "Message text = \"Hello World!\"" << std::endl;
-	std::cout << "Tag number = \"0\"" << std::endl;
+	std::cout << "Client version == \"eMule v0.70a\"" << std::endl;
+	std::cout << "Mod version == \"Xtreme 8.1\"" << std::endl;
+	std::cout << "User name == \"Hello World!\"" << std::endl;
+	std::cout << "User hash == \"0123456789ABCDE0123456789ABCDE01\"" << std::endl;
+	std::cout << "Message text == \"Hello World!\"" << std::endl;
+	std::cout << "Tag number == \"0\"" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Client version: ";
 	std::getline(std::wcin, StringClientVersion);
@@ -128,32 +136,78 @@ int main(
 //Print parameter.
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
-	std::cout << "Client version = \"";
-	std::wcout << StringClientVersion;
-	std::cout << "\"" << std::endl;
-	std::cout << "Mod version = \"";
-	std::wcout << StringModVersion;
-	std::cout << "\"" << std::endl;
-	std::cout << "User name = \"";
-	std::wcout << StringUserName;
-	std::cout << "\"" << std::endl;
-	std::cout << "User hash = \"";
-	std::wcout << StringUserHash;
-	std::cout << "\"" << std::endl;
-	std::cout << "Message text = \"";
+	std::cout << "Client version == ";
+	if (StringClientVersion.empty() == true)
+	{
+		StringClientVersion.clear();
+		std::wcout << L"<empty>";
+	}
+	else {
+		std::cout << "\"";
+		std::wcout << StringClientVersion;
+		std::cout << "\"";
+	}
+	std::cout << std::endl;
+	std::cout << "Mod version == ";
+	if (StringModVersion.empty() == true)
+	{
+		StringModVersion.clear();
+		std::wcout << L"<empty>";
+	}
+	else {
+		std::cout << "\"";
+		std::wcout << StringModVersion;
+		std::cout << "\"";
+	}
+	std::cout << std::endl;
+	std::cout << "User name == ";
+	if (StringUserName.empty() == true)
+	{
+		StringUserName.clear();
+		std::wcout << L"<empty>";
+	}
+	else {
+		std::cout << "\"";
+		std::wcout << StringUserName;
+		std::cout << "\"";
+	}
+	std::cout << std::endl;
+	std::cout << "User hash == ";
+	if (StringUserHash.empty() == true)
+	{
+		StringUserHash.clear();
+		std::wcout << L"<empty>";
+	}
+	else {
+		std::cout << "\"";
+		std::wcout << StringUserHash;
+		std::cout << "\"";
+	}
+	std::cout << std::endl;
+	std::cout << "Message text == ";
 	std::wcout << StringMessageText;
-	std::cout << "\"" << std::endl;
-	std::cout << "Tag number = \"";
+	if (StringMessageText.empty() == true)
+	{
+		StringMessageText.clear();
+		std::wcout << L"<empty>";
+	}
+	else {
+		std::cout << "\"";
+		std::wcout << StringMessageText;
+		std::cout << "\"";
+	}
+	std::cout << std::endl;
+	std::cout << "Tag number == \"";
 	std::cout << std::hex << "0x" << TagNumber;
 	std::cout << "\"" << std::endl;
 	std::cout << std::endl;
 
 //Check parameter.
-	LPCWSTR PointClientVersion = nullptr;
-	LPCWSTR PointModVersion = nullptr;
-	LPCWSTR PointUserName = nullptr;
-	LPCWSTR PointUserHash = nullptr;
-	LPCWSTR PointMessageText = nullptr;
+	LPCWSTR PointClientVersion{nullptr};
+	LPCWSTR PointModVersion{nullptr};
+	LPCWSTR PointUserName{nullptr};
+	LPCWSTR PointUserHash{nullptr};
+	LPCWSTR PointMessageText{nullptr};
 	if (StringClientVersion.empty() == false)
 		PointClientVersion = StringClientVersion.c_str();
 	if (StringModVersion.empty() == false)
@@ -165,70 +219,61 @@ int main(
 	if (StringMessageText.empty() == false)
 		PointMessageText = StringMessageText.c_str();
 
-//Run the test, the order is from eMule Xtreme 8.1 sources.
+//Start to test, order is from eMule Xtreme 8.1 sources.
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
-	LPCWSTR Reason = nullptr;
+	LPCWSTR Reason{nullptr};
 	Reason = DLPCheckHelloTag(TagNumber);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Hard-Ban> DLPCheckHelloTag: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
 	Reason = DLPCheckInfoTag(TagNumber);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Hard-Ban> DLPCheckInfoTag: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
 	Reason = DLPCheckModstring_Hard(PointModVersion, PointClientVersion);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Hard-Ban> DLPCheckModstring_Hard: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
 	Reason = DLPCheckModstring_Soft(PointModVersion, PointClientVersion);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Soft-Ban> DLPCheckModstring_Soft: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
-/* No more AJ check.
-	Reason = DLPCheckUserhash(nullptr);
-	if (Reason != nullptr)
-	{
-		std::cout << "<AJ-Ban> DLPCheckUserhash: Report \"";
-		std::wcout << Reason << L"\"." << std::endl;
-		goto JumpToEnd;
-	}
-*/
 	Reason = DLPCheckNameAndHashAndMod(PointUserName, PointUserHash, PointModVersion);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Soft-Ban> DLPCheckNameAndHashAndMod: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
 	Reason = DLPCheckUsername_Soft(PointUserName);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Soft-Ban> DLPCheckUsername_Soft: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
 	Reason = DLPCheckUsername_Hard(PointUserName);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Hard-Ban> DLPCheckUsername_Hard: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
 		goto JumpToEnd;
 	}
 	Reason = DLPCheckMessageSpam(PointMessageText);
-	if (Reason != nullptr)
+	if (Reason != nullptr) [[unlikely]]
 	{
 		std::cout << "<Spam-Ban> DLPCheckMessageSpam: Report \"";
 		std::wcout << Reason << L"\"." << std::endl;
@@ -241,7 +286,7 @@ int main(
 //Jump here to end.
 JumpToEnd:
 
-//Free library file and pause to show the result.
+//Free library file and pause to show result.
 	FreeLibrary(LibraryInstance);
 	PressReturnToEnd();
 
@@ -253,8 +298,9 @@ static void PressReturnToEnd(
 	void
 )
 {
-	std::cout << std::endl << "Press \"Return\" to end." << std::endl;
-	std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
+	std::cout << std::endl;
+	std::cout << "Press \"Return\" to end." << std::endl;
+	std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), u8'\n');
 	std::cin.get();
 
 	return;

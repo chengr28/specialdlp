@@ -1,4 +1,9 @@
-﻿//{{NO_DEPENDENCIES}}
+﻿//SDC team start
+#ifndef SDC_INCLUDE_RESOURCE_H
+#define SDC_INCLUDE_RESOURCE_H
+//SDC team end
+
+//{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
 // Used by antiLeech.rc
 // 
@@ -98,7 +103,7 @@
 #else 
 #define SDC_RESOURCE_INTERNAL_NAME			"Release"
 #endif
-#define SDC_RESOURCE_LEGAL_COPYRIGHT		"Copyright (C) 2009-2024 SDC Team"
+#define SDC_RESOURCE_LEGAL_COPYRIGHT		"Copyright (C) 2009-2025 SDC Team"
 #if (defined(WIN_X86) && !defined(WIN_X64))
 #define SDC_RESOURCE_ORIGINAL_FILE_NAME		"antiLeech.dll"
 #elif defined(WIN_X64)
@@ -113,5 +118,7 @@
 #define SDC_RESOURCE_ORIGINAL_FILE_NAME		"antiLeech.dll"
 #endif
 #define SDC_RESOURCE_PRODUCT_NAME			"Strict Dynamic Leech Protection Chinese Dynamic Link Library (SDC DLL)"
+#endif
+
 #endif
 //SDC team end
