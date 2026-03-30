@@ -51,7 +51,6 @@ SDC versions
   * Architectures:
     * x86: 32-bit eMule version. Most of eMule programs are 32-bit, you should use this one.
     * x64: 64-bit eMule version. It's only for 64-bit eMule.
-    * arm: 32-bit ARM version.
     * arm64: 64-bit ARM version.
     * arm64ec: 64-bit ARM (EC) version.
   * Variants:
@@ -77,7 +76,7 @@ Q: What can I do if SDC loads failed?
 A: 
   * Please check the file name of "antiLeech.dll".
   * Please check the "antiLeech.dll" location.
-  * Please check the platform of system and version of eMule (x86/x64/arm/arm64/arm64ec).
+  * Please check the platform of system and version of eMule (x86/x64/arm64/arm64ec).
 
 Q: It seems I select banned mode but get reduce-score, or get opposite situation.
 A: 
