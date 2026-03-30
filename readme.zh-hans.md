@@ -7,7 +7,7 @@
 这里保存了所有 SDC (Strict DLP Chinese) 不同功能和指令集版本的、已编译可直接使用的二进制文件。下载链接列举如下：
 
 | variant | x86 | x64 | arm64 | arm64ec |
-|-----------------|----------|----------|----------|----------|----------|
+|-----------------|----------|----------|----------|----------|
 | all-verycd | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/all-verycd/antiLeech.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x64/all-verycd/antiLeechx64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64/all-verycd/antiLeecharm64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64ec/all-verycd/antiLeecharm64ec.dll.new) |
 | easymule | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/easymule/antiLeech.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x64/easymule/antiLeechx64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64/easymule/antiLeecharm64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64ec/easymule/antiLeecharm64ec.dll.new) |
 | lite | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/lite/antiLeech.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x64/lite/antiLeechx64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64/lite/antiLeecharm64.dll.new) | [下载](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64ec/lite/antiLeecharm64ec.dll.new) |

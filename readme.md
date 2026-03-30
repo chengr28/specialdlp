@@ -7,7 +7,7 @@
 This branch stores all binary files of the SDC (Strict DLP Chinese). They are listed below:
 
 | variant | x86 | x64 | arm64 | arm64ec |
-|-----------------|----------|----------|----------|----------|----------|
+|-----------------|----------|----------|----------|----------|
 | all-verycd | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/all-verycd/antiLeech.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x64/all-verycd/antiLeechx64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64/all-verycd/antiLeecharm64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64ec/all-verycd/antiLeecharm64ec.dll.new) |
 | easymule | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/easymule/antiLeech.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x64/easymule/antiLeechx64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64/easymule/antiLeecharm64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64ec/easymule/antiLeecharm64ec.dll.new) |
 | lite | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x86/lite/antiLeech.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/x64/lite/antiLeechx64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64/lite/antiLeecharm64.dll.new) | [Download](https://github.com/chengr28/specialdlp/raw/binary/specialdlp/arm64ec/lite/antiLeecharm64ec.dll.new) |
