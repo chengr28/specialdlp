@@ -24,9 +24,6 @@
     <None Include="def\antiLeech.def">
       <Filter>Module-Definition Files</Filter>
     </None>
-    <None Include="def\antiLeecharm.def">
-      <Filter>Module-Definition Files</Filter>
-    </None>
     <None Include="def\antiLeecharm64.def">
       <Filter>Module-Definition Files</Filter>
     </None>

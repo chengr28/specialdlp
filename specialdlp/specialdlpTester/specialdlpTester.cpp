@@ -1,5 +1,5 @@
 ﻿// Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
-// Copyright (C) 2009-2025 SDC Team
+// Copyright (C) 2009-2026 SDC Team
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU General Public License as published by 
@@ -77,7 +77,7 @@ int main(
 	}
 
 //Print library location.
-	auto LocationBuffer(std::make_unique<wchar_t[]>(SDC_PATH_MAXSIZE + sizeof(std::uint8_t)));
+	auto LocationBuffer(std::make_unique<wchar_t[]>(SDC_PATH_MAXSIZE + sizeof(std::uint_fast64_t)));
 	if (GetModuleFileNameW(LibraryInstance, LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0 || 
 		wcsnlen(LocationBuffer.get(), SDC_PATH_MAXSIZE) <= 0) [[unlikely]]
 	{
@@ -107,10 +107,10 @@ int main(
 	std::cout << "----------------------------------------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Example: " << std::endl;
-	std::cout << "Client version == \"eMule v0.70a\"" << std::endl;
+	std::cout << "Client version == \"eMule v0.70b\"" << std::endl;
 	std::cout << "Mod version == \"Xtreme 8.1\"" << std::endl;
 	std::cout << "User name == \"Hello World!\"" << std::endl;
-	std::cout << "User hash == \"0123456789ABCDE0123456789ABCDE01\"" << std::endl;
+	std::cout << "User hash == \"0123456789ABCDEF0123456789ABCDEF\"" << std::endl;
 	std::cout << "Message text == \"Hello World!\"" << std::endl;
 	std::cout << "Tag number == \"0\"" << std::endl;
 	std::cout << std::endl;

@@ -103,7 +103,7 @@
 #else 
 #define SDC_RESOURCE_INTERNAL_NAME			"Release"
 #endif
-#define SDC_RESOURCE_LEGAL_COPYRIGHT		"Copyright (C) 2009-2025 SDC Team"
+#define SDC_RESOURCE_LEGAL_COPYRIGHT		"Copyright (C) 2009-2026 SDC Team"
 #if (defined(WIN_X86) && !defined(WIN_X64))
 #define SDC_RESOURCE_ORIGINAL_FILE_NAME		"antiLeech.dll"
 #elif defined(WIN_X64)

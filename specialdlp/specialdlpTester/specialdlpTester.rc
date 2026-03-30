@@ -1,5 +1,5 @@
 ﻿// Strict DLP Chinese (SDC) is a set of strict DLP (Dynamic Leech Protection) DLLs based on the eMule Xtreme Mod's official version.
-// Copyright (C) 2009-2025 SDC Team
+// Copyright (C) 2009-2026 SDC Team
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU General Public License as published by 
@@ -33,7 +33,7 @@
 // English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -95,7 +95,7 @@ BEGIN
 	END
 	BLOCK "VarFileInfo"
 	BEGIN
-		VALUE "Translation", 0x409, 1200
+		VALUE "Translation", 0x0409, 0x04B0
 	END
 END
 

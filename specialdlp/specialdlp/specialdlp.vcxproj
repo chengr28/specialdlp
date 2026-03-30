@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|ARM">
-      <Configuration>Debug</Configuration>
-      <Platform>ARM</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|ARM64">
       <Configuration>Debug</Configuration>
       <Platform>ARM64</Platform>
@@ -16,10 +12,6 @@
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release_SDC_ALL_VERYCD|ARM">
-      <Configuration>Release_SDC_ALL_VERYCD</Configuration>
-      <Platform>ARM</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release_SDC_ALL_VERYCD|ARM64">
       <Configuration>Release_SDC_ALL_VERYCD</Configuration>
@@ -37,10 +29,6 @@
       <Configuration>Release_SDC_ALL_VERYCD</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release_SDC_LITE|ARM">
-      <Configuration>Release_SDC_LITE</Configuration>
-      <Platform>ARM</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release_SDC_LITE|ARM64">
       <Configuration>Release_SDC_LITE</Configuration>
       <Platform>ARM64</Platform>
@@ -56,10 +44,6 @@
     <ProjectConfiguration Include="Release_SDC_LITE|x64">
       <Configuration>Release_SDC_LITE</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release_SDC_VERYCD_NICKNAME|ARM">
-      <Configuration>Release_SDC_VERYCD_NICKNAME</Configuration>
-      <Platform>ARM</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release_SDC_VERYCD_NICKNAME|ARM64">
       <Configuration>Release_SDC_VERYCD_NICKNAME</Configuration>
@@ -77,10 +61,6 @@
       <Configuration>Release_SDC_VERYCD_NICKNAME</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release_SDC_EASYMULE|ARM">
-      <Configuration>Release_SDC_EASYMULE</Configuration>
-      <Platform>ARM</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release_SDC_EASYMULE|ARM64">
       <Configuration>Release_SDC_EASYMULE</Configuration>
       <Platform>ARM64</Platform>
@@ -97,10 +77,6 @@
       <Configuration>Release_SDC_EASYMULE</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release_SDC_VERYCD_TAG|ARM">
-      <Configuration>Release_SDC_VERYCD_TAG</Configuration>
-      <Platform>ARM</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release_SDC_VERYCD_TAG|ARM64">
       <Configuration>Release_SDC_VERYCD_TAG</Configuration>
       <Platform>ARM64</Platform>
@@ -116,10 +92,6 @@
     <ProjectConfiguration Include="Release_SDC_VERYCD_TAG|x64">
       <Configuration>Release_SDC_VERYCD_TAG</Configuration>
       <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|ARM">
-      <Configuration>Release</Configuration>
-      <Platform>ARM</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|ARM64">
       <Configuration>Release</Configuration>
@@ -151,347 +123,306 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <SpectreMitigation>Spectre</SpectreMitigation>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <SpectreMitigation>Spectre</SpectreMitigation>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|Win32'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <SpectreMitigation>Spectre</SpectreMitigation>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|Win32'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <SpectreMitigation>Spectre</SpectreMitigation>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|Win32'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <SpectreMitigation>Spectre</SpectreMitigation>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|Win32'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <SpectreMitigation>Spectre</SpectreMitigation>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|Win32'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM'" Label="Configuration">
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
-    <PlatformToolset>v143</PlatformToolset>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <SpectreMitigation>Spectre</SpectreMitigation>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
+    <UseOfMfc>Dynamic</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
+    <UseOfMfc>Dynamic</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
+    <UseOfMfc>Dynamic</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>SpectreLoad</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM64EC'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
     <SpectreMitigation>Spectre</SpectreMitigation>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <MSVCPreviewEnabled>false</MSVCPreviewEnabled>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -501,43 +432,22 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -612,13 +522,10 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <TargetExt>.dll</TargetExt>
-    <LinkIncremental>false</LinkIncremental>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|Win32'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -628,13 +535,10 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM'">
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <TargetExt>.dll</TargetExt>
-    <LinkIncremental>false</LinkIncremental>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|Win32'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -644,13 +548,10 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM'">
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <TargetExt>.dll</TargetExt>
-    <LinkIncremental>false</LinkIncremental>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|Win32'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -660,13 +561,10 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM'">
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <TargetExt>.dll</TargetExt>
-    <LinkIncremental>false</LinkIncremental>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|Win32'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -676,13 +574,10 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM'">
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <TargetExt>.dll</TargetExt>
-    <LinkIncremental>false</LinkIncremental>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|Win32'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -692,13 +587,10 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM'">
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <TargetExt>.dll</TargetExt>
-    <LinkIncremental>false</LinkIncremental>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -706,6 +598,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -714,6 +610,10 @@
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -721,6 +621,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -728,6 +632,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM64EC'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -736,6 +644,10 @@
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -743,6 +655,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -750,6 +666,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM64EC'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -758,6 +678,10 @@
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -765,6 +689,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -772,6 +700,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM64EC'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -780,6 +712,10 @@
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -787,6 +723,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -794,6 +734,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM64EC'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -802,6 +746,10 @@
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -809,6 +757,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -816,6 +768,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM64EC'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -824,6 +780,10 @@
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -831,6 +791,10 @@
     <TargetExt>.dll</TargetExt>
     <LinkIncremental>false</LinkIncremental>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetExt>.dll</TargetExt>
@@ -839,18 +803,20 @@
     <ManagedAssembly>false</ManagedAssembly>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <TargetExt>.dll</TargetExt>
-    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <TargetName>antiLeecharm</TargetName>
-    <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetExt>.dll</TargetExt>
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <TargetName>antiLeechx64</TargetName>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
     <TargetExt>.dll</TargetExt>
@@ -858,12 +824,20 @@
     <TargetName>antiLeecharm64ec</TargetName>
     <ManagedAssembly>false</ManagedAssembly>
     <BuildAsX>true</BuildAsX>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <TargetExt>.dll</TargetExt>
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <TargetName>antiLeecharm64</TargetName>
     <ManagedAssembly>false</ManagedAssembly>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <MaxNumberOfProcesses>0</MaxNumberOfProcesses>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -884,43 +858,13 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <PreprocessorDefinitions>WIN32;WIN_X86;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <CompileAsManaged>false</CompileAsManaged>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;_ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -948,11 +892,13 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <PreprocessorDefinitions>WIN32;WIN64;WIN_X86;WIN_X64;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -980,11 +926,13 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <PreprocessorDefinitions>WIN32;WIN64;WIN_ARM32;WIN_ARM64;WIN_ARM64EC;_AMD64_;_ARM64EC_;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1012,11 +960,13 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <PreprocessorDefinitions>WIN32;WIN64;WIN_ARM32;WIN_ARM64;_ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1058,13 +1008,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1072,62 +1023,11 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
       <PreprocessorDefinitions>WIN32;WIN_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>true</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <FloatingPointExceptions>true</FloatingPointExceptions>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <StringPooling>true</StringPooling>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <EnableEnhancedInstructionSet>ARMVFPv4Instructions</EnableEnhancedInstructionSet>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <DebugInformationFormat>None</DebugInformationFormat>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Manifest>
       <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
@@ -1166,13 +1066,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1180,62 +1081,11 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
       <PreprocessorDefinitions>WIN32;WIN_X86;SPECIAL_DLP_VERSION;SDC_VERYCD_TAG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_TAG|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>true</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_VERYCD_TAG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <FloatingPointExceptions>true</FloatingPointExceptions>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <StringPooling>true</StringPooling>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <EnableEnhancedInstructionSet>ARMVFPv4Instructions</EnableEnhancedInstructionSet>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <DebugInformationFormat>None</DebugInformationFormat>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_VERYCD_TAG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Manifest>
       <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
@@ -1274,13 +1124,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1288,62 +1139,11 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
       <PreprocessorDefinitions>WIN32;WIN_X86;SPECIAL_DLP_VERSION;SDC_VERYCD_NICKNAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_VERYCD_NICKNAME|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>true</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_VERYCD_NICKNAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <FloatingPointExceptions>true</FloatingPointExceptions>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <StringPooling>true</StringPooling>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <EnableEnhancedInstructionSet>ARMVFPv4Instructions</EnableEnhancedInstructionSet>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <DebugInformationFormat>None</DebugInformationFormat>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_VERYCD_NICKNAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Manifest>
       <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
@@ -1382,13 +1182,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1396,62 +1197,11 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
       <PreprocessorDefinitions>WIN32;WIN_X86;SPECIAL_DLP_VERSION;SDC_EASYMULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_EASYMULE|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>true</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_EASYMULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <FloatingPointExceptions>true</FloatingPointExceptions>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <StringPooling>true</StringPooling>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <EnableEnhancedInstructionSet>ARMVFPv4Instructions</EnableEnhancedInstructionSet>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <DebugInformationFormat>None</DebugInformationFormat>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_EASYMULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Manifest>
       <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
@@ -1490,13 +1240,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1504,62 +1255,11 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
       <PreprocessorDefinitions>WIN32;WIN_X86;SPECIAL_DLP_VERSION;SDC_ALL_VERYCD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_ALL_VERYCD|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>true</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_ALL_VERYCD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <FloatingPointExceptions>true</FloatingPointExceptions>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <StringPooling>true</StringPooling>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <EnableEnhancedInstructionSet>ARMVFPv4Instructions</EnableEnhancedInstructionSet>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <DebugInformationFormat>None</DebugInformationFormat>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_ALL_VERYCD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Manifest>
       <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
@@ -1598,13 +1298,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeech.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1612,62 +1313,11 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
       <PreprocessorDefinitions>WIN32;WIN_X86;SPECIAL_DLP_VERSION;SDC_LITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ResourceCompile>
-    <Manifest>
-      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
-    </Manifest>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDC_LITE|ARM'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>true</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_LITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <FloatingPointExceptions>true</FloatingPointExceptions>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
-      <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <UseStandardPreprocessor>true</UseStandardPreprocessor>
-      <ConformanceMode>true</ConformanceMode>
-      <StringPooling>true</StringPooling>
-      <OpenMPSupport>true</OpenMPSupport>
-      <EnableModules>true</EnableModules>
-      <EnableEnhancedInstructionSet>ARMVFPv4Instructions</EnableEnhancedInstructionSet>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <BuildStlModules>true</BuildStlModules>
-      <DebugInformationFormat>None</DebugInformationFormat>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <ModuleDefinitionFile>.\def\antiLeecharm.def</ModuleDefinitionFile>
-      <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-    </Link>
-    <ResourceCompile>
-      <NullTerminateStrings>true</NullTerminateStrings>
-      <PreprocessorDefinitions>WIN32;WIN_ARM32;SPECIAL_DLP_VERSION;SDC_LITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Manifest>
       <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
@@ -1705,13 +1355,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1719,6 +1370,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1760,17 +1412,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1812,17 +1466,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1864,13 +1520,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -1878,6 +1535,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1919,17 +1577,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -1971,17 +1631,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2023,13 +1685,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -2037,6 +1700,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2078,17 +1742,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2130,17 +1796,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2182,13 +1850,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -2196,6 +1865,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2237,17 +1907,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2289,17 +1961,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2341,13 +2015,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -2355,6 +2030,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2396,17 +2072,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2448,17 +2126,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2500,13 +2180,14 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeechx64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
@@ -2514,6 +2195,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <CETCompat>true</CETCompat>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2555,17 +2237,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>.\def\antiLeecharm64ec.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2607,17 +2291,19 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <BuildStlModules>true</BuildStlModules>
       <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>.\def\antiLeecharm64.def</ModuleDefinitionFile>
       <LargeAddressAware>true</LargeAddressAware>
-      <Version>44005</Version>
+      <Version>44006</Version>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SetChecksum>true</SetChecksum>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Console</SubSystem>
     </Link>
     <ResourceCompile>
       <NullTerminateStrings>true</NullTerminateStrings>
@@ -2629,7 +2315,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="def\antiLeech.def" />
-    <None Include="def\antiLeecharm.def" />
     <None Include="def\antiLeecharm64.def" />
     <None Include="def\antiLeecharm64ec.def" />
     <None Include="def\antiLeechx64.def" />
